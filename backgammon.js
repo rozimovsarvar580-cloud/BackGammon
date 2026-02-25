@@ -1,6 +1,8 @@
 const game = document.querySelector('.game')
 const Start = document.querySelector('.BtnStart')
 const context = game.getContext('2d')
+const dice = document.querySelector('.dice')
+const dice2 = document.querySelector('.dice2')
 console.log(context)
 CreateBoard()
 function CreateBoard(){
@@ -373,4 +375,57 @@ BlackCheckers = [
   {x:105,y:1165}
 ]
 Checkers()
+dice.style.display = 'block'
+dice2.style.display = 'none'
+if(Start.textContent === 'Roll Dice'){
+  const randNum1 = Math.ceil(Math.random()*6)
+  const randNum2 = Math.ceil(Math.random()*6)
+  dice.style.animation = 'rolling 4s'
+  dice2.style.animation = 'rolling 4s'
+  setTimeout(()=>{
+  switch(randNum1){
+    case 1:
+      dice.style.transform = ''
+      break
+    case 6:
+      dice.style.transform = 'rotateX(180deg)'
+      break
+    case 5:
+      dice.style.transform = 'rotateX(90deg)'
+      break
+    case 2:
+      dice.style.transform = 'rotateX(-90deg)'
+      break
+    case 3:
+      dice.style.transform = 'rotateY(90deg)'
+      break
+    case 4:
+      dice.style.transform = 'rotateY(-90deg)'
+      break
+  }
+  switch(randNum2){
+    case 1:
+      dice2.style.transform = ''
+      break
+    case 6:
+      dice2.style.transform = 'rotateX(180deg)'
+      break
+    case 5:
+      dice2.style.transform = 'rotateX(90deg)'
+      break
+    case 2:
+      dice2.style.transform = 'rotateX(-90deg)'
+      break
+    case 3:
+      dice2.style.transform = 'rotateY(90deg)'
+      break
+    case 4:
+      dice2.style.transform = 'rotateY(-90deg)'
+      break
+  }
+  dice.style.animation = ''
+  dice2.style.animation = ''
+  },4050)
+}
+Start.textContent = 'Roll Dice'
 })
