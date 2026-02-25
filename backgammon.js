@@ -30,7 +30,7 @@ function CreateBoard(){
         context.lineTo(260,450)
         context.lineTo(340,35)
         context.closePath()
-        context.fillStyle ='black'
+        context.fillStyle ='#242424'
         context.fill()
       }
       BlackTriangle()
@@ -40,7 +40,7 @@ function CreateBoard(){
         context.lineTo(550,450)
         context.lineTo(650,35)
         context.closePath()
-        context.fillStyle ='black'
+        context.fillStyle ='#242424'
         context.fill()
       }
       Black2Triangle()
@@ -50,7 +50,7 @@ function CreateBoard(){
         context.lineTo(850,450)
         context.lineTo(940,35)
         context.closePath()
-        context.fillStyle ='black'
+        context.fillStyle ='#242424'
         context.fill()
       }
       Black3Triangle()
@@ -60,7 +60,7 @@ function CreateBoard(){
         context.lineTo(1230,450)
         context.lineTo(1310,35)
         context.closePath()
-        context.fillStyle ='black'
+        context.fillStyle ='#242424'
         context.fill()
       }
       Black4Triangle()
@@ -70,7 +70,7 @@ function CreateBoard(){
         context.lineTo(1530,450)
         context.lineTo(1620,35)
         context.closePath()
-        context.fillStyle ='black'
+        context.fillStyle ='#242424'
         context.fill()
       }
       Black5Triangle()
@@ -80,7 +80,7 @@ function CreateBoard(){
         context.lineTo(1835,450)
         context.lineTo(1920,35)
         context.closePath()
-        context.fillStyle ='black'
+        context.fillStyle ='#242424'
         context.fill()
       }
       Black6Triangle()
@@ -93,7 +93,7 @@ function CreateBoard(){
         context.lineTo(100,450)
         context.lineTo(180,35)
         context.closePath()
-        context.fillStyle ='white'
+        context.fillStyle ='#f8f8f8'
         context.fill()
       }
       WhiteTriangle()
@@ -103,7 +103,7 @@ function CreateBoard(){
         context.lineTo(390,450)
         context.lineTo(490,35)
         context.closePath()
-        context.fillStyle ='white'
+        context.fillStyle ='#f8f8f8'
         context.fill()
       }
       White2Triangle()
@@ -113,7 +113,7 @@ function CreateBoard(){
         context.lineTo(700,450)
         context.lineTo(790,35)
         context.closePath()
-        context.fillStyle ='white'
+        context.fillStyle ='#f8f8f8'
         context.fill()
       }
       White3Triangle()
@@ -123,7 +123,7 @@ function CreateBoard(){
         context.lineTo(1080,450)
         context.lineTo(1160,35)
         context.closePath()
-        context.fillStyle ='white'
+        context.fillStyle ='#f8f8f8'
         context.fill()
       }
       White4Triangle()
@@ -133,7 +133,7 @@ function CreateBoard(){
         context.lineTo(1380,450)
         context.lineTo(1460,35)
         context.closePath()
-        context.fillStyle ='white'
+        context.fillStyle ='#f8f8f8'
         context.fill()
       }
       White5Triangle()
@@ -143,7 +143,7 @@ function CreateBoard(){
         context.lineTo(1690,450)
         context.lineTo(1770,35)
         context.closePath()
-        context.fillStyle ='white'
+        context.fillStyle ='#f8f8f8'
         context.fill()
       }
       White6Triangle()
@@ -156,7 +156,7 @@ function CreateBoard(){
         context.lineTo(100,750)
         context.lineTo(185,1205)
         context.closePath()
-        context.fillStyle ='black'
+        context.fillStyle ='#242424'
         context.fill()
       }
       BlackTriangle()
@@ -166,7 +166,7 @@ function CreateBoard(){
         context.lineTo(400,750)
         context.lineTo(485,1205)
         context.closePath()
-        context.fillStyle ='black'
+        context.fillStyle ='#242424'
         context.fill()
       }
       Black2Triangle()
@@ -176,7 +176,7 @@ function CreateBoard(){
         context.lineTo(700,750)
         context.lineTo(785,1205)
         context.closePath()
-        context.fillStyle ='black'
+        context.fillStyle ='#242424'
         context.fill()
       }
       Black3Triangle()
@@ -186,7 +186,7 @@ function CreateBoard(){
         context.lineTo(1080,750)
         context.lineTo(1165,1205)
         context.closePath()
-        context.fillStyle ='black'
+        context.fillStyle ='#242424'
         context.fill()
       }
       Black4Triangle()
@@ -196,7 +196,7 @@ function CreateBoard(){
         context.lineTo(1380,750)
         context.lineTo(1465,1205)
         context.closePath()
-        context.fillStyle ='black'
+        context.fillStyle ='#242424'
         context.fill()
       }
       Black5Triangle()
@@ -206,7 +206,7 @@ function CreateBoard(){
         context.lineTo(1680,750)
         context.lineTo(1765,1205)
         context.closePath()
-        context.fillStyle ='black'
+        context.fillStyle ='#242424'
         context.fill()
       }
       Black6Triangle()
@@ -219,7 +219,7 @@ function CreateBoard(){
         context.lineTo(255,750)
         context.lineTo(335,1205)
         context.closePath()
-        context.fillStyle ='white'
+        context.fillStyle ='#f8f8f8'
         context.fill()
       }
       WhiteTriangle()
@@ -229,7 +229,7 @@ function CreateBoard(){
         context.lineTo(555,750)
         context.lineTo(635,1205)
         context.closePath()
-        context.fillStyle ='white'
+        context.fillStyle ='#f8f8f8'
         context.fill()
       }
       White2Triangle()
@@ -239,7 +239,7 @@ function CreateBoard(){
         context.lineTo(855,750)
         context.lineTo(935,1205)
         context.closePath()
-        context.fillStyle ='white'
+        context.fillStyle ='#f8f8f8'
         context.fill()
       }
       White3Triangle()
@@ -249,7 +249,7 @@ function CreateBoard(){
         context.lineTo(1230,750)
         context.lineTo(1315,1205)
         context.closePath()
-        context.fillStyle ='white'
+        context.fillStyle ='#f8f8f8'
         context.fill()
       }
       White4Triangle()
@@ -259,7 +259,7 @@ function CreateBoard(){
         context.lineTo(1530,750)
         context.lineTo(1615,1205)
         context.closePath()
-        context.fillStyle ='white'
+        context.fillStyle ='#f8f8f8'
         context.fill()
       }
       White5Triangle()
@@ -269,7 +269,7 @@ function CreateBoard(){
         context.lineTo(1830,750)
         context.lineTo(1915,1205)
         context.closePath()
-        context.fillStyle ='white'
+        context.fillStyle ='#f8f8f8'
         context.fill()
       }
       White6Triangle()
@@ -315,13 +315,18 @@ let WhiteCheckers = [
   {x:WhiteX,    y:WhiteY}
 ]
 Checkers()
-function Checkers () {
+function Checkers (x,y) {
   context.clearRect(0,0,2200,1400)
   CreateBoard()
 BlackCheckers.forEach(BlackChecker =>{
-  context.beginPath()
-context.strokeStyle = 'white'
-context.lineWidth = 2
+context.beginPath()
+if(x === BlackChecker.x && y === BlackChecker.y){
+context.strokeStyle = 'gold'
+}else{
+context.strokeStyle = '#949494fa'
+}
+
+context.lineWidth = 5
 context.fillStyle = '#272727'
 context.arc(BlackChecker.x,BlackChecker.y,35,0,Math.PI *2,false)
 context.fill()
@@ -330,8 +335,12 @@ context.closePath()
 })
 WhiteCheckers.forEach(WhiteChecker =>{
 context.beginPath()
-context.strokeStyle = 'black'
-context.lineWidth = 2
+if(x === WhiteChecker.x && y === WhiteChecker.y){
+  context.strokeStyle = 'yellow'
+}else{
+  context.strokeStyle = '#777777'
+}
+context.lineWidth = 5
 context.fillStyle = 'white'
 context.arc(WhiteChecker.x,WhiteChecker.y,35,0,Math.PI *2,false)
 context.fill()
@@ -340,7 +349,7 @@ context.closePath()
 })
 }
 Start.addEventListener('click',()=>{
-   WhiteCheckers = [
+WhiteCheckers = [
   {x:1845,y:150},
   {x:1845,y:75},
   {x:1085,y:885},
@@ -376,10 +385,11 @@ BlackCheckers = [
 ]
 Checkers()
 dice.style.display = 'block'
-dice2.style.display = 'none'
+dice2.style.display = 'block'
 if(Start.textContent === 'Roll Dice'){
   const randNum1 = Math.ceil(Math.random()*6)
   const randNum2 = Math.ceil(Math.random()*6)
+  dice.style.transform = ''
   dice.style.animation = 'rolling 4s'
   dice2.style.animation = 'rolling 4s'
   setTimeout(()=>{
@@ -428,4 +438,73 @@ if(Start.textContent === 'Roll Dice'){
   },4050)
 }
 Start.textContent = 'Roll Dice'
+})
+game.addEventListener('click',(e)=>{
+  
+  if(Start.textContent === 'Roll Dice'){
+   WhiteCheckers.forEach(WhiteChecker =>{
+    const distance = Math.sqrt(
+     ((e.offsetX - WhiteChecker.x)*(e.offsetX - WhiteChecker.x))
+     +
+     ((e.offsetY - WhiteChecker.y)*(e.offsetY - WhiteChecker.y))
+    )
+    
+    if(distance<35){
+     switch(WhiteChecker.x){
+      case 105:
+        if(WhiteChecker.y === 375){
+          Checkers(WhiteChecker.x,WhiteChecker.y)
+        }
+        break
+      case 710:
+        if(WhiteChecker.y === 1025){
+          Checkers(WhiteChecker.x,WhiteChecker.y)
+        }
+        break
+      case 1085:
+        if(WhiteChecker.y === 885){
+          Checkers(WhiteChecker.x,WhiteChecker.y)
+        }
+        break
+      case 1845:
+        if(WhiteChecker.y === 150){
+          Checkers(WhiteChecker.x,WhiteChecker.y)
+        }
+        break
+     }
+     
+    }
+  })
+  BlackCheckers.forEach(BlackChecker =>{
+    const distance = Math.sqrt(
+     ((e.offsetX - BlackChecker.x)*(e.offsetX - BlackChecker.x))
+     +
+     ((e.offsetY - BlackChecker.y)*(e.offsetY - BlackChecker.y))
+    )
+    if(distance<35){
+     switch(BlackChecker.x){
+      case 105:
+        if(BlackChecker.y === 885){
+          Checkers(BlackChecker.x,BlackChecker.y)
+        }
+        break
+      case 710:
+        if(BlackChecker.y === 225){
+          Checkers(BlackChecker.x,BlackChecker.y)
+        }
+        break
+      case 1085:
+        if(BlackChecker.y === 375){
+          Checkers(BlackChecker.x,BlackChecker.y)
+        }
+        break
+      case 1845:
+        if(BlackChecker.y === 1095){
+          Checkers(BlackChecker.x,BlackChecker.y)
+        }
+        break
+     }
+    }
+  })
+}
 })
