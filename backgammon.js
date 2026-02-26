@@ -3,6 +3,7 @@ const Start = document.querySelector('.BtnStart')
 const context = game.getContext('2d')
 const dice = document.querySelector('.dice')
 const dice2 = document.querySelector('.dice2')
+const GameTip = document.querySelector('.Gametip')
 console.log(context)
 CreateBoard()
 function CreateBoard(){
@@ -348,7 +349,9 @@ context.stroke()
 context.closePath()
 })
 }
+let Rolled
 Start.addEventListener('click',()=>{
+  GameTip.textContent = ''
 WhiteCheckers = [
   {x:1845,y:150},
   {x:1845,y:75},
@@ -387,6 +390,7 @@ Checkers()
 dice.style.display = 'block'
 dice2.style.display = 'block'
 if(Start.textContent === 'Roll Dice'){
+  Rolled = 'Rolled'
   const randNum1 = Math.ceil(Math.random()*6)
   const randNum2 = Math.ceil(Math.random()*6)
   dice.style.transform = ''
@@ -441,6 +445,20 @@ Start.textContent = 'Roll Dice'
 })
 game.addEventListener('click',(e)=>{
   if(Start.textContent === 'Roll Dice'){
+    if(!Rolled){
+     GameTip.textContent = 'Please roll the dice first!'
+     GameTip.style.marginLeft = '-1000px'
+     game.style.marginLeft = '-1090px'
+   }
+  }
+  if(Start.textContent !== 'Roll Dice'){
+    GameTip.textContent = 'Game is not running'
+    GameTip.style.marginLeft = '-1200px'
+    game.style.marginLeft = '-1350px'
+  }
+   
+  if(Rolled){
+    GameTip.textContent = ''
     let number = 0
     let number2 = 0
     let number3 = 0
