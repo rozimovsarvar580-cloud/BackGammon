@@ -356,14 +356,14 @@ WhiteCheckers = [
   {x:1085,y:955},
   {x:1085,y:1025},
   {x:1085,y:1095},
-  {x:1085, y:1165},
+  {x:1085,y:1165},
   {x:710,y:1025},
   {x:710,y:1095},
   {x:710,y:1165},
   {x:105,y:375},
   {x:105,y:300},
   {x:105,y:225},
-  {x:105, y:150},
+  {x:105,y:150},
   {x:105, y:75}
 ] 
 BlackCheckers = [
@@ -440,38 +440,84 @@ if(Start.textContent === 'Roll Dice'){
 Start.textContent = 'Roll Dice'
 })
 game.addEventListener('click',(e)=>{
-  
   if(Start.textContent === 'Roll Dice'){
+    let number = 0
+    let number2 = 0
+    let number3 = 0
+    let number4 = 0
    WhiteCheckers.forEach(WhiteChecker =>{
     const distance = Math.sqrt(
      ((e.offsetX - WhiteChecker.x)*(e.offsetX - WhiteChecker.x))
      +
      ((e.offsetY - WhiteChecker.y)*(e.offsetY - WhiteChecker.y))
     )
-    
-    if(distance<35){
-     switch(WhiteChecker.x){
+    switch(WhiteChecker.x){
       case 105:
-        if(WhiteChecker.y === 375){
+        number+=1
+        break
+      case 710:
+        number2++
+        break
+      case 1085:
+        number3++
+        break
+      case 1845:  
+        number4++
+        break
+     }
+    if(distance<35){
+     setTimeout(()=>{
+      switch(number2){
+       case 1:
+         number2 = 233
+         break
+       case 2:
+         number2 = 219
+         break
+       case 3:
+         number2 = 205
+         break
+       }
+        switch(number3){
+       case 1:
+         number3 = 233
+         break
+       case 2:
+         number3 = 219
+         break
+       case 3:
+         number3 = 205
+         break
+        case 4:
+         number3 = 191
+         break
+        case 5:
+         number3 = 177
+         break
+       }
+      switch(WhiteChecker.x){
+      case 105:
+        if(WhiteChecker.y === 75*number){
           Checkers(WhiteChecker.x,WhiteChecker.y)
         }
         break
       case 710:
-        if(WhiteChecker.y === 1025){
+        if(WhiteChecker.y === number2*5){
           Checkers(WhiteChecker.x,WhiteChecker.y)
         }
         break
       case 1085:
-        if(WhiteChecker.y === 885){
+        if(WhiteChecker.y === number3*5){
           Checkers(WhiteChecker.x,WhiteChecker.y)
         }
         break
       case 1845:
-        if(WhiteChecker.y === 150){
+        if(WhiteChecker.y === number4*75){
           Checkers(WhiteChecker.x,WhiteChecker.y)
         }
         break
      }
+     },50)
      
     }
   })
