@@ -4,16 +4,21 @@ const context = game.getContext('2d')
 const dice = document.querySelector('.dice')
 const dice2 = document.querySelector('.dice2')
 const GameTip = document.querySelector('.Gametip')
+let NumbeR 
+let Number2
+let Color = 'transparent'
+let Color2 = 'transparent'
 console.log(context)
 CreateBoard()
 function CreateBoard(){
+  context.clearRect(0,0,1950,1230)
     function Board1(){
     context.fillStyle ='wheat'
     context.fillRect(20,20,935,1200)
     context.lineWidth = 30
     context.strokeStyle = 'orange'
     context.strokeRect(20,20,935,1200)
-    } 
+    }
     Board1()
     function Board2(){
     context.fillStyle ='wheat'
@@ -24,258 +29,74 @@ function CreateBoard(){
     
     }
     Board2()
-     function TopBlackTriangle(){
-      function BlackTriangle () {
-        context.beginPath()
-        context.moveTo(180,35)
-        context.lineTo(260,450)
-        context.lineTo(340,35)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      BlackTriangle()
-      function Black2Triangle () {
-        context.beginPath()
-        context.moveTo(490,35)
-        context.lineTo(550,450)
-        context.lineTo(650,35)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      Black2Triangle()
-      function Black3Triangle () {
-        context.beginPath()
-        context.moveTo(790,35)
-        context.lineTo(850,450)
-        context.lineTo(940,35)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      Black3Triangle()
-      function Black4Triangle () {
-        context.beginPath()
-        context.moveTo(1160,35)
-        context.lineTo(1230,450)
-        context.lineTo(1310,35)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      Black4Triangle()
-      function Black5Triangle () {
-        context.beginPath()
-        context.moveTo(1460,35)
-        context.lineTo(1530,450)
-        context.lineTo(1620,35)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      Black5Triangle()
-      function Black6Triangle () {
-        context.beginPath()
-        context.moveTo(1770,35)
-        context.lineTo(1835,450)
-        context.lineTo(1920,35)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      Black6Triangle()
-    }
-    TopBlackTriangle()
-    function TopWhiteTriangle(){
-      function WhiteTriangle () {
-        context.beginPath()
-        context.moveTo(35,35)
-        context.lineTo(100,450)
-        context.lineTo(180,35)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      WhiteTriangle()
-      function White2Triangle () {
-        context.beginPath()
-        context.moveTo(340,35)
-        context.lineTo(390,450)
-        context.lineTo(490,35)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      White2Triangle()
-      function White3Triangle () {
-        context.beginPath()
-        context.moveTo(650,35)
-        context.lineTo(700,450)
-        context.lineTo(790,35)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      White3Triangle()
-      function White4Triangle () {
-        context.beginPath()
-        context.moveTo(1015,35)
-        context.lineTo(1080,450)
-        context.lineTo(1160,35)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      White4Triangle()
-       function White5Triangle () {
-        context.beginPath()
-        context.moveTo(1310,35)
-        context.lineTo(1380,450)
-        context.lineTo(1460,35)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      White5Triangle()
-        function White6Triangle () {
-        context.beginPath()
-        context.moveTo(1620,35)
-        context.lineTo(1690,450)
-        context.lineTo(1770,35)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      White6Triangle()
-    }
-    TopWhiteTriangle()
-    function BottomBlackTriangle(){
-      function BlackTriangle () {
-        context.beginPath()
-        context.moveTo(35,1205)
-        context.lineTo(100,750)
-        context.lineTo(185,1205)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      BlackTriangle()
-      function Black2Triangle () {
-        context.beginPath()
-        context.moveTo(335,1205)
-        context.lineTo(400,750)
-        context.lineTo(485,1205)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      Black2Triangle()
-      function Black3Triangle () {
-        context.beginPath()
-        context.moveTo(635,1205)
-        context.lineTo(700,750)
-        context.lineTo(785,1205)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      Black3Triangle()
-       function Black4Triangle () {
-        context.beginPath()
-        context.moveTo(1015,1205)
-        context.lineTo(1080,750)
-        context.lineTo(1165,1205)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      Black4Triangle()
-      function Black5Triangle () {
-        context.beginPath()
-        context.moveTo(1315,1205)
-        context.lineTo(1380,750)
-        context.lineTo(1465,1205)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      Black5Triangle()
-      function Black6Triangle () {
-        context.beginPath()
-        context.moveTo(1615,1205)
-        context.lineTo(1680,750)
-        context.lineTo(1765,1205)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      Black6Triangle()
-    }
-    BottomBlackTriangle()
-     function BottomWhiteTriangle(){
-      function WhiteTriangle () {
-        context.beginPath()
-        context.moveTo(185,1205)
-        context.lineTo(255,750)
-        context.lineTo(335,1205)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      WhiteTriangle()
-      function White2Triangle () {
-        context.beginPath()
-        context.moveTo(485,1205)
-        context.lineTo(555,750)
-        context.lineTo(635,1205)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      White2Triangle()
-      function White3Triangle () {
-        context.beginPath()
-        context.moveTo(785,1205)
-        context.lineTo(855,750)
-        context.lineTo(935,1205)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      White3Triangle()
-      function White4Triangle () {
-        context.beginPath()
-        context.moveTo(1165,1205)
-        context.lineTo(1230,750)
-        context.lineTo(1315,1205)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      White4Triangle()
-      function White5Triangle () {
-        context.beginPath()
-        context.moveTo(1465,1205)
-        context.lineTo(1530,750)
-        context.lineTo(1615,1205)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      White5Triangle()
-       function White6Triangle () {
-        context.beginPath()
-        context.moveTo(1765,1205)
-        context.lineTo(1830,750)
-        context.lineTo(1915,1205)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      White6Triangle()
-    }
-    BottomWhiteTriangle()
+    const TopWhiteTriangles = [
+      {a:35,b:185},
+      {a:335,b:485},
+      {a:635,b:785},
+      {a:1015,b:1165},
+      {a:1315,b:1465},
+      {a:1615,b:1765},
+    ]
+    TopWhiteTriangles.forEach(TopWhiteTriangle =>{
+      context.beginPath()
+      context.moveTo(TopWhiteTriangle.a,35)
+      context.lineTo(TopWhiteTriangle.a+70,450)
+      context.lineTo(TopWhiteTriangle.b,35)
+      context.closePath()
+      context.fillStyle ='#f8f8f8'
+      context.fill()
+    })
+    const TopBlackTriangles = [
+      {a:185,b:335},
+      {a:485,b:635},
+      {a:785,b:940},
+      {a:1165,b:1315},
+      {a:1465,b:1615},
+      {a:1765,b:1920},
+    ]
+    TopBlackTriangles.forEach(TopBlackTriangle =>{
+      context.beginPath()
+      context.moveTo(TopBlackTriangle.a,35)
+      context.lineTo(TopBlackTriangle.a+70,450)
+      context.lineTo(TopBlackTriangle.b,35)
+      context.closePath()
+      context.fillStyle ='#2c2c2c'
+      context.fill()
+    })
+    const BottomWhiteTriangles = [
+      {a:35,b:185},
+      {a:335,b:485},
+      {a:635,b:785},
+      {a:1015,b:1165},
+      {a:1315,b:1465},
+      {a:1615,b:1765},
+    ]
+    BottomWhiteTriangles.forEach(BottomWhiteTriangle =>{
+      context.beginPath()
+      context.moveTo(BottomWhiteTriangle.a,1205)
+      context.lineTo(BottomWhiteTriangle.a+70,750)
+      context.lineTo(BottomWhiteTriangle.b,1205)
+      context.closePath()
+      context.fillStyle ='#f8f8f8'
+      context.fill()
+    })
+    const BottomBlackTriangles = [
+      {a:185,b:335},
+      {a:485,b:635},
+      {a:785,b:940},
+      {a:1165,b:1315},
+      {a:1465,b:1615},
+      {a:1765,b:1920},
+    ]
+    BottomBlackTriangles.forEach(BottomBlackTriangle =>{
+      context.beginPath()
+      context.moveTo(BottomBlackTriangle.a,1205)
+      context.lineTo(BottomBlackTriangle.a+70,750)
+      context.lineTo(BottomBlackTriangle.b,1205)
+      context.closePath()
+      context.fillStyle ='#2c2c2c'
+      context.fill()
+    })
 }
 let X = 1200
 let Y = 560
@@ -317,7 +138,6 @@ let WhiteCheckers = [
 ]
 Checkers()
 function Checkers (x,y) {
-  context.clearRect(0,0,2200,1400)
   CreateBoard()
 BlackCheckers.forEach(BlackChecker =>{
 context.beginPath()
@@ -390,9 +210,11 @@ Checkers()
 dice.style.display = 'block'
 dice2.style.display = 'block'
 if(Start.textContent === 'Roll Dice'){
-  Rolled = 'Rolled'
+  Rolled = 'Rolling'
   const randNum1 = Math.ceil(Math.random()*6)
   const randNum2 = Math.ceil(Math.random()*6)
+  NumbeR = randNum1
+  Number2 = randNum2
   dice.style.transform = ''
   dice.style.animation = 'rolling 4s'
   dice2.style.animation = 'rolling 4s'
@@ -439,7 +261,8 @@ if(Start.textContent === 'Roll Dice'){
   }
   dice.style.animation = ''
   dice2.style.animation = ''
-  },4050)
+  Rolled = 'Rolled'
+  },4000)
 }
 Start.textContent = 'Roll Dice'
 })
@@ -450,19 +273,28 @@ game.addEventListener('click',(e)=>{
      GameTip.style.marginLeft = '-1000px'
      game.style.marginLeft = '-1090px'
    }
+   if(Rolled === 'Rolling'){
+     GameTip.textContent = 'Please wait dice is rolling'
+     GameTip.style.marginLeft = '-990px'
+     game.style.marginLeft = '-1050px'
+   }
   }
   if(Start.textContent !== 'Roll Dice'){
-    GameTip.textContent = 'Game is not running'
+    GameTip.textContent = 'Game is not Started'
     GameTip.style.marginLeft = '-1200px'
     game.style.marginLeft = '-1350px'
   }
    
-  if(Rolled){
+  if(Rolled === 'Rolled'){
     GameTip.textContent = ''
     let number = 0
     let number2 = 0
     let number3 = 0
     let number4 = 0
+    let number5 = 0
+    let number6 = 0
+    let number7 = 0
+    let number8 = 0
    WhiteCheckers.forEach(WhiteChecker =>{
     const distance = Math.sqrt(
      ((e.offsetX - WhiteChecker.x)*(e.offsetX - WhiteChecker.x))
@@ -494,6 +326,12 @@ game.addEventListener('click',(e)=>{
          break
        case 3:
          number2 = 205
+         break
+       case 4:
+         number2 = 191
+         break
+        case 5:
+         number2 = 177
          break
        }
         switch(number3){
@@ -531,44 +369,97 @@ game.addEventListener('click',(e)=>{
         break
       case 1845:
         if(WhiteChecker.y === number4*75){
+          CreateBoard(WhiteChecker.x)
           Checkers(WhiteChecker.x,WhiteChecker.y)
         }
         break
      }
-     },50)
+     },10)
      
     }
-  })
+  }) 
   BlackCheckers.forEach(BlackChecker =>{
     const distance = Math.sqrt(
      ((e.offsetX - BlackChecker.x)*(e.offsetX - BlackChecker.x))
      +
      ((e.offsetY - BlackChecker.y)*(e.offsetY - BlackChecker.y))
     )
-    if(distance<35){
      switch(BlackChecker.x){
       case 105:
-        if(BlackChecker.y === 885){
+        number5++
+        break
+      case 710:
+        number6++
+        break
+      case 1085:
+        number7++
+        break
+      case 1845:
+        number8++
+        break
+     }
+    if(distance<35){
+      setTimeout(()=>{
+        switch(number5){  
+       case 1:
+         number5 = 233
+         break
+       case 2:
+         number5 = 219
+         break
+       case 3:
+         number5 = 205
+         break
+        case 4:
+         number5 = 191
+         break
+        case 5:
+         number5 = 177
+         break
+        }
+        switch(number8){  
+       case 1:
+         number8 = 233
+         break
+       case 2:
+         number8 = 219
+         break
+       case 3:
+         number8 = 205
+         break
+        case 4:
+         number8 = 191
+         break
+        case 5:
+         number8 = 177
+         break
+        }
+      switch(BlackChecker.x){
+      case 105:
+        if(BlackChecker.y === number5*5){
           Checkers(BlackChecker.x,BlackChecker.y)
         }
         break
       case 710:
-        if(BlackChecker.y === 225){
+        if(BlackChecker.y === number6*75){
           Checkers(BlackChecker.x,BlackChecker.y)
         }
         break
       case 1085:
-        if(BlackChecker.y === 375){
+        if(BlackChecker.y === number7*75){
           Checkers(BlackChecker.x,BlackChecker.y)
         }
         break
       case 1845:
-        if(BlackChecker.y === 1095){
+        if(BlackChecker.y === number8*5){
           Checkers(BlackChecker.x,BlackChecker.y)
         }
         break
      }
+    },10)
+     
     }
   })
+  CreateBoard(e)
 }
 })
