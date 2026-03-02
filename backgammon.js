@@ -6,12 +6,160 @@ const dice2 = document.querySelector('.dice2')
 const GameTip = document.querySelector('.Gametip')
 let NumbeR 
 let Number2
-let Color = 'transparent'
-let Color2 = 'transparent'
+let TopWhite
+let TopBlack
+let TopWhite2
+let TopBlack2
+let TopWhite3
+let TopBlack3
+let TopWhite4
+let TopBlack4
+let TopWhite5
+let TopBlack5
+let TopWhite6
+let TopBlack6
 console.log(context)
 CreateBoard()
-function CreateBoard(){
-  context.clearRect(0,0,1950,1230)
+function CreateBoard(x){
+  switch(x){
+    case 1845:
+      switch(NumbeR){
+         case 0:
+          switch(Number2){
+            case 1:
+             break
+            case 2:
+             break
+            case 3:
+             break
+            case 4:
+             break
+            case 5:
+             break
+            case 6:
+             break
+          }
+          break
+         case 1:
+          BlackCheckers.forEach(BlackChecker=>{
+            if(BlackChecker.x === 1690){
+             
+            }else{
+              TopWhiteTriangLe(1615)
+            }
+            })
+           
+          switch(Number2){
+            case 1:
+              TopBlackTriangLe(1465)
+             break
+            case 2:
+             TopBlackTriangLe(1465)
+             TopWhiteTriangLe(1315)
+             break
+            case 3:
+              TopBlackTriangLe(1165)
+              TopWhiteTriangLe(1315)
+             break
+            case 4:
+              BlackCheckers.forEach(BlackChecker=>{
+                if(BlackChecker.x === 1085){
+                  TopWhite5 = 0
+                }else{
+                  TopWhiteTriangLe(1015)
+                }
+              })
+              TopBlackTriangLe(1165)
+             break
+            case 5:
+             break
+            case 6:
+             break
+          }
+          break
+         case 2:
+          switch(Number2){
+            case 1:
+             break
+            case 2:
+             break
+            case 3:
+             break
+            case 4:
+             break
+            case 5:
+             break
+            case 6:
+             break
+          }
+          break
+         case 3:
+          switch(Number2){
+            case 1:
+             break
+            case 2:
+             break
+            case 3:
+             break
+            case 4:
+             break
+            case 5:
+             break
+            case 6:
+             break
+          }
+          break
+         case 4:
+          switch(Number2){
+            case 1:
+             break
+            case 2:
+             break
+            case 3:
+             break
+            case 4:
+             break
+            case 5:
+             break
+            case 6:
+             break
+          }
+          break
+         case 5:
+          switch(Number2){
+            case 1:
+             break
+            case 2:
+             break
+            case 3:
+             break
+            case 4:
+             break
+            case 5:
+             break
+            case 6:
+             break
+          }
+          break
+         case 6:
+          switch(Number2){
+            case 1:
+             break
+            case 2:
+             break
+            case 3:
+             break
+            case 4:
+             break
+            case 5:
+             break
+            case 6:
+             break
+          }
+          break
+      }
+      break
+  }
     function Board1(){
     context.fillStyle ='wheat'
     context.fillRect(20,20,935,1200)
@@ -29,23 +177,80 @@ function CreateBoard(){
     
     }
     Board2()
+
+    function TopWhiteTriangLe(A){
     const TopWhiteTriangles = [
-      {a:35,b:185},
-      {a:335,b:485},
-      {a:635,b:785},
-      {a:1015,b:1165},
-      {a:1315,b:1465},
-      {a:1615,b:1765},
-    ]
+         {a:35,b:185},
+         {a:335,b:485},
+         {a:635,b:785},
+         {a:1015,b:1165},
+         {a:1315,b:1465},
+         {a:1615,b:1765},
+       ]
     TopWhiteTriangles.forEach(TopWhiteTriangle =>{
       context.beginPath()
       context.moveTo(TopWhiteTriangle.a,35)
       context.lineTo(TopWhiteTriangle.a+70,450)
       context.lineTo(TopWhiteTriangle.b,35)
+      switch(A){
+        case 35:
+          TopWhite = A
+          break
+        case 335:
+          TopWhite2 = A
+          break
+        case 635:
+          TopWhite3 = A
+          break
+        case 1015:
+          TopWhite4 = A
+          break
+        case 1315:
+          TopWhite5 = A
+          break
+        case 1615:
+          TopWhite6 = A
+          break
+      }
+      switch(TopWhiteTriangle.a){
+        case TopWhite:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopWhite2:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopWhite3:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopWhite4:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopWhite5:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopWhite6:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+      }
       context.closePath()
       context.fillStyle ='#f8f8f8'
       context.fill()
     })
+    }
+    TopWhiteTriangLe()
+   function TopBlackTriangLe(A){
     const TopBlackTriangles = [
       {a:185,b:335},
       {a:485,b:635},
@@ -59,17 +264,73 @@ function CreateBoard(){
       context.moveTo(TopBlackTriangle.a,35)
       context.lineTo(TopBlackTriangle.a+70,450)
       context.lineTo(TopBlackTriangle.b,35)
+      switch(A){
+        case 185:
+          TopBlack = A
+          break
+        case 485:
+          TopBlack2 = A
+          break
+        case 785:
+          TopBlack3 = A
+          break
+        case 1165:
+          TopBlack4 = A
+          break
+        case 1465:
+          TopBlack5 = A
+          break
+        case 1765:
+          TopBlack6 = A
+          break
+      }
+      switch(TopBlackTriangle.a){
+        case TopBlack:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopBlack2:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopBlack3:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopBlack4:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopBlack5:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopBlack6:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+      }
       context.closePath()
       context.fillStyle ='#2c2c2c'
       context.fill()
     })
-    const BottomWhiteTriangles = [
-      {a:35,b:185},
-      {a:335,b:485},
-      {a:635,b:785},
-      {a:1015,b:1165},
-      {a:1315,b:1465},
-      {a:1615,b:1765},
+   }
+    TopBlackTriangLe()
+    function BottomWhiteTriangLe(){
+      const BottomWhiteTriangles = [
+      {a:185,b:335},
+      {a:485,b:635},
+      {a:785,b:940},
+      {a:1165,b:1315},
+      {a:1465,b:1615},
+      {a:1765,b:1920},
+      
     ]
     BottomWhiteTriangles.forEach(BottomWhiteTriangle =>{
       context.beginPath()
@@ -80,13 +341,16 @@ function CreateBoard(){
       context.fillStyle ='#f8f8f8'
       context.fill()
     })
-    const BottomBlackTriangles = [
-      {a:185,b:335},
-      {a:485,b:635},
-      {a:785,b:940},
-      {a:1165,b:1315},
-      {a:1465,b:1615},
-      {a:1765,b:1920},
+    }
+    BottomWhiteTriangLe()
+    function BottomBlackTriangLe(){
+      const BottomBlackTriangles = [
+      {a:35,b:185},
+      {a:335,b:485},
+      {a:635,b:785},
+      {a:1015,b:1165},
+      {a:1315,b:1465},
+      {a:1615,b:1765},
     ]
     BottomBlackTriangles.forEach(BottomBlackTriangle =>{
       context.beginPath()
@@ -97,6 +361,8 @@ function CreateBoard(){
       context.fillStyle ='#2c2c2c'
       context.fill()
     })
+    }
+    BottomBlackTriangLe()
 }
 let X = 1200
 let Y = 560
@@ -138,7 +404,8 @@ let WhiteCheckers = [
 ]
 Checkers()
 function Checkers (x,y) {
-  CreateBoard()
+  context.clearRect(0,0,1950,1230)
+CreateBoard()
 BlackCheckers.forEach(BlackChecker =>{
 context.beginPath()
 if(x === BlackChecker.x && y === BlackChecker.y){
@@ -183,11 +450,11 @@ WhiteCheckers = [
   {x:710,y:1025},
   {x:710,y:1095},
   {x:710,y:1165},
-  {x:105,y:375},
-  {x:105,y:300},
-  {x:105,y:225},
-  {x:105,y:150},
-  {x:105, y:75}
+  {x:110,y:375},
+  {x:110,y:300},
+  {x:110,y:225},
+  {x:110,y:150},
+  {x:110, y:75}
 ] 
 BlackCheckers = [
   {x:1845,y:1095},
@@ -200,11 +467,11 @@ BlackCheckers = [
   {x:710,y:225},
   {x:710,y:150},
   {x:710,y:75},
-  {x:105,y:885},
-  {x:105,y:955},
-  {x:105,y:1025},
-  {x:105, y:1095},
-  {x:105,y:1165}
+  {x:110,y:885},
+  {x:110,y:955},
+  {x:110,y:1025},
+  {x:110, y:1095},
+  {x:110,y:1165}
 ]
 Checkers()
 dice.style.display = 'block'
@@ -213,8 +480,8 @@ if(Start.textContent === 'Roll Dice'){
   Rolled = 'Rolling'
   const randNum1 = Math.ceil(Math.random()*6)
   const randNum2 = Math.ceil(Math.random()*6)
-  NumbeR = randNum1
-  Number2 = randNum2
+  NumbeR = 1
+  Number2 = 4
   dice.style.transform = ''
   dice.style.animation = 'rolling 4s'
   dice2.style.animation = 'rolling 4s'
@@ -460,6 +727,5 @@ game.addEventListener('click',(e)=>{
      
     }
   })
-  CreateBoard(e)
 }
 })
