@@ -325,7 +325,6 @@ context.strokeStyle = 'gold'
 }else{
 context.strokeStyle = '#949494fa'
 }
-
 context.lineWidth = 5
 context.fillStyle = '#272727'
 context.arc(BlackChecker.x,BlackChecker.y,35,0,Math.PI *2,false)
