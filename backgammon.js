@@ -3,16 +3,1329 @@ const Start = document.querySelector('.BtnStart')
 const context = game.getContext('2d')
 const dice = document.querySelector('.dice')
 const dice2 = document.querySelector('.dice2')
+const GameTip = document.querySelector('.Gametip')
+let NumbeR 
+let Number2
+let TopWhite
+let TopBlack
+let TopWhite2
+let TopBlack2
+let TopWhite3
+let TopBlack3
+let TopWhite4
+let TopBlack4
+let TopWhite5
+let TopBlack5
+let TopWhite6
+let TopBlack6
+let BottomWhite
+let BottomWhite2
+let BottomWhite3
+let BottomWhite4
+let BottomWhite5
+let BottomWhite6
+let BottomBlack
+let BottomBlack2
+let BottomBlack3
+let BottomBlack4
+let BottomBlack5
+let BottomBlack6
+let NUMBER = 0
+let NUMBER2 = 0
 console.log(context)
 CreateBoard()
-function CreateBoard(){
+function CreateBoard(x){
+  switch(x){
+    case 1845:
+      switch(NumbeR){
+         case 0:
+          switch(Number2){
+            case 1:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                    if(BlackCheckers[NUMBER].x === 1690){
+                      NUMBER2++
+                      if(NUMBER2>=2){
+                        TopWhite6 = undefined
+                        break
+                      }
+                    }else{
+                      TopWhiteTriangLe(1615)
+                    }
+                  NUMBER++
+                  }
+             break
+            case 2:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1540){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(1465)
+                }
+              NUMBER++
+              }
+             break
+            case 3:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1390){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1315)
+                }
+              NUMBER++
+              }
+             break
+            case 4:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1240){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(1165)
+                }
+              NUMBER++
+              }
+             break
+            case 5:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1090){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1015)
+                }
+              NUMBER++
+              }
+             break
+            case 6:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 860){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(785)
+                }
+              NUMBER++
+              }
+             break
+          }
+          break
+         case 1:
+          NUMBER=0
+          NUMBER2=0
+          while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1690){
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite6 = undefined
+                    break
+                  }
+                }else{
+                  TopWhiteTriangLe(1615)
+                }
+              NUMBER++
+              }
+          switch(Number2){
+            case 1:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1540){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(1465)
+                }
+              NUMBER++
+              }
+              
+             break
+            case 2:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1540){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(1465)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1390){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1315)
+                }
+              NUMBER++
+              }
+             
+             break
+            case 3:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1240){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(1165)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1390){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1315)
+                }
+              NUMBER++
+              }
+              
+             break
+            case 4:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1090){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1015)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1240){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(1165)
+                }
+              NUMBER++
+              }
+             break
+            case 5:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 860){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(785)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1090){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1015)
+                }
+              NUMBER++
+              }
+             break
+            case 6:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 860){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack3 = undefined
+                    break
+                  }
+                 
+                }else{
+                   TopBlackTriangLe(785)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 710){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(635)
+                }
+              NUMBER++
+              }
+             break
+          }
+          break
+         case 2:
+           NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1540){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(1465)
+                }
+              NUMBER++
+              }
+          switch(Number2){
+            case 1:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                    if(BlackCheckers[NUMBER].x === 1690){
+                      NUMBER2++
+                      if(NUMBER2>=2){
+                        TopWhite6 = undefined
+                        break
+                      }
+                    }else{
+                      TopWhiteTriangLe(1615)
+                    }
+                  NUMBER++
+                  }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1390){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1315)
+                }
+              NUMBER++
+              }
+             break
+            case 2:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1240){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(1165)
+                }
+              NUMBER++
+              }
+             break
+            case 3:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1390){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1315)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1090){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1015)
+                }
+              NUMBER++
+              }
+             break
+            case 4:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1240){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(1165)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 860){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(785)
+                }
+              NUMBER++
+              }
+             break
+            case 5:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1090){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1015)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 710){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(635)
+                }
+              NUMBER++
+              }
+             break
+            case 6:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 860){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(785)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 560){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(485)
+                }
+              NUMBER++
+              }
+             break
+          }
+          break
+         case 3:
+          NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1390){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1315)
+                }
+              NUMBER++
+              }
+          switch(Number2){
+            case 1:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                    if(BlackCheckers[NUMBER].x === 1690){
+                      NUMBER2++
+                      if(NUMBER2>=2){
+                        TopWhite6 = undefined
+                        break
+                      }
+                    }else{
+                      TopWhiteTriangLe(1615)
+                    }
+                  NUMBER++
+                  }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1240){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(1165)
+                }
+              NUMBER++
+              }
+             break
+            case 2:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1540){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(1465)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1090){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1015)
+                }
+              NUMBER++
+              }
+             break
+            case 3:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 860){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(785)
+                }
+              NUMBER++
+              }
+             break
+            case 4:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 710){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(635)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1240){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(1165)
+                }
+              NUMBER++
+              }
+             break
+            case 5:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1090){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1015)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 560){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack2 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(485)
+                }
+              NUMBER++
+              }
+             break
+            case 6:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 860){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(785)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 410){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite2 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(335)
+                }
+              NUMBER++
+              }
+             break
+          }
+          break
+         case 4:
+          NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1240){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(1165)
+                }
+              NUMBER++
+              }
+          switch(Number2){
+            case 1:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                    if(BlackCheckers[NUMBER].x === 1690){
+                      NUMBER2++
+                      if(NUMBER2>=2){
+                        TopWhite6 = undefined
+                        break
+                      }
+                    }else{
+                      TopWhiteTriangLe(1615)
+                    }
+                  NUMBER++
+                  }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1090){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1015)
+                }
+              NUMBER++
+              }
+             break
+            case 2:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 860){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(785)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1540){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(1465)
+                }
+              NUMBER++
+              }
+             break
+            case 3:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1390){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1315)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 710){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(635)
+                }
+              NUMBER++
+              }
+             break
+            case 4:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 560){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack2 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(485)
+                }
+              NUMBER++
+              }
+             break
+            case 5:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1090){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1015)
+                }
+              NUMBER++
+              }
+            NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 410){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite2 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(335)
+                }
+              NUMBER++
+              }
+             break
+            case 6:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 860){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(785)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 260){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack1 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(185)
+                }
+              NUMBER++
+              }
+             break
+          }
+             break
+         case 5:
+          NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1090){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1015)
+                }
+              NUMBER++
+              }
+          switch(Number2){
+            case 1:
+              NUMBER=0
+          NUMBER2=0
+          while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1690){
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite6 = undefined
+                    break
+                  }
+                }else{
+                  TopWhiteTriangLe(1615)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 860){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(785)
+                }
+              NUMBER++
+              }
+             break
+            case 2:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1540){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(1465)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 710){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(635)
+                }
+              NUMBER++
+              }
+             break
+            case 3:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1390){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1315)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 560){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack2 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(485)
+                }
+              NUMBER++
+              }
+             break
+            case 4:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1240){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(1165)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 410){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite2 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(335)
+                }
+              NUMBER++
+              }
+             break
+            case 5:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 260){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack1 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(185)
+                }
+              NUMBER++
+              }
+             break
+            case 6:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 860){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(785)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 110){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite2 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(35)
+                }
+              NUMBER++
+              }
+             break 
+          }
+          
+          break
+         case 6:
+          NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 860){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(785)
+                }
+              NUMBER++
+              }
+          switch(Number2){
+            case 1:
+              NUMBER=0
+          NUMBER2=0
+          while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1690){
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite6 = undefined
+                    break
+                  }
+                }else{
+                  TopWhiteTriangLe(1615)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 710){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(635)
+                }
+              NUMBER++
+              }
+             break
+            case 2:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1540){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(1465)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 560){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack2 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(485)
+                }
+              NUMBER++
+              }
+             break
+            case 3:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1390){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1315)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 410){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite2 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(335)
+                }
+              NUMBER++
+              }
+             break
+            case 4:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1240){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(1165)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 260){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack1 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopBlackTriangLe(185)
+                }
+              NUMBER++
+              }
+             break
+            case 5:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 110 && BlackCheckers[NUMBER].y<600){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(35)
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1090){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  TopWhiteTriangLe(1015)
+                }
+              NUMBER++
+              }
+             break
+            case 6:
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 110){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    BottomBlack = undefined
+                    break
+                  }
+                 
+                }else{
+                  BottomBlackTriangLe(35)
+                }
+              NUMBER++
+              }
+             break
+          }
+          break
+          }  
+      }
     function Board1(){
     context.fillStyle ='wheat'
     context.fillRect(20,20,935,1200)
     context.lineWidth = 30
     context.strokeStyle = 'orange'
     context.strokeRect(20,20,935,1200)
-    } 
+    }
     Board1()
     function Board2(){
     context.fillStyle ='wheat'
@@ -23,258 +1336,295 @@ function CreateBoard(){
     
     }
     Board2()
-     function TopBlackTriangle(){
-      function BlackTriangle () {
-        context.beginPath()
-        context.moveTo(180,35)
-        context.lineTo(260,450)
-        context.lineTo(340,35)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
+
+    function TopWhiteTriangLe(A){
+    const TopWhiteTriangles = [
+         {a:35,b:185},
+         {a:335,b:485},
+         {a:635,b:785},
+         {a:1015,b:1165},
+         {a:1315,b:1465},
+         {a:1615,b:1765},
+       ]
+    TopWhiteTriangles.forEach(TopWhiteTriangle =>{
+      context.beginPath()
+      context.moveTo(TopWhiteTriangle.a,35)
+      context.lineTo(TopWhiteTriangle.a+70,450)
+      context.lineTo(TopWhiteTriangle.b,35)
+      switch(A){
+        case 35:
+          TopWhite = A
+          break
+        case 335:
+          TopWhite2 = A
+          break
+        case 635:
+          TopWhite3 = A
+          break
+        case 1015:
+          TopWhite4 = A
+          break
+        case 1315:
+          TopWhite5 = A
+          break
+        case 1615:
+          TopWhite6 = A
+          break
       }
-      BlackTriangle()
-      function Black2Triangle () {
-        context.beginPath()
-        context.moveTo(490,35)
-        context.lineTo(550,450)
-        context.lineTo(650,35)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
+      switch(TopWhiteTriangle.a){
+        case TopWhite:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopWhite2:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopWhite3:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopWhite4:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopWhite5:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopWhite6:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
       }
-      Black2Triangle()
-      function Black3Triangle () {
-        context.beginPath()
-        context.moveTo(790,35)
-        context.lineTo(850,450)
-        context.lineTo(940,35)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      Black3Triangle()
-      function Black4Triangle () {
-        context.beginPath()
-        context.moveTo(1160,35)
-        context.lineTo(1230,450)
-        context.lineTo(1310,35)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      Black4Triangle()
-      function Black5Triangle () {
-        context.beginPath()
-        context.moveTo(1460,35)
-        context.lineTo(1530,450)
-        context.lineTo(1620,35)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      Black5Triangle()
-      function Black6Triangle () {
-        context.beginPath()
-        context.moveTo(1770,35)
-        context.lineTo(1835,450)
-        context.lineTo(1920,35)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      Black6Triangle()
+      context.closePath()
+      context.fillStyle ='#f8f8f8'
+      context.fill()
+    })
     }
-    TopBlackTriangle()
-    function TopWhiteTriangle(){
-      function WhiteTriangle () {
-        context.beginPath()
-        context.moveTo(35,35)
-        context.lineTo(100,450)
-        context.lineTo(180,35)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
+    TopWhiteTriangLe()
+   function TopBlackTriangLe(A){
+    const TopBlackTriangles = [
+      {a:185,b:335},
+      {a:485,b:635},
+      {a:785,b:940},
+      {a:1165,b:1315},
+      {a:1465,b:1615},
+      {a:1765,b:1920},
+    ]
+    TopBlackTriangles.forEach(TopBlackTriangle =>{
+      context.beginPath()
+      context.moveTo(TopBlackTriangle.a,35)
+      context.lineTo(TopBlackTriangle.a+70,450)
+      context.lineTo(TopBlackTriangle.b,35)
+      switch(A){
+        case 185:
+          TopBlack = A
+          break
+        case 485:
+          TopBlack2 = A
+          break
+        case 785:
+          TopBlack3 = A
+          break
+        case 1165:
+          TopBlack4 = A
+          break
+        case 1465:
+          TopBlack5 = A
+          break
+        case 1765:
+          TopBlack6 = A
+          break
       }
-      WhiteTriangle()
-      function White2Triangle () {
-        context.beginPath()
-        context.moveTo(340,35)
-        context.lineTo(390,450)
-        context.lineTo(490,35)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
+      switch(TopBlackTriangle.a){
+        case TopBlack:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopBlack2:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopBlack3:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopBlack4:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopBlack5:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case TopBlack6:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
       }
-      White2Triangle()
-      function White3Triangle () {
-        context.beginPath()
-        context.moveTo(650,35)
-        context.lineTo(700,450)
-        context.lineTo(790,35)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
+      context.closePath()
+      context.fillStyle ='#2c2c2c'
+      context.fill()
+    })
+   }
+    TopBlackTriangLe()
+    function BottomWhiteTriangLe(A){
+      const BottomWhiteTriangles = [
+      {a:185,b:335},
+      {a:485,b:635},
+      {a:785,b:940},
+      {a:1165,b:1315},
+      {a:1465,b:1615},
+      {a:1765,b:1920},
+    ]
+    BottomWhiteTriangles.forEach(BottomWhiteTriangle =>{
+      context.beginPath()
+      context.moveTo(BottomWhiteTriangle.a,1205)
+      context.lineTo(BottomWhiteTriangle.a+70,750)
+      context.lineTo(BottomWhiteTriangle.b,1205)
+      switch(A){
+        case 185:
+          BottomWhite = A
+          break
+        case 485:
+          BottomWhite2 = A
+          break
+        case 785:
+          BottomWhite3 = A
+          break
+        case 1165:
+          BottomWhite4 = A
+          break
+        case 1465:
+          BottomWhite5 = A
+          break
+        case 1765:
+          BottomWhite6 = A
+          break
       }
-      White3Triangle()
-      function White4Triangle () {
-        context.beginPath()
-        context.moveTo(1015,35)
-        context.lineTo(1080,450)
-        context.lineTo(1160,35)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
+      switch(BottomWhiteTriangle.a){
+        case BottomWhite:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case BottomWhite2:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case BottomWhite3:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case BottomWhite4:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case BottomWhite5:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case BottomWhite6:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
       }
-      White4Triangle()
-       function White5Triangle () {
-        context.beginPath()
-        context.moveTo(1310,35)
-        context.lineTo(1380,450)
-        context.lineTo(1460,35)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      White5Triangle()
-        function White6Triangle () {
-        context.beginPath()
-        context.moveTo(1620,35)
-        context.lineTo(1690,450)
-        context.lineTo(1770,35)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      White6Triangle()
+      context.closePath()
+      context.fillStyle ='#f8f8f8'
+      context.fill()
+    })
     }
-    TopWhiteTriangle()
-    function BottomBlackTriangle(){
-      function BlackTriangle () {
-        context.beginPath()
-        context.moveTo(35,1205)
-        context.lineTo(100,750)
-        context.lineTo(185,1205)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
+    BottomWhiteTriangLe()
+    function BottomBlackTriangLe(A){
+      const BottomBlackTriangles = [
+      {a:35,b:185},
+      {a:335,b:485},
+      {a:635,b:785},
+      {a:1015,b:1165},
+      {a:1315,b:1465},
+      {a:1615,b:1765},
+    ]
+    BottomBlackTriangles.forEach(BottomBlackTriangle =>{
+      context.beginPath()
+      context.moveTo(BottomBlackTriangle.a,1205)
+      context.lineTo(BottomBlackTriangle.a+70,750)
+      context.lineTo(BottomBlackTriangle.b,1205)
+      switch(A){
+        case 35:
+          BottomBlack = A
+          break
+        case 335:
+          BottomBlack2 = A
+          break
+        case 635:
+          BottomBlack3 = A
+          break
+        case 1015:
+          BottomBlack4 = A
+          break
+        case 1315:
+          BottomBlack5 = A
+          break
+        case 1615:
+          BottomBlack6 = A
+          break
       }
-      BlackTriangle()
-      function Black2Triangle () {
-        context.beginPath()
-        context.moveTo(335,1205)
-        context.lineTo(400,750)
-        context.lineTo(485,1205)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
+      switch(BottomBlackTriangle.a){
+        case BottomBlack:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case BottomBlack2:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case BottomBlack3:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case BottomBlack4:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case BottomBlack5:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
+        case BottomBlack6:
+          context.lineWidth = 9
+          context.strokeStyle = 'yellow'
+          context.stroke()
+          break
       }
-      Black2Triangle()
-      function Black3Triangle () {
-        context.beginPath()
-        context.moveTo(635,1205)
-        context.lineTo(700,750)
-        context.lineTo(785,1205)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      Black3Triangle()
-       function Black4Triangle () {
-        context.beginPath()
-        context.moveTo(1015,1205)
-        context.lineTo(1080,750)
-        context.lineTo(1165,1205)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      Black4Triangle()
-      function Black5Triangle () {
-        context.beginPath()
-        context.moveTo(1315,1205)
-        context.lineTo(1380,750)
-        context.lineTo(1465,1205)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      Black5Triangle()
-      function Black6Triangle () {
-        context.beginPath()
-        context.moveTo(1615,1205)
-        context.lineTo(1680,750)
-        context.lineTo(1765,1205)
-        context.closePath()
-        context.fillStyle ='#242424'
-        context.fill()
-      }
-      Black6Triangle()
+      context.closePath()
+      context.fillStyle ='#2c2c2c'
+      context.fill()
+    })
     }
-    BottomBlackTriangle()
-     function BottomWhiteTriangle(){
-      function WhiteTriangle () {
-        context.beginPath()
-        context.moveTo(185,1205)
-        context.lineTo(255,750)
-        context.lineTo(335,1205)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      WhiteTriangle()
-      function White2Triangle () {
-        context.beginPath()
-        context.moveTo(485,1205)
-        context.lineTo(555,750)
-        context.lineTo(635,1205)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      White2Triangle()
-      function White3Triangle () {
-        context.beginPath()
-        context.moveTo(785,1205)
-        context.lineTo(855,750)
-        context.lineTo(935,1205)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      White3Triangle()
-      function White4Triangle () {
-        context.beginPath()
-        context.moveTo(1165,1205)
-        context.lineTo(1230,750)
-        context.lineTo(1315,1205)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      White4Triangle()
-      function White5Triangle () {
-        context.beginPath()
-        context.moveTo(1465,1205)
-        context.lineTo(1530,750)
-        context.lineTo(1615,1205)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      White5Triangle()
-       function White6Triangle () {
-        context.beginPath()
-        context.moveTo(1765,1205)
-        context.lineTo(1830,750)
-        context.lineTo(1915,1205)
-        context.closePath()
-        context.fillStyle ='#f8f8f8'
-        context.fill()
-      }
-      White6Triangle()
-    }
-    BottomWhiteTriangle()
+    BottomBlackTriangLe()
 }
 let X = 1200
 let Y = 560
@@ -316,8 +1666,8 @@ let WhiteCheckers = [
 ]
 Checkers()
 function Checkers (x,y) {
-  context.clearRect(0,0,2200,1400)
-  CreateBoard()
+  context.clearRect(0,0,1950,1230)
+CreateBoard()
 BlackCheckers.forEach(BlackChecker =>{
 context.beginPath()
 if(x === BlackChecker.x && y === BlackChecker.y){
@@ -347,47 +1697,52 @@ context.stroke()
 context.closePath()
 })
 }
+let Rolled
 Start.addEventListener('click',()=>{
+  GameTip.textContent = ''
 WhiteCheckers = [
   {x:1845,y:150},
   {x:1845,y:75},
-  {x:1085,y:885},
-  {x:1085,y:955},
-  {x:1085,y:1025},
-  {x:1085,y:1095},
-  {x:1085, y:1165},
+  {x:1090,y:885},
+  {x:1090,y:955},
+  {x:1090,y:1025},
+  {x:1090,y:1095},
+  {x:1090,y:1165},
   {x:710,y:1025},
   {x:710,y:1095},
   {x:710,y:1165},
-  {x:105,y:375},
-  {x:105,y:300},
-  {x:105,y:225},
-  {x:105, y:150},
-  {x:105, y:75}
+  {x:110,y:375},
+  {x:110,y:300},
+  {x:110,y:225},
+  {x:110,y:150},
+  {x:110, y:75}
 ] 
 BlackCheckers = [
   {x:1845,y:1095},
   {x:1845,y:1165},
-  {x:1085,y:375},
-  {x:1085,y:300},
-  {x:1085,y:225},
-  {x:1085,y:150},
-  {x:1085,y:75},
+  {x:1090,y:375},
+  {x:1090,y:300},
+  {x:1090,y:225},
+  {x:1090,y:150},
+  {x:1090,y:75},
   {x:710,y:225},
   {x:710,y:150},
   {x:710,y:75},
-  {x:105,y:885},
-  {x:105,y:955},
-  {x:105,y:1025},
-  {x:105, y:1095},
-  {x:105,y:1165}
+  {x:110,y:885},
+  {x:110,y:955},
+  {x:110,y:1025},
+  {x:110, y:1095},
+  {x:110,y:1165}
 ]
 Checkers()
 dice.style.display = 'block'
 dice2.style.display = 'block'
 if(Start.textContent === 'Roll Dice'){
+  Rolled = 'Rolling'
   const randNum1 = Math.ceil(Math.random()*6)
   const randNum2 = Math.ceil(Math.random()*6)
+  NumbeR = 6
+  Number2 = 6
   dice.style.transform = ''
   dice.style.animation = 'rolling 4s'
   dice2.style.animation = 'rolling 4s'
@@ -434,75 +1789,203 @@ if(Start.textContent === 'Roll Dice'){
   }
   dice.style.animation = ''
   dice2.style.animation = ''
-  },4050)
+  Rolled = 'Rolled'
+  },4000)
 }
 Start.textContent = 'Roll Dice'
 })
 game.addEventListener('click',(e)=>{
-  
   if(Start.textContent === 'Roll Dice'){
+    if(!Rolled){
+     GameTip.textContent = 'Please roll the dice first!'
+     GameTip.style.marginLeft = '-1000px'
+     game.style.marginLeft = '-1090px'
+   }
+   if(Rolled === 'Rolling'){
+     GameTip.textContent = 'Please wait dice is rolling'
+     GameTip.style.marginLeft = '-990px'
+     game.style.marginLeft = '-1050px'
+   }
+  }
+  if(Start.textContent !== 'Roll Dice'){
+    GameTip.textContent = 'Game is not Started'
+    GameTip.style.marginLeft = '-1200px'
+    game.style.marginLeft = '-1350px'
+  }
+   
+  if(Rolled === 'Rolled'){
+    GameTip.textContent = ''
+    let number = 0
+    let number2 = 0
+    let number3 = 0
+    let number4 = 0
+    let number5 = 0
+    let number6 = 0
+    let number7 = 0
+    let number8 = 0
    WhiteCheckers.forEach(WhiteChecker =>{
     const distance = Math.sqrt(
      ((e.offsetX - WhiteChecker.x)*(e.offsetX - WhiteChecker.x))
      +
      ((e.offsetY - WhiteChecker.y)*(e.offsetY - WhiteChecker.y))
     )
-    
-    if(distance<35){
-     switch(WhiteChecker.x){
+    switch(WhiteChecker.x){
       case 105:
-        if(WhiteChecker.y === 375){
+        number+=1
+        break
+      case 710:
+        number2++
+        break
+      case 1085:
+        number3++
+        break
+      case 1845:  
+        number4++
+        break
+     }
+    if(distance<35){
+     setTimeout(()=>{
+      switch(number2){
+       case 1:
+         number2 = 233
+         break
+       case 2:
+         number2 = 219
+         break
+       case 3:
+         number2 = 205
+         break
+       case 4:
+         number2 = 191
+         break
+        case 5:
+         number2 = 177
+         break
+       }
+        switch(number3){
+       case 1:
+         number3 = 233
+         break
+       case 2:
+         number3 = 219
+         break
+       case 3:
+         number3 = 205
+         break
+        case 4:
+         number3 = 191
+         break
+        case 5:
+         number3 = 177
+         break
+       }
+      switch(WhiteChecker.x){
+      case 105:
+        if(WhiteChecker.y === 75*number){
           Checkers(WhiteChecker.x,WhiteChecker.y)
         }
         break
       case 710:
-        if(WhiteChecker.y === 1025){
+        if(WhiteChecker.y === number2*5){
           Checkers(WhiteChecker.x,WhiteChecker.y)
         }
         break
       case 1085:
-        if(WhiteChecker.y === 885){
+        if(WhiteChecker.y === number3*5){
           Checkers(WhiteChecker.x,WhiteChecker.y)
         }
         break
       case 1845:
-        if(WhiteChecker.y === 150){
+        if(WhiteChecker.y === number4*75){
+          CreateBoard(WhiteChecker.x)
           Checkers(WhiteChecker.x,WhiteChecker.y)
         }
         break
      }
+     },10)
      
     }
-  })
+  }) 
   BlackCheckers.forEach(BlackChecker =>{
     const distance = Math.sqrt(
      ((e.offsetX - BlackChecker.x)*(e.offsetX - BlackChecker.x))
      +
      ((e.offsetY - BlackChecker.y)*(e.offsetY - BlackChecker.y))
     )
-    if(distance<35){
      switch(BlackChecker.x){
       case 105:
-        if(BlackChecker.y === 885){
+        number5++
+        break
+      case 710:
+        number6++
+        break
+      case 1085:
+        number7++
+        break
+      case 1845:
+        number8++
+        break
+     }
+    if(distance<35){
+      setTimeout(()=>{
+        switch(number5){  
+       case 1:
+         number5 = 233
+         break
+       case 2:
+         number5 = 219
+         break
+       case 3:
+         number5 = 205
+         break
+        case 4:
+         number5 = 191
+         break
+        case 5:
+         number5 = 177
+         break
+        }
+        switch(number8){  
+       case 1:
+         number8 = 233
+         break
+       case 2:
+         number8 = 219
+         break
+       case 3:
+         number8 = 205
+         break
+        case 4:
+         number8 = 191
+         break
+        case 5:
+         number8 = 177
+         break
+        }
+      switch(BlackChecker.x){
+      case 105:
+        if(BlackChecker.y === number5*5){
           Checkers(BlackChecker.x,BlackChecker.y)
         }
         break
       case 710:
-        if(BlackChecker.y === 225){
+        if(BlackChecker.y === number6*75){
           Checkers(BlackChecker.x,BlackChecker.y)
         }
         break
       case 1085:
-        if(BlackChecker.y === 375){
+        if(BlackChecker.y === number7*75){
           Checkers(BlackChecker.x,BlackChecker.y)
         }
         break
       case 1845:
-        if(BlackChecker.y === 1095){
+        if(BlackChecker.y === number8*5){
           Checkers(BlackChecker.x,BlackChecker.y)
         }
         break
      }
+    },10)
+     
     }
   })
 }

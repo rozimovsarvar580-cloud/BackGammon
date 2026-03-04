@@ -107,3 +107,12 @@ box-shadow: 0px 65px 0,-65px 0px 0,-65px 65px 0;
 @keyframes rolling{
     50%{transform: rotateX(455deg) rotateY(455deg);}
 }
+.Gametip{
+    margin-top: 1300px;
+    font-size: 35px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:  red;
+}
+.game{
+    margin-left: -500px;
+}
