@@ -21,14 +21,33 @@ body{
 .dice{
     margin-top: -50px;
     position: relative;
+    display: none;
     width: 100px;
     height: 100px;
-    display: none;
     transform-style: preserve-3d;
 }
 .dice2{
     margin-top: -50px;
-    margin-left: -500px;
+    margin-left: -460px;
+    position: relative;
+    display: none;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+}
+.dice3{
+    margin-top: -50px;
+    margin-left: 20px;
+    position: relative;
+    display: none;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+}
+.dice4{
+    margin-top: -50px;
+    margin-left: 20px;
+    margin-right: 0px;
     position: relative;
     display: none;
     width: 100px;

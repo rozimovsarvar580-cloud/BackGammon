@@ -3,6 +3,8 @@ const Start = document.querySelector('.BtnStart')
 const context = game.getContext('2d')
 const dice = document.querySelector('.dice')
 const dice2 = document.querySelector('.dice2')
+const dice3 = document.querySelector('.dice3')
+const dice4 = document.querySelector('.dice4')
 const GameTip = document.querySelector('.Gametip')
 let NumbeR 
 let Number2
@@ -171,11 +173,46 @@ function CreateBoard(x){
                   }
                  
                 }else{
-                  TopBlackTriangLe(1465)
+                  if(TopWhite6){
+                    TopBlackTriangLe(1465)
+                  }
                 }
               NUMBER++
               }
-              
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1390){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  if(TopBlack5){
+                    TopWhiteTriangLe(1315)
+                  }
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1240){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  if(TopWhite5){
+                    TopBlackTriangLe(1165)
+                  }
+                }
+              NUMBER++
+              }
              break
             case 2:
               NUMBER=0
@@ -401,7 +438,43 @@ function CreateBoard(x){
                   }
                  
                 }else{
-                  TopBlackTriangLe(1165)
+                  if(TopBlack5){
+                    TopBlackTriangLe(1165)
+                  } 
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 860){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack3 = undefined
+                    break
+                  }
+                 
+                }else{
+                  if(TopBlack4){
+                    TopBlackTriangLe(785)
+                  }  
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 560){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopBlack2 = undefined
+                    break
+                  }
+                 
+                }else{
+                  if(TopBlack3){
+                    TopBlackTriangLe(485)
+                  }
                 }
               NUMBER++
               }
@@ -628,7 +701,43 @@ function CreateBoard(x){
                   }
                  
                 }else{
-                  TopBlackTriangLe(785)
+                  if(TopWhite5){
+                    TopBlackTriangLe(785)
+                  }
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 410){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    TopWhite2 = undefined
+                    break
+                  }
+                 
+                }else{
+                  if(TopBlack3){
+                    TopWhiteTriangLe(335)
+                  }
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 110){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    BottomBlack = undefined
+                    break
+                  }
+                 
+                }else{
+                  if(TopWhite2){
+                     BottomBlackTriangLe(35)
+                  }
                 }
               NUMBER++
               }
@@ -855,7 +964,42 @@ function CreateBoard(x){
                   }
                  
                 }else{
-                  TopBlackTriangLe(485)
+                  if(TopBlack4){
+                    TopBlackTriangLe(485)
+                  }
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 110){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    BottomBlack = undefined
+                    break
+                  }
+                }else{
+                  if(TopBlack2){
+                    BottomBlackTriangLe(35)
+                  }
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 710 && BlackCheckers[NUMBER].y > 600){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    BottomBlack3 = undefined
+                    console.log(1)
+                    break
+                  }
+                }else{
+                  if(BottomBlack){
+                    BottomBlackTriangLe(635)
+                  }
                 }
               NUMBER++
               }
@@ -1077,12 +1221,48 @@ function CreateBoard(x){
                 if(BlackCheckers[NUMBER].x === 260){ 
                   NUMBER2++
                   if(NUMBER2>=2){
-                    TopBlack1 = undefined
+                    TopBlack = undefined
                     break
                   }
                  
                 }else{
-                  TopBlackTriangLe(185)
+                  if(TopWhite4){
+                    TopBlackTriangLe(185)
+                  }
+                }
+              NUMBER++
+              }
+             NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 560){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    BottomWhite2 = undefined
+                    break
+                  }
+                 
+                }else{
+                  if(TopBlack){
+                    BottomWhiteTriangLe(485)
+                  }
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1390){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    BottomBlack5 = undefined
+                    break
+                  }
+                 
+                }else{
+                  if(BottomWhite2){
+                   BottomBlackTriangLe(1315) 
+                  }
                 }
               NUMBER++
               }
@@ -1310,14 +1490,35 @@ function CreateBoard(x){
                   }
                  
                 }else{
-                  BottomBlackTriangLe(35)
+                  if(TopBlack3){
+                    BottomBlackTriangLe(35)
+                  }
+                }
+              NUMBER++
+              }
+              NUMBER=0
+              NUMBER2=0
+              while(NUMBER<BlackCheckers.length){
+                if(BlackCheckers[NUMBER].x === 1090){ 
+                  NUMBER2++
+                  if(NUMBER2>=2){
+                    BottomBlack4 = undefined
+                    break
+                  }
+                 
+                }else{
+                  if(BottomBlack){
+                    BottomBlackTriangLe(1015)
+                  }
+                  
                 }
               NUMBER++
               }
              break
           }
           break
-          }  
+          }
+      break  
       }
     function Board1(){
     context.fillStyle ='wheat'
@@ -1738,11 +1939,13 @@ Checkers()
 dice.style.display = 'block'
 dice2.style.display = 'block'
 if(Start.textContent === 'Roll Dice'){
+  dice3.style.display = 'none'
+  dice4.style.display = 'none'
   Rolled = 'Rolling'
   const randNum1 = Math.ceil(Math.random()*6)
   const randNum2 = Math.ceil(Math.random()*6)
-  NumbeR = 6
-  Number2 = 6
+  NumbeR = randNum1
+  Number2 = randNum2
   dice.style.transform = ''
   dice.style.animation = 'rolling 4s'
   dice2.style.animation = 'rolling 4s'
@@ -1789,8 +1992,14 @@ if(Start.textContent === 'Roll Dice'){
   }
   dice.style.animation = ''
   dice2.style.animation = ''
+  if(randNum1 === randNum2){
+    dice3.style.display = 'block'
+    dice4.style.display = 'block'
+    dice3.style.transform = dice.style.transform
+    dice4.style.transform = dice.style.transform
+  }
   Rolled = 'Rolled'
-  },4000)
+  },2000)
 }
 Start.textContent = 'Roll Dice'
 })
@@ -1823,6 +2032,7 @@ game.addEventListener('click',(e)=>{
     let number6 = 0
     let number7 = 0
     let number8 = 0
+    console.log(`x:${e.offsetX}, y:${e.offsetY}`)
    WhiteCheckers.forEach(WhiteChecker =>{
     const distance = Math.sqrt(
      ((e.offsetX - WhiteChecker.x)*(e.offsetX - WhiteChecker.x))
@@ -1899,6 +2109,7 @@ game.addEventListener('click',(e)=>{
         if(WhiteChecker.y === number4*75){
           CreateBoard(WhiteChecker.x)
           Checkers(WhiteChecker.x,WhiteChecker.y)
+
         }
         break
      }
