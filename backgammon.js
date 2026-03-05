@@ -34,9 +34,21 @@ let BottomBlack5
 let BottomBlack6
 let NUMBER = 0
 let NUMBER2 = 0
+let Selected
+let Xcon
+let Ycon
 console.log(context)
 CreateBoard()
-function CreateBoard(x){
+function CreateBoard(x,y){
+  if(Selected){
+ if(y<600){
+TopBlackTriangLe(x)
+TopWhiteTriangLe(x)
+ }else{
+  BottomBlackTriangLe(x)
+  BottomWhiteTriangLe(x)
+ }
+  }
   switch(x){
     case 1845:
       switch(NumbeR){
@@ -1552,7 +1564,9 @@ function CreateBoard(x){
       context.moveTo(TopWhiteTriangle.a,35)
       context.lineTo(TopWhiteTriangle.a+70,450)
       context.lineTo(TopWhiteTriangle.b,35)
-      switch(A){
+      if(Selected){
+      }else{
+        switch(A){
         case 35:
           TopWhite = A
           break
@@ -1572,36 +1586,200 @@ function CreateBoard(x){
           TopWhite6 = A
           break
       }
+      }
       switch(TopWhiteTriangle.a){
         case TopWhite:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
+         if(Selected){
+       if(A>TopWhiteTriangle.a && A<TopWhiteTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === TopWhiteTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=TopWhiteTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
           break
         case TopWhite2:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
+         if(Selected){
+       if(A>TopWhiteTriangle.a && A<TopWhiteTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === TopWhiteTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=TopWhiteTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
           break
         case TopWhite3:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
+       if(Selected){
+       if(A>TopWhiteTriangle.a && A<TopWhiteTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === TopWhiteTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=TopWhiteTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
           break
         case TopWhite4:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
+          if(Selected){
+       if(A>TopWhiteTriangle.a && A<TopWhiteTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === TopWhiteTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=TopWhiteTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }   
           break
         case TopWhite5:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
+          if(Selected){
+       if(A>TopWhiteTriangle.a && A<TopWhiteTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === TopWhiteTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=TopWhiteTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
           break
         case TopWhite6:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
+          if(Selected){
+       if(A>TopWhiteTriangle.a && A<TopWhiteTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === TopWhiteTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=TopWhiteTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+             if(NumbeR === 1){
+          NumbeR = undefined
+          TopWhite6 = undefined
+         }else{
+          Number2 = undefined
+          TopWhite6 = undefined
+         }
+          }
+
+          }
+          index++
+          
+         })
+       }
+      } 
+        
           break
       }
       context.closePath()
@@ -1624,7 +1802,9 @@ function CreateBoard(x){
       context.moveTo(TopBlackTriangle.a,35)
       context.lineTo(TopBlackTriangle.a+70,450)
       context.lineTo(TopBlackTriangle.b,35)
-      switch(A){
+      if(Selected){
+      }else{
+        switch(A){
         case 185:
           TopBlack = A
           break
@@ -1644,38 +1824,196 @@ function CreateBoard(x){
           TopBlack6 = A
           break
       }
+      }
       switch(TopBlackTriangle.a){
         case TopBlack:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
+          if(Selected){
+       if(A>TopBlackTriangle.a && A<TopBlackTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === TopBlackTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=TopBlackTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
           break
         case TopBlack2:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
+          if(Selected){
+       if(A>TopBlackTriangle.a && A<TopBlackTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === TopBlackTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=TopBlackTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
           break
         case TopBlack3:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
+          if(Selected){
+       if(A>TopBlackTriangle.a && A<TopBlackTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === TopBlackTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=TopBlackTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
           break
         case TopBlack4:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
+          if(Selected){
+       if(A>TopBlackTriangle.a && A<TopBlackTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === TopBlackTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=TopBlackTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
           break
         case TopBlack5:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
+          if(Selected){
+       if(A>TopBlackTriangle.a && A<TopBlackTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === TopBlackTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=TopBlackTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
           break
         case TopBlack6:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
+          if(Selected){
+       if(A>TopBlackTriangle.a && A<TopBlackTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === TopBlackTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=TopBlackTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
           break
       }
+      
       context.closePath()
       context.fillStyle ='#2c2c2c'
       context.fill()
@@ -1696,7 +2034,10 @@ function CreateBoard(x){
       context.moveTo(BottomWhiteTriangle.a,1205)
       context.lineTo(BottomWhiteTriangle.a+70,750)
       context.lineTo(BottomWhiteTriangle.b,1205)
-      switch(A){
+      if(Selected){
+     
+      }else{
+        switch(A){
         case 185:
           BottomWhite = A
           break
@@ -1716,36 +2057,193 @@ function CreateBoard(x){
           BottomWhite6 = A
           break
       }
-      switch(BottomWhiteTriangle.a){
+      }
+       switch(BottomWhiteTriangle.a){
         case BottomWhite:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
+          if(Selected){
+       if(A>BottomWhiteTriangle.a && A<BottomWhiteTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === BottomWhiteTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=BottomWhiteTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
           break
         case BottomWhite2:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
+          if(Selected){
+       if(A>BottomWhiteTriangle.a && A<BottomWhiteTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === BottomWhiteTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=BottomWhiteTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
           break
         case BottomWhite3:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
+          if(Selected){
+       if(A>BottomWhiteTriangle.a && A<BottomWhiteTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === BottomWhiteTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=BottomWhiteTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
           break
         case BottomWhite4:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
+          if(Selected){
+       if(A>BottomWhiteTriangle.a && A<BottomWhiteTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === BottomWhiteTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=BottomWhiteTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
           break
         case BottomWhite5:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
+          if(Selected){
+       if(A>BottomWhiteTriangle.a && A<BottomWhiteTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === BottomWhiteTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=BottomWhiteTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
           break
         case BottomWhite6:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
+          if(Selected){
+       if(A>BottomWhiteTriangle.a && A<BottomWhiteTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === BottomWhiteTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=BottomWhiteTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
           break
       }
       context.closePath()
@@ -1768,7 +2266,10 @@ function CreateBoard(x){
       context.moveTo(BottomBlackTriangle.a,1205)
       context.lineTo(BottomBlackTriangle.a+70,750)
       context.lineTo(BottomBlackTriangle.b,1205)
-      switch(A){
+      if(Selected){
+      
+      }else{
+        switch(A){
         case 35:
           BottomBlack = A
           break
@@ -1788,37 +2289,194 @@ function CreateBoard(x){
           BottomBlack6 = A
           break
       }
+      }
       switch(BottomBlackTriangle.a){
         case BottomBlack:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
-          break
+          if(Selected){
+       if(A>BottomBlackTriangle.a && A<BottomBlackTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === BottomBlackTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=BottomBlackTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
+             break
         case BottomBlack2:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
-          break
+          if(Selected){
+       if(A>BottomBlackTriangle.a && A<BottomBlackTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === BottomBlackTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=BottomBlackTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
+             break
         case BottomBlack3:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
-          break
+          if(Selected){
+       if(A>BottomBlackTriangle.a && A<BottomBlackTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === BottomBlackTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=BottomBlackTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
+             break
         case BottomBlack4:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
-          break
+          if(Selected){
+       if(A>BottomBlackTriangle.a && A<BottomBlackTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === BottomBlackTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=BottomBlackTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
+             break
         case BottomBlack5:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
-          break
+          if(Selected){
+       if(A>BottomBlackTriangle.a && A<BottomBlackTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === BottomBlackTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=BottomBlackTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
+             break
         case BottomBlack6:
           context.lineWidth = 9
           context.strokeStyle = 'yellow'
           context.stroke()
-          break
+          if(Selected){
+       if(A>BottomBlackTriangle.a && A<BottomBlackTriangle.b){
+        NUMBER = 0
+         WhiteCheckers.forEach((WhiteChecker,index)=>{
+          if(WhiteChecker.x === BottomBlackTriangle.a+75){
+           NUMBER++
+          }
+          if(WhiteChecker.x === Xcon && WhiteChecker.y === Ycon){
+          WhiteCheckers[index].x=BottomBlackTriangle.a+75
+          if(NUMBER === 0){
+            WhiteCheckers[index].y=75
+          }else{
+            if(NUMBER === 1){
+              WhiteCheckers[index].y=NUMBER*75*2
+            }else{
+              WhiteCheckers[index].y=NUMBER*75
+            }
+            
+          }
+
+          }
+          index++
+          
+         })
+       }
+      }
+             break
       }
       context.closePath()
       context.fillStyle ='#2c2c2c'
@@ -1866,12 +2524,14 @@ let WhiteCheckers = [
   {x:WhiteX,    y:WhiteY}
 ]
 Checkers()
-function Checkers (x,y) {
-  context.clearRect(0,0,1950,1230)
-CreateBoard()
+function Checkers () {
+  if(!Selected){
+    context.clearRect(0,0,1950,1230)
+    CreateBoard()
+  }
 BlackCheckers.forEach(BlackChecker =>{
 context.beginPath()
-if(x === BlackChecker.x && y === BlackChecker.y){
+if(Xcon === BlackChecker.x && Ycon === BlackChecker.y){
 context.strokeStyle = 'gold'
 }else{
 context.strokeStyle = '#949494fa'
@@ -1885,7 +2545,7 @@ context.closePath()
 })
 WhiteCheckers.forEach(WhiteChecker =>{
 context.beginPath()
-if(x === WhiteChecker.x && y === WhiteChecker.y){
+if(Xcon === WhiteChecker.x && Ycon === WhiteChecker.y){
   context.strokeStyle = 'yellow'
 }else{
   context.strokeStyle = '#777777'
@@ -2003,6 +2663,7 @@ if(Start.textContent === 'Roll Dice'){
 }
 Start.textContent = 'Roll Dice'
 })
+
 game.addEventListener('click',(e)=>{
   if(Start.textContent === 'Roll Dice'){
     if(!Rolled){
@@ -2032,7 +2693,6 @@ game.addEventListener('click',(e)=>{
     let number6 = 0
     let number7 = 0
     let number8 = 0
-    console.log(`x:${e.offsetX}, y:${e.offsetY}`)
    WhiteCheckers.forEach(WhiteChecker =>{
     const distance = Math.sqrt(
      ((e.offsetX - WhiteChecker.x)*(e.offsetX - WhiteChecker.x))
@@ -2040,13 +2700,13 @@ game.addEventListener('click',(e)=>{
      ((e.offsetY - WhiteChecker.y)*(e.offsetY - WhiteChecker.y))
     )
     switch(WhiteChecker.x){
-      case 105:
+      case 110:
         number+=1
         break
       case 710:
         number2++
         break
-      case 1085:
+      case 1090:
         number3++
         break
       case 1845:  
@@ -2090,26 +2750,34 @@ game.addEventListener('click',(e)=>{
          break
        }
       switch(WhiteChecker.x){
-      case 105:
+      case 110:
         if(WhiteChecker.y === 75*number){
-          Checkers(WhiteChecker.x,WhiteChecker.y)
+          Xcon = WhiteChecker.x
+          Ycon = WhiteChecker.y
+          Checkers()
         }
         break
       case 710:
         if(WhiteChecker.y === number2*5){
-          Checkers(WhiteChecker.x,WhiteChecker.y)
+          Xcon = WhiteChecker.x
+          Ycon = WhiteChecker.y
+          Checkers()
         }
         break
-      case 1085:
+      case 1090:
         if(WhiteChecker.y === number3*5){
-          Checkers(WhiteChecker.x,WhiteChecker.y)
+          Xcon = WhiteChecker.x
+          Ycon = WhiteChecker.y
+          Checkers()
         }
         break
       case 1845:
         if(WhiteChecker.y === number4*75){
           CreateBoard(WhiteChecker.x)
-          Checkers(WhiteChecker.x,WhiteChecker.y)
-
+          Xcon = WhiteChecker.x
+          Ycon = WhiteChecker.y
+          Checkers()
+          Selected = 'selected'
         }
         break
      }
@@ -2124,13 +2792,13 @@ game.addEventListener('click',(e)=>{
      ((e.offsetY - BlackChecker.y)*(e.offsetY - BlackChecker.y))
     )
      switch(BlackChecker.x){
-      case 105:
+      case 110:
         number5++
         break
       case 710:
         number6++
         break
-      case 1085:
+      case 1090:
         number7++
         break
       case 1845:
@@ -2174,24 +2842,32 @@ game.addEventListener('click',(e)=>{
          break
         }
       switch(BlackChecker.x){
-      case 105:
+      case 110:
         if(BlackChecker.y === number5*5){
-          Checkers(BlackChecker.x,BlackChecker.y)
+          Xcon = BlackChecker.x
+          Ycon = BlackChecker.y
+          Checkers()
         }
         break
       case 710:
         if(BlackChecker.y === number6*75){
-          Checkers(BlackChecker.x,BlackChecker.y)
+          Xcon = BlackChecker.x
+          Ycon = BlackChecker.y
+          Checkers()
         }
         break
-      case 1085:
+      case 1090:
         if(BlackChecker.y === number7*75){
-          Checkers(BlackChecker.x,BlackChecker.y)
+          Xcon = BlackChecker.x
+          Ycon = BlackChecker.y
+          Checkers()
         }
         break
       case 1845:
         if(BlackChecker.y === number8*5){
-          Checkers(BlackChecker.x,BlackChecker.y)
+          Xcon = BlackChecker.x
+          Ycon = BlackChecker.y
+          Checkers()
         }
         break
      }
@@ -2199,5 +2875,9 @@ game.addEventListener('click',(e)=>{
      
     }
   })
+}
+if(Selected){
+  CreateBoard(e.offsetX,e.offsetY)
+  Checkers()
 }
 })
