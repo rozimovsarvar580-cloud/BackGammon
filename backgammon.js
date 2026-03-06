@@ -153,6 +153,8 @@ let WhiteCheckers = [
 Checkers()
 function Checkers (X,Y) {
   Counter = 0
+  BottomY = 233
+  Loop = 1
 BlackCheckers.forEach(BlackChecker =>{
 context.beginPath()
 context.strokeStyle = '#949494fa'
@@ -170,30 +172,34 @@ WhiteCheckers.forEach(WhiteChecker=>{
   })
 WhiteCheckers.forEach(WhiteChecker =>{
 context.beginPath()
-if(X === WhiteChecker.x){
-console.log(Counter)
+if(X === WhiteChecker.x ){
   if(Y<600){
-   if(Y === Counter*75){
-      context.strokeStyle = 'yellow'
-      context.stroke()
-   }
+   if(Y === Counter*75 && Y === WhiteChecker.y){
+    context.strokeStyle = 'yellow'
+   }else{
+        context.strokeStyle = '#888888'
+    }
   }else{
    while(Loop<=5){
     if(Counter === Loop){
-      if(Y===BottomY*5){
+      if(Y === BottomY*5 && Y === WhiteChecker.y){
         context.strokeStyle = 'yellow'
-        context.stroke()
+      }else{
+         context.strokeStyle = '#888888'
       }
       break
     }
-    BottomY-14
+    BottomY-=14
     Loop++
    }
   }
+}else{
+  context.strokeStyle = '#888888'
 }
 context.lineWidth = 5
 context.fillStyle = 'white'
 context.arc(WhiteChecker.x,WhiteChecker.y,35,0,Math.PI *2,false)
+context.stroke()
 context.fill()
 context.closePath()
 })
@@ -356,6 +362,7 @@ game.addEventListener('click',(e)=>{
           ((e.offsetY - WhiteChecker.y)*(e.offsetY - WhiteChecker.y))
          )
          if(distance<35){
+          console.log(1)
           Checkers(WhiteChecker.x,WhiteChecker.y)
          }
       })
