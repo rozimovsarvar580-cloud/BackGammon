@@ -111,7 +111,134 @@ function CreateBoard(){
       context.fill()
     })
     }
-    BottomBlackTriangLe()
+    BottomBlackTriangLe() 
+    
+    function GetCoordinates(X,Y){
+    context.clearRect(0,0,1950,1230)  
+    CreateBoard()
+    if(WhoIsTurn === 'Black'){
+    if(Y<600){
+      switch(X-75){
+      case 35:
+      case 185:
+      case 335:
+      case 485:
+      case 635:
+      case 785:
+      case 1015:
+      case 1165:
+      case 1315:
+      case 1465:
+      case 1615:
+      case 1765:
+      }
+      }else{
+      switch(X-75){
+      case 35:
+      case 185:
+      case 335:
+      case 485:
+      case 635:
+      case 785:
+      case 1015:
+      case 1165:
+      case 1315:
+      case 1465:
+      case 1615:
+      case 1765:
+      }
+      }
+    }
+    if(WhoIsTurn === 'White'){
+      if(Y<600){
+      switch(X-75){
+      case 35:
+      case 185:
+      case 335:
+      case 485:
+      case 635:
+      case 785:
+      case 1015:
+      case 1165:
+      case 1315:
+      case 1465:
+      case 1615:
+      case 1765: 
+      }
+      }else{
+      switch(X-75){
+      case 35:
+      case 185:
+      case 335:
+      case 485:
+      case 635:
+      case 785:
+      case 1015:
+      case 1165:
+      case 1315:
+      case 1465:
+      case 1615:
+      case 1765:
+      }
+      }
+    }    
+    Checkers(X,Y)
+    }
+    function CheckCoordinates(X,Y){
+      if(WhoIsTurn === 'Black'){
+        BlackCheckers.forEach(BlackChecker=>{
+          if(X === BlackChecker.x ){
+            if(Y<600){
+             if(Y === Counter*75 && Y === BlackChecker.y){
+              GetCoordinates(BlackChecker.x,BlackChecker.y)
+             }else{
+              }
+            }else{
+             while(Loop<=5){
+              if(Counter === Loop){
+                if(Y === BottomY*5 && Y === BlackChecker.y){
+                  GetCoordinates(BlackChecker.x,BlackChecker.y)
+                }else{
+                }
+                break
+              }
+              BottomY-=14
+              Loop++
+             }
+            }
+          }else{
+          }
+        })
+      }
+      if(WhoIsTurn === 'White'){
+        WhiteCheckers.forEach(WhiteChecker=>{
+         if(X === WhiteChecker.x ){
+                if(Y<600){
+                
+                 if(Y === Counter*75 && Y === WhiteChecker.y){
+                 
+                  GetCoordinates(WhiteChecker.x,WhiteChecker.y)
+                 }else{ 
+                  }
+                }else{
+                 while(Loop<=5){
+                  if(Counter === Loop){
+                    if(Y === BottomY*5 && Y === WhiteChecker.y){
+                      GetCoordinates(WhiteChecker.x,WhiteChecker.y)
+                    }else{
+                       
+                    }
+                    break
+                  }
+                  BottomY-=14
+                  Loop++
+                 }
+                }
+               }else{
+               }
+        })
+      }
+    }
 let X = 1200
 let Y = 560
 let BlackCheckers = [
@@ -155,16 +282,46 @@ function Checkers (X,Y) {
   Counter = 0
   BottomY = 233
   Loop = 1
+  BlackCheckers.forEach(BlackChecker=>{
+     if(X === BlackChecker.x){
+       Counter+=1
+     }
+  })
 BlackCheckers.forEach(BlackChecker =>{
 context.beginPath()
-context.strokeStyle = '#949494fa'
 context.lineWidth = 5
 context.fillStyle = '#272727'
 context.arc(BlackChecker.x,BlackChecker.y,35,0,Math.PI *2,false)
 context.fill()
-context.stroke()
 context.closePath()
+if(X === BlackChecker.x ){
+  if(Y<600){
+   if(Y === Counter*75 && Y === BlackChecker.y){
+    context.strokeStyle = 'yellow'
+   }else{
+        context.strokeStyle = '#949494fa'
+    }
+  }else{
+   while(Loop<=5){
+    if(Counter === Loop){
+      if(Y === BottomY*5 && Y === BlackChecker.y){
+        context.strokeStyle = 'yellow'
+      }else{
+         context.strokeStyle = '#949494fa'
+      }
+      break
+    }
+    BottomY-=14
+    Loop++
+   }
+  }
+}else{
+context.strokeStyle = '#949494fa'
+}
+context.stroke()
+
 })
+Counter = 0
 WhiteCheckers.forEach(WhiteChecker=>{
      if(X === WhiteChecker.x){
        Counter+=1
@@ -172,6 +329,11 @@ WhiteCheckers.forEach(WhiteChecker=>{
   })
 WhiteCheckers.forEach(WhiteChecker =>{
 context.beginPath()
+context.lineWidth = 5
+context.fillStyle = 'white'
+context.arc(WhiteChecker.x,WhiteChecker.y,35,0,Math.PI *2,false)
+context.fill()
+context.closePath()
 if(X === WhiteChecker.x ){
   if(Y<600){
    if(Y === Counter*75 && Y === WhiteChecker.y){
@@ -196,12 +358,7 @@ if(X === WhiteChecker.x ){
 }else{
   context.strokeStyle = '#888888'
 }
-context.lineWidth = 5
-context.fillStyle = 'white'
-context.arc(WhiteChecker.x,WhiteChecker.y,35,0,Math.PI *2,false)
 context.stroke()
-context.fill()
-context.closePath()
 })
 }
 let Rolled
@@ -214,8 +371,8 @@ TopWhiteTriangLe()
 BottomBlackTriangLe()
 BottomWhiteTriangLe()
 WhiteCheckers = [
-  {x:1845,y:150},
-  {x:1845,y:75},
+  {x:1840,y:150},
+  {x:1840,y:75},
   {x:1090,y:885},
   {x:1090,y:955},
   {x:1090,y:1025},
@@ -231,8 +388,8 @@ WhiteCheckers = [
   {x:110, y:75}
 ] 
 BlackCheckers = [
-  {x:1845,y:1095},
-  {x:1845,y:1165},
+  {x:1840,y:1095},
+  {x:1840,y:1165},
   {x:1090,y:375},
   {x:1090,y:300},
   {x:1090,y:225},
@@ -311,8 +468,7 @@ if(Start.textContent === 'Roll Dice'){
     dice4.style.transform = dice.style.transform
   }
   Rolled = 'Rolled'
-  },2000)
-  if(CheckWhoIsFirst){
+   if(CheckWhoIsFirst){
       if(NumbeR === Number2){
         GameTip.textContent = 'Tie Roll Again'
          GameTip.style.marginLeft = '-1200px'
@@ -328,10 +484,11 @@ if(Start.textContent === 'Roll Dice'){
      WhoIsTurn = 'Black'
     }
     }
+  },1000)
+ 
 }
 Start.textContent = 'Roll Dice'
 })
-
 game.addEventListener('click',(e)=>{
   if(Start.textContent === 'Roll Dice'){
     if(!Rolled){
@@ -354,7 +511,10 @@ game.addEventListener('click',(e)=>{
   if(Rolled === 'Rolled'){
     GameTip.textContent = ''
     if(!CheckWhoIsFirst){
-      if(WhoIsTurn === 'White'){
+      if(WhoIsTurn === 'White'){ 
+        Counter = 0
+           BottomY = 233
+            Loop = 1
         WhiteCheckers.forEach(WhiteChecker =>{
          const distance = Math.sqrt(
           ((e.offsetX - WhiteChecker.x)*(e.offsetX - WhiteChecker.x))
@@ -362,12 +522,15 @@ game.addEventListener('click',(e)=>{
           ((e.offsetY - WhiteChecker.y)*(e.offsetY - WhiteChecker.y))
          )
          if(distance<35){
-          console.log(1)
           Checkers(WhiteChecker.x,WhiteChecker.y)
+          CheckCoordinates(WhiteChecker.x,WhiteChecker.y)
          }
       })
       }
-      if(WhoIsTurn === 'Black'){
+      if(WhoIsTurn === 'Black'){ 
+        Counter = 0
+          BottomY = 233
+          Loop = 1
         BlackCheckers.forEach(BlackChecker =>{
          const distance = Math.sqrt(
           ((e.offsetX - BlackChecker.x)*(e.offsetX - BlackChecker.x))
@@ -376,10 +539,10 @@ game.addEventListener('click',(e)=>{
          )
          if(distance<35){
           Checkers(BlackChecker.x,BlackChecker.y)
+          CheckCoordinates(BlackChecker.x,BlackChecker.y)
          }
       }) 
       }
-      
     }
 }
 })
