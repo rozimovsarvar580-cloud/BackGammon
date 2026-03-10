@@ -32,7 +32,7 @@ function CreateBoard(){
     }
     Board2()
 }
-    function TopWhiteTriangLe(){
+    function TopWhiteTriangLe(X){
     const TopWhiteTriangles = [
          {a:35,b:185},
          {a:335,b:485},
@@ -46,13 +46,18 @@ function CreateBoard(){
       context.moveTo(TopWhiteTriangle.a,35)
       context.lineTo(TopWhiteTriangle.a+70,450)
       context.lineTo(TopWhiteTriangle.b,35)
+      if(X === TopWhiteTriangle.a){
+        context.strokeStyle = 'yellow'
+        context.lineWidth = 10
+        context.stroke()
+      }
       context.closePath()
       context.fillStyle ='#f8f8f8'
       context.fill()
     })
     }
     TopWhiteTriangLe()
-    function TopBlackTriangLe(){
+    function TopBlackTriangLe(X){
     const TopBlackTriangles = [
       {a:185,b:335},
       {a:485,b:635},
@@ -66,13 +71,18 @@ function CreateBoard(){
       context.moveTo(TopBlackTriangle.a,35)
       context.lineTo(TopBlackTriangle.a+70,450)
       context.lineTo(TopBlackTriangle.b,35)
+      if(X === TopBlackTriangle.a){
+        context.strokeStyle = 'yellow'
+        context.lineWidth = 10
+        context.stroke()
+      }
       context.closePath()
       context.fillStyle ='#2c2c2c'
       context.fill()
     })
     }
     TopBlackTriangLe()
-    function BottomWhiteTriangLe(){
+    function BottomWhiteTriangLe(X){
       const BottomWhiteTriangles = [
       {a:185,b:335},
       {a:485,b:635},
@@ -86,13 +96,18 @@ function CreateBoard(){
       context.moveTo(BottomWhiteTriangle.a,1205)
       context.lineTo(BottomWhiteTriangle.a+70,750)
       context.lineTo(BottomWhiteTriangle.b,1205)
+      if(X === BottomWhiteTriangle.a){
+        context.strokeStyle = 'yellow'
+        context.lineWidth = 10
+        context.stroke()
+      }
       context.closePath()
       context.fillStyle ='#f8f8f8'
       context.fill()
     })
     }
     BottomWhiteTriangLe()
-    function BottomBlackTriangLe(){
+    function BottomBlackTriangLe(X){
       const BottomBlackTriangles = [
       {a:35,b:185},
       {a:335,b:485},
@@ -106,13 +121,72 @@ function CreateBoard(){
       context.moveTo(BottomBlackTriangle.a,1205)
       context.lineTo(BottomBlackTriangle.a+70,750)
       context.lineTo(BottomBlackTriangle.b,1205)
+      if(X === BottomBlackTriangle.a){
+        context.strokeStyle = 'yellow'
+        context.lineWidth = 10
+        context.stroke()
+      }
+      
       context.closePath()
       context.fillStyle ='#2c2c2c'
       context.fill()
     })
     }
     BottomBlackTriangLe() 
-    
+    function CheckWhiteCheckers (X,Y){
+      Counter = 0
+    WhiteCheckers.forEach(WhiteChecker=>{
+    if(WhiteChecker.x === X){
+      if(Y<600){
+        if(WhiteChecker.y<600){
+      Counter++
+      }else{
+      }
+      }else{
+        if(WhiteChecker.y<600){
+      }else{
+      Counter++
+      }
+      }
+      
+    }
+    })
+    }
+    function CheckBlackCheckers(X,Y){
+      Counter =0
+    BlackCheckers.forEach(BlackChecker=>{
+    if(BlackChecker.x === X){
+      if(Y<600){
+        if(BlackChecker.y<600){
+      Counter++
+      }else{
+      }
+      }else{
+        if(BlackChecker.y<600){
+      }else{
+      Counter++
+      }
+      }
+      
+    }
+    })
+    }
+    function HightLightedTriangle(X,Bottom){
+       if(Counter>=2){
+            }else{
+              if(Bottom){
+              TopBlackTriangLe()
+              TopWhiteTriangLe()
+              BottomBlackTriangLe(X)
+              BottomWhiteTriangLe(X)
+              }else{
+              TopBlackTriangLe(X)
+              TopWhiteTriangLe(X)
+              BottomBlackTriangLe()
+              BottomWhiteTriangLe()
+              }
+            }
+    }
     function GetCoordinates(X,Y){
     context.clearRect(0,0,1950,1230)  
     CreateBoard()
@@ -146,6 +220,136 @@ function CreateBoard(){
       case 1465:
       case 1615:
       case 1765:
+        switch(NumbeR){
+          case 1:
+            CheckWhiteCheckers(X-150,Y)
+            HightLightedTriangle(X-225,true)
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-300,Y)
+                HightLightedTriangle(X-375,true)
+                break
+               case 2:
+                CheckWhiteCheckers(X-300,Y)
+                HightLightedTriangle(X-375,true)
+                CheckWhiteCheckers(X-450,Y)
+                HightLightedTriangle(X-525,true)
+                break
+               case 3:
+                CheckWhiteCheckers(X-450,Y)
+                HightLightedTriangle(X-525,true)
+                CheckWhiteCheckers(X-600,Y)
+                HightLightedTriangle(X-675,true)
+                break
+               case 4:
+                CheckWhiteCheckers(X-600,Y)
+                HightLightedTriangle(X-675,true)
+                CheckWhiteCheckers(X-750,Y)
+                HightLightedTriangle(X-825,true)
+                break
+               case 5:
+                CheckWhiteCheckers(X-750,Y)
+                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+            }
+            break
+          case 2:
+            CheckWhiteCheckers(X-300,Y)
+            HightLightedTriangle(X-375,true)
+            switch(Number2){
+               case 1:
+                 CheckWhiteCheckers(X-150,Y)
+                 HightLightedTriangle(X-225,true)
+                 CheckWhiteCheckers(X-450,Y)
+                 HightLightedTriangle(X-525,true)
+                 break
+               case 2:
+                CheckWhiteCheckers(X-600,Y)
+                HightLightedTriangle(X-675,true)
+                break
+               case 3:
+                CheckWhiteCheckers(X-450,Y)
+                HightLightedTriangle(X-525,true)
+                CheckWhiteCheckers(X-750,Y)
+                HightLightedTriangle(X-825,true)
+                break
+               case 4:
+                CheckWhiteCheckers(X-600,Y)
+                HightLightedTriangle(X-675,true)
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+               case 5:
+                CheckWhiteCheckers(X-750,Y)
+                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-1280,Y)
+                HightLightedTriangle(X-1355,true)
+                break
+            }
+            break
+          case 3:
+            CheckWhiteCheckers(X-450,Y)
+            HightLightedTriangle(X-525,true)
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                CheckWhiteCheckers(X-600,Y)
+                HightLightedTriangle(X-675,true)
+                break
+               case 2:
+                break
+               case 3:
+               case 4:
+               case 5:
+               case 6:
+            }
+            break
+          case 4:
+            switch(Number2){
+               case 1:
+               case 2:
+               case 3:
+               case 4:
+               case 5:
+               case 6:
+            }
+            break
+          case 5:
+            switch(Number2){
+               case 1:
+               case 2:
+               case 3:
+               case 4:
+               case 5:
+               case 6:
+            }
+            break
+          case 6:
+            switch(Number2){
+               case 1:
+               case 2:
+               case 3:
+               case 4:
+               case 5:
+               case 6:
+            }
+            break
+        }
       }
       }
     }
@@ -373,7 +577,7 @@ BottomWhiteTriangLe()
 WhiteCheckers = [
   {x:1840,y:150},
   {x:1840,y:75},
-  {x:1090,y:885},
+  {x:1090,y:880},
   {x:1090,y:955},
   {x:1090,y:1025},
   {x:1090,y:1095},
@@ -413,8 +617,8 @@ if(Start.textContent === 'Roll Dice'){
   Rolled = 'Rolling'
   const randNum1 = Math.ceil(Math.random()*6)
   const randNum2 = Math.ceil(Math.random()*6)
-  NumbeR = randNum1
-  Number2 = randNum2
+  NumbeR = 2
+  Number2 = 6
   dice.style.transform = ''
   dice.style.animation = 'rolling 4s'
   dice2.style.animation = 'rolling 4s'
@@ -470,15 +674,17 @@ if(Start.textContent === 'Roll Dice'){
   Rolled = 'Rolled'
    if(CheckWhoIsFirst){
       if(NumbeR === Number2){
-        GameTip.textContent = 'Tie Roll Again'
-         GameTip.style.marginLeft = '-1200px'
-         game.style.marginLeft = '-1350px'
-        dice3.style.display = 'none'
-        dice4.style.display = 'none'
+         CheckWhoIsFirst = false
+     WhoIsTurn = 'Black'
+        // GameTip.textContent = 'Tie Roll Again'
+        //  GameTip.style.marginLeft = '-1200px'
+        //  game.style.marginLeft = '-1350px'
+        // dice3.style.display = 'none'
+        // dice4.style.display = 'none'
     }
     if(NumbeR>Number2){
     CheckWhoIsFirst = false
-    WhoIsTurn = 'White'
+    WhoIsTurn = 'Black'
     }else{
      CheckWhoIsFirst = false
      WhoIsTurn = 'Black'
