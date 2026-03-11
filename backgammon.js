@@ -312,41 +312,157 @@ function CreateBoard(){
                 HightLightedTriangle(X-675,true)
                 break
                case 2:
+                CheckWhiteCheckers(X-300,Y)
+                HightLightedTriangle(X-375,true)
+                CheckWhiteCheckers(X-750,Y)
+                HightLightedTriangle(X-825,true)
                 break
                case 3:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
                case 4:
+                CheckWhiteCheckers(X-600,Y)
+                HightLightedTriangle(X-675,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
                case 5:
+                CheckWhiteCheckers(X-750,Y)
+                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-1280,Y)
+                HightLightedTriangle(X-1355,true)
+                break
                case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-1430,Y)
+                HightLightedTriangle(X-1505,true)
+                break
             }
             break
           case 4:
+             CheckWhiteCheckers(X-600,Y)
+             HightLightedTriangle(X-675,true)
             switch(Number2){
                case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                CheckWhiteCheckers(X-750,Y)
+                HightLightedTriangle(X-825,true)
+                break
                case 2:
+                CheckWhiteCheckers(X-300,Y)
+                HightLightedTriangle(X-375,true)
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
                case 3:
+                CheckWhiteCheckers(X-450,Y)
+                HightLightedTriangle(X-525,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
                case 4:
+                CheckWhiteCheckers(X-1280,Y)
+                HightLightedTriangle(X-1355,true)
+                break
                case 5:
+                CheckWhiteCheckers(X-750,Y)
+                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-1430,Y)
+                HightLightedTriangle(X-1505,true)
+                break
                case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-1580,Y)
+                HightLightedTriangle(X-1655,true)
+                break
             }
             break
           case 5:
+            CheckWhiteCheckers(X-750,Y)
+            HightLightedTriangle(X-825,true)
             switch(Number2){
                case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
                case 2:
+                CheckWhiteCheckers(X-300,Y)
+                HightLightedTriangle(X-375,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
                case 3:
+                CheckWhiteCheckers(X-450,Y)
+                HightLightedTriangle(X-525,true)
+                CheckWhiteCheckers(X-1280,Y)
+                HightLightedTriangle(X-1355,true)
+                break
                case 4:
+                CheckWhiteCheckers(X-600,Y)
+                HightLightedTriangle(X-675,true)
+                CheckWhiteCheckers(X-1430,Y)
+                HightLightedTriangle(X-1505,true)
+                break
                case 5:
+                CheckWhiteCheckers(X-750,Y)
+                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-1580,Y)
+                HightLightedTriangle(X-1655,true)
+                break
                case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-1730,Y)
+                HightLightedTriangle(X-1805,true)
+                break
             }
             break
           case 6:
+            CheckWhiteCheckers(X-980,Y)
+            HightLightedTriangle(X-1055,true)
             switch(Number2){
                case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
                case 2:
+                CheckWhiteCheckers(X-300,Y)
+                HightLightedTriangle(X-375,true)
+                CheckWhiteCheckers(X-1280,Y)
+                HightLightedTriangle(X-1355,true)
+                break
                case 3:
+                CheckWhiteCheckers(X-450,Y)
+                HightLightedTriangle(X-525,true)
+                CheckWhiteCheckers(X-1430,Y)
+                HightLightedTriangle(X-1505,true)
+                break
                case 4:
+                CheckWhiteCheckers(X-600,Y)
+                HightLightedTriangle(X-675,true)
+                CheckWhiteCheckers(X-1580,Y)
+                HightLightedTriangle(X-1655,true)
+                break
                case 5:
+                CheckWhiteCheckers(X-750,Y)
+                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-1730,Y)
+                HightLightedTriangle(X-1805,true)
+                break
                case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-1730,500)
+                HightLightedTriangle(X-1805)
+                break
             }
             break
         }
@@ -617,7 +733,7 @@ if(Start.textContent === 'Roll Dice'){
   Rolled = 'Rolling'
   const randNum1 = Math.ceil(Math.random()*6)
   const randNum2 = Math.ceil(Math.random()*6)
-  NumbeR = 2
+  NumbeR = 6
   Number2 = 6
   dice.style.transform = ''
   dice.style.animation = 'rolling 4s'
