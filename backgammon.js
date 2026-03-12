@@ -227,20 +227,1028 @@ function CreateBoard(){
       case 785:
         break
       case 1015:
-        break
-      case 1165:
-        break
-      case 1315:
-        break
-      case 1465:
         switch(NumbeR){
+          case 0:
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                break
+               case 2:
+                CheckWhiteCheckers(X-380,Y)
+                HightLightedTriangle(X-455,true)
+                break
+               case 3:
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+            }
+            break
           case 1:
             CheckWhiteCheckers(X-150,Y)
             HightLightedTriangle(X-225,true)
             switch(Number2){
                case 1:
+                if(HightLightedTriangle(X-225,true)){
+                CheckWhiteCheckers(X-380,Y)
+                HightLightedTriangle(X-455,true)  
+                }
+                if(HightLightedTriangle(X-455,true)){
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                }
+                if(HightLightedTriangle(X-605,true)){
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                }
+                break
+               case 2:
+                CheckWhiteCheckers(X-380,Y)
+                HightLightedTriangle(X-375,true)
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                break
+               case 3:
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+            }
+            break
+          case 2:
+            CheckWhiteCheckers(X-380,Y)
+            HightLightedTriangle(X-455,true)
+            switch(Number2){
+               case 1:
+                 CheckWhiteCheckers(X-150,Y)
+                 HightLightedTriangle(X-225,true)
+                 CheckWhiteCheckers(X-530,Y)
+                 HightLightedTriangle(X-605,true)
+                 break
+               case 2:
+                if(HightLightedTriangle(X-455,true)){
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true) 
+                }
+                if(HightLightedTriangle(X-755,true)){
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                }
+                if(HightLightedTriangle(X-1055,true)){
+                CheckWhiteCheckers(X-1130,500)
+                HightLightedTriangle(X-1205)
+                }
+                break
+               case 3:
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-1130,500)
+                HightLightedTriangle(X-1205)
+                break
+            }
+            break
+          case 3:
+            CheckWhiteCheckers(X-530,Y)
+            HightLightedTriangle(X-605,true)
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                break
+               case 2:
+                CheckWhiteCheckers(X-380,Y)
+                HightLightedTriangle(X-455,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                break
+               case 3:
+                if(HightLightedTriangle(X-605,true)){
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true) 
+                }
+                if(HightLightedTriangle(X-1055,true)){
+                CheckWhiteCheckers(X-980,500)
+                HightLightedTriangle(X-1055)
+                }
+                if(HightLightedTriangle(X-1055)){
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                }
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                CheckWhiteCheckers(X-1130,500)
+                HightLightedTriangle(X-1205)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-980,500)
+                HightLightedTriangle(X-1055)
+                break
+            }
+            break
+          case 4:
+             CheckWhiteCheckers(X-680,Y)
+             HightLightedTriangle(X-755,true)
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                break
+               case 2:
+                CheckWhiteCheckers(X-380,Y)
+                HightLightedTriangle(X-455,true)
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+               case 3:
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+               case 4:
+                if(HightLightedTriangle(X-755,true)){
+                CheckWhiteCheckers(X-1130,500)
+                HightLightedTriangle(X-1205)
+                }
+                if(HightLightedTriangle(X-1205)){
+                CheckWhiteCheckers(X-530,500)
+                HightLightedTriangle(X-605)
+                }
+                if(HightLightedTriangle(X-605)){
+                CheckWhiteCheckers(X+150,500)
+                HightLightedTriangle(X+75)
+                }
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                CheckWhiteCheckers(X-980,500)
+                HightLightedTriangle(X-1055)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-830,500)
+                HightLightedTriangle(X-905)
+                break
+            }
+            break
+          case 5:
+            CheckWhiteCheckers(X-830,Y)
+            HightLightedTriangle(X-905,true)
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+               case 2:
+                CheckWhiteCheckers(X-380,Y)
+                HightLightedTriangle(X-455,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+               case 3:
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                CheckWhiteCheckers(X-1130,500)
+                HightLightedTriangle(X-1205)
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                CheckWhiteCheckers(X-980,500)
+                HightLightedTriangle(X-1055)
+                break
+               case 5:
+                if(HightLightedTriangle(X-905,true)){
+                CheckWhiteCheckers(X-830,500)
+                HightLightedTriangle(X-905)
+                }
+                if(HightLightedTriangle(X-905)){
+                CheckWhiteCheckers(X,500)
+                HightLightedTriangle(X-75)
+                }
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-680,500)
+                HightLightedTriangle(X-755)
+                break
+            }
+            break
+          case 6:
+            CheckWhiteCheckers(X-980,Y)
+            HightLightedTriangle(X-1055,true)
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-230,Y)
+                HightLightedTriangle(X-305,true)
+                CheckWhiteCheckers(X-980,500)
+                HightLightedTriangle(X-1055)
+                break
+               case 2:
+                CheckWhiteCheckers(X-380,Y)
+                HightLightedTriangle(X-455,true)
+                CheckWhiteCheckers(X-830,500)
+                HightLightedTriangle(X-905)
+                break
+               case 3:
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                CheckWhiteCheckers(X-680,500)
+                HightLightedTriangle(X-755)
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                CheckWhiteCheckers(X-530,500)
+                HightLightedTriangle(X-605)
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                CheckWhiteCheckers(X-380,500)
+                HightLightedTriangle(X-455)
+                break
+               case 6:
+                if(HightLightedTriangle(X-1055,true)){
+                CheckWhiteCheckers(X-230,500)
+                HightLightedTriangle(X-305)
+                }
+                if(HightLightedTriangle(X-305)){
+                CheckWhiteCheckers(X+750,500)
+                HightLightedTriangle(X+675)
+                }
+                break
+            }
+            break
+        }
+        break
+      case 1165:
+        switch(NumbeR){
+          case 0:
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                break
+               case 2:
+                CheckWhiteCheckers(X-380,Y)
+                HightLightedTriangle(X-455,true)
+                break
+               case 3:
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+            }
+            break
+          case 1:
+            CheckWhiteCheckers(X-150,Y)
+            HightLightedTriangle(X-225,true)
+            switch(Number2){
+               case 1:
+                if(HightLightedTriangle(X-225,true)){
+                CheckWhiteCheckers(X-380,Y)
+                HightLightedTriangle(X-455,true)  
+                }
+                if(HightLightedTriangle(X-455,true)){
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                }
+                if(HightLightedTriangle(X-605,true)){
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                }
+                break
+               case 2:
+                CheckWhiteCheckers(X-380,Y)
+                HightLightedTriangle(X-375,true)
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                break
+               case 3:
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+            }
+            break
+          case 2:
+            CheckWhiteCheckers(X-380,Y)
+            HightLightedTriangle(X-455,true)
+            switch(Number2){
+               case 1:
+                 CheckWhiteCheckers(X-150,Y)
+                 HightLightedTriangle(X-225,true)
+                 CheckWhiteCheckers(X-530,Y)
+                 HightLightedTriangle(X-605,true)
+                 break
+               case 2:
+                if(HightLightedTriangle(X-455,true)){
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true) 
+                }
+                if(HightLightedTriangle(X-755,true)){
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                }
+                if(HightLightedTriangle(X-1055,true)){
+                CheckWhiteCheckers(X-1130,500)
+                HightLightedTriangle(X-1205)
+                }
+                break
+               case 3:
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-1130,500)
+                HightLightedTriangle(X-1205)
+                break
+            }
+            break
+          case 3:
+            CheckWhiteCheckers(X-530,Y)
+            HightLightedTriangle(X-605,true)
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                break
+               case 2:
+                CheckWhiteCheckers(X-380,Y)
+                HightLightedTriangle(X-455,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                break
+               case 3:
+                if(HightLightedTriangle(X-605,true)){
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true) 
+                }
+                if(HightLightedTriangle(X-1055,true)){
+                CheckWhiteCheckers(X-980,500)
+                HightLightedTriangle(X-1055)
+                }
+                if(HightLightedTriangle(X-1055)){
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                }
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                CheckWhiteCheckers(X-1130,500)
+                HightLightedTriangle(X-1205)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-980,500)
+                HightLightedTriangle(X-1055)
+                break
+            }
+            break
+          case 4:
+             CheckWhiteCheckers(X-680,Y)
+             HightLightedTriangle(X-755,true)
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                break
+               case 2:
+                CheckWhiteCheckers(X-380,Y)
+                HightLightedTriangle(X-455,true)
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+               case 3:
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+               case 4:
+                if(HightLightedTriangle(X-755,true)){
+                CheckWhiteCheckers(X-1130,500)
+                HightLightedTriangle(X-1205)
+                }
+                if(HightLightedTriangle(X-1205)){
+                CheckWhiteCheckers(X-530,500)
+                HightLightedTriangle(X-605)
+                }
+                if(HightLightedTriangle(X-605)){
+                CheckWhiteCheckers(X+150,500)
+                HightLightedTriangle(X+75)
+                }
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                CheckWhiteCheckers(X-980,500)
+                HightLightedTriangle(X-1055)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-830,500)
+                HightLightedTriangle(X-905)
+                break
+            }
+            break
+          case 5:
+            CheckWhiteCheckers(X-830,Y)
+            HightLightedTriangle(X-905,true)
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+               case 2:
+                CheckWhiteCheckers(X-380,Y)
+                HightLightedTriangle(X-455,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+               case 3:
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                CheckWhiteCheckers(X-1130,500)
+                HightLightedTriangle(X-1205)
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                CheckWhiteCheckers(X-980,500)
+                HightLightedTriangle(X-1055)
+                break
+               case 5:
+                if(HightLightedTriangle(X-905,true)){
+                CheckWhiteCheckers(X-830,500)
+                HightLightedTriangle(X-905)
+                }
+                if(HightLightedTriangle(X-905)){
+                CheckWhiteCheckers(X,500)
+                HightLightedTriangle(X-75)
+                }
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-680,500)
+                HightLightedTriangle(X-755)
+                break
+            }
+            break
+          case 6:
+            CheckWhiteCheckers(X-980,Y)
+            HightLightedTriangle(X-1055,true)
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+               case 2:
+                CheckWhiteCheckers(X-380,Y)
+                HightLightedTriangle(X-455,true)
+                CheckWhiteCheckers(X-1130,500)
+                HightLightedTriangle(X-1205)
+                break
+               case 3:
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                CheckWhiteCheckers(X-980,500)
+                HightLightedTriangle(X-1055)
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                CheckWhiteCheckers(X-830,500)
+                HightLightedTriangle(X-905)
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                CheckWhiteCheckers(X-680,500)
+                HightLightedTriangle(X-755)
+                break
+               case 6:
+                if(HightLightedTriangle(X-1055,true)){
+                CheckWhiteCheckers(X-530,500)
+                HightLightedTriangle(X-605)
+                }
+                if(HightLightedTriangle(X-605)){
+                CheckWhiteCheckers(X+450,500)
+                HightLightedTriangle(X+375)
+                }
+                break
+            }
+            break
+        }
+        break
+      case 1315:
+        switch(NumbeR){
+          case 0:
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                break
+               case 2:
                 CheckWhiteCheckers(X-300,Y)
                 HightLightedTriangle(X-375,true)
+                break
+               case 3:
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+            }
+            break
+          case 1:
+            CheckWhiteCheckers(X-150,Y)
+            HightLightedTriangle(X-225,true)
+            switch(Number2){
+               case 1:
+                if(HightLightedTriangle(X-225,true)){
+                CheckWhiteCheckers(X-300,Y)
+                HightLightedTriangle(X-375,true)  
+                }
+                if(HightLightedTriangle(X-375,true)){
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                }
+                if(HightLightedTriangle(X-605,true)){
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                }
+                break
+               case 2:
+                CheckWhiteCheckers(X-300,Y)
+                HightLightedTriangle(X-375,true)
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                break
+               case 3:
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+            }
+            break
+          case 2:
+            CheckWhiteCheckers(X-300,Y)
+            HightLightedTriangle(X-375,true)
+            switch(Number2){
+               case 1:
+                 CheckWhiteCheckers(X-150,Y)
+                 HightLightedTriangle(X-225,true)
+                 CheckWhiteCheckers(X-530,Y)
+                 HightLightedTriangle(X-605,true)
+                 break
+               case 2:
+                if(HightLightedTriangle(X-375,true)){
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true) 
+                }
+                if(HightLightedTriangle(X-755,true)){
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                }
+                if(HightLightedTriangle(X-1055,true)){
+                CheckWhiteCheckers(X-1280,Y)
+                HightLightedTriangle(X-1355,true)  
+                }
+                break
+               case 3:
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-1280,Y)
+                HightLightedTriangle(X-1355,true)
+                break
+            }
+            break
+          case 3:
+            CheckWhiteCheckers(X-530,Y)
+            HightLightedTriangle(X-605,true)
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                break
+               case 2:
+                CheckWhiteCheckers(X-300,Y)
+                HightLightedTriangle(X-375,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                break
+               case 3:
+                if(HightLightedTriangle(X-605,true)){
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true) 
+                }
+                if(HightLightedTriangle(X-1055,true)){
+                CheckWhiteCheckers(X-1280,500)
+                HightLightedTriangle(X-1355)
+                }
+                if(HightLightedTriangle(X-1355)){
+                CheckWhiteCheckers(X-830,500)
+                HightLightedTriangle(X-905)
+                }
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                CheckWhiteCheckers(X-1280,Y)
+                HightLightedTriangle(X-1355,true)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-1280,500)
+                HightLightedTriangle(X-1355)
+                break
+            }
+            break
+          case 4:
+             CheckWhiteCheckers(X-680,Y)
+             HightLightedTriangle(X-755,true)
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                break
+               case 2:
+                CheckWhiteCheckers(X-300,Y)
+                HightLightedTriangle(X-375,true)
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+               case 3:
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+               case 4:
+                if(HightLightedTriangle(X-755,true)){
+                CheckWhiteCheckers(X-1280,Y)
+                HightLightedTriangle(X-1355,true) 
+                }
+                if(HightLightedTriangle(X-1355,true)){
+                CheckWhiteCheckers(X-830,500)
+                HightLightedTriangle(X-905)
+                }
+                if(HightLightedTriangle(X-905)){
+                CheckWhiteCheckers(X-150,500)
+                HightLightedTriangle(X-225)
+                }
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                CheckWhiteCheckers(X-1280,500)
+                HightLightedTriangle(X-1355)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-1130,500)
+                HightLightedTriangle(X-1205) 
+                break
+            }
+            break
+          case 5:
+            CheckWhiteCheckers(X-830,Y)
+            HightLightedTriangle(X-905,true)
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+               case 2:
+                CheckWhiteCheckers(X-300,Y)
+                HightLightedTriangle(X-375,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+               case 3:
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                CheckWhiteCheckers(X-1280,Y)
+                HightLightedTriangle(X-1355,true)
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                CheckWhiteCheckers(X-1280,500)
+                HightLightedTriangle(X-1355)
+                break
+               case 5:
+                if(HightLightedTriangle(X-905,true)){
+                CheckWhiteCheckers(X-1130,500)
+                HightLightedTriangle(X-1205)
+                }
+                if(HightLightedTriangle(X-1205)){
+                CheckWhiteCheckers(X-300,500)
+                HightLightedTriangle(X-375)
+                }
+                if(HightLightedTriangle(X-375)){
+                CheckWhiteCheckers(X+450,500)
+                HightLightedTriangle(X+375)
+                }
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                CheckWhiteCheckers(X-980,500)
+                HightLightedTriangle(X-1055)
+                break
+            }
+            break
+          case 6:
+            CheckWhiteCheckers(X-980,Y)
+            HightLightedTriangle(X-1055,true)
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                CheckWhiteCheckers(X-1130,Y)
+                HightLightedTriangle(X-1205,true)
+                break
+               case 2:
+                CheckWhiteCheckers(X-300,Y)
+                HightLightedTriangle(X-375,true)
+                CheckWhiteCheckers(X-1280,Y)
+                HightLightedTriangle(X-1355,true)
+                break
+               case 3:
+                CheckWhiteCheckers(X-530,Y)
+                HightLightedTriangle(X-605,true)
+                CheckWhiteCheckers(X-1280,500)
+                HightLightedTriangle(X-1355)
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                CheckWhiteCheckers(X-1130,500)
+                HightLightedTriangle(X-1205)
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                CheckWhiteCheckers(X-980,500)
+                HightLightedTriangle(X-1055)
+                break
+               case 6:
+                if(HightLightedTriangle(X-1055,true)){
+                CheckWhiteCheckers(X-830,500)
+                HightLightedTriangle(X-905)
+                }
+                if(HightLightedTriangle(X-905)){
+                CheckWhiteCheckers(X+150,500)
+                HightLightedTriangle(X+75)
+                }
+                break
+            }
+            break
+        }
+        break
+      case 1465:
+        switch(NumbeR){
+          case 0:
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                break
+               case 2:
+                CheckWhiteCheckers(X-300,Y)
+                HightLightedTriangle(X-375,true)
+                break
+               case 3:
+                CheckWhiteCheckers(X-450,Y)
+                HightLightedTriangle(X-525,true)
+                break
+               case 4:
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+            }
+            break
+          case 1:
+            CheckWhiteCheckers(X-150,Y)
+            HightLightedTriangle(X-225,true)
+            switch(Number2){
+               case 1:
+                if(HightLightedTriangle(X-225,true)){
+                CheckWhiteCheckers(X-300,Y)
+                HightLightedTriangle(X-375,true)  
+                }
+                if(HightLightedTriangle(X-375,true)){
+                CheckWhiteCheckers(X-450,Y)
+                HightLightedTriangle(X-525,true)
+                }
+                if(HightLightedTriangle(X-525,true)){
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                }
                 break
                case 2:
                 CheckWhiteCheckers(X-300,Y)
@@ -251,18 +1259,18 @@ function CreateBoard(){
                case 3:
                 CheckWhiteCheckers(X-450,Y)
                 HightLightedTriangle(X-525,true)
-                CheckWhiteCheckers(X-600,Y)
-                HightLightedTriangle(X-675,true)
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
                 break
                case 4:
-                CheckWhiteCheckers(X-600,Y)
-                HightLightedTriangle(X-675,true)
-                CheckWhiteCheckers(X-750,Y)
-                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
                 break
                case 5:
-                CheckWhiteCheckers(X-750,Y)
-                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
                 CheckWhiteCheckers(X-980,Y)
                 HightLightedTriangle(X-1055,true)
                 break
@@ -285,24 +1293,34 @@ function CreateBoard(){
                  HightLightedTriangle(X-525,true)
                  break
                case 2:
-                CheckWhiteCheckers(X-600,Y)
-                HightLightedTriangle(X-675,true)
+                if(HightLightedTriangle(X-375,true)){
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true) 
+                }
+                if(HightLightedTriangle(X-755,true)){
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                }
+                if(HightLightedTriangle(X-1055,true)){
+                CheckWhiteCheckers(X-1280,Y)
+                HightLightedTriangle(X-1355,true)  
+                }
                 break
                case 3:
                 CheckWhiteCheckers(X-450,Y)
                 HightLightedTriangle(X-525,true)
-                CheckWhiteCheckers(X-750,Y)
-                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
                 break
                case 4:
-                CheckWhiteCheckers(X-600,Y)
-                HightLightedTriangle(X-675,true)
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
                 CheckWhiteCheckers(X-980,Y)
                 HightLightedTriangle(X-1055,true)
                 break
                case 5:
-                CheckWhiteCheckers(X-750,Y)
-                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
                 CheckWhiteCheckers(X-1130,Y)
                 HightLightedTriangle(X-1205,true)
                 break
@@ -321,28 +1339,38 @@ function CreateBoard(){
                case 1:
                 CheckWhiteCheckers(X-150,Y)
                 HightLightedTriangle(X-225,true)
-                CheckWhiteCheckers(X-600,Y)
-                HightLightedTriangle(X-675,true)
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
                 break
                case 2:
                 CheckWhiteCheckers(X-300,Y)
                 HightLightedTriangle(X-375,true)
-                CheckWhiteCheckers(X-750,Y)
-                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
                 break
                case 3:
+                if(HightLightedTriangle(X-525,true)){
                 CheckWhiteCheckers(X-980,Y)
-                HightLightedTriangle(X-1055,true)
+                HightLightedTriangle(X-1055,true) 
+                }
+                if(HightLightedTriangle(X-1055,true)){
+                CheckWhiteCheckers(X-1430,Y)
+                HightLightedTriangle(X-1505,true)
+                }
+                if(HightLightedTriangle(X-1505,true)){
+                CheckWhiteCheckers(X-1130,500)
+                HightLightedTriangle(X-1205)
+                }
                 break
                case 4:
-                CheckWhiteCheckers(X-600,Y)
-                HightLightedTriangle(X-675,true)
+                CheckWhiteCheckers(X-680,Y)
+                HightLightedTriangle(X-755,true)
                 CheckWhiteCheckers(X-1130,Y)
                 HightLightedTriangle(X-1205,true)
                 break
                case 5:
-                CheckWhiteCheckers(X-750,Y)
-                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
                 CheckWhiteCheckers(X-1280,Y)
                 HightLightedTriangle(X-1355,true)
                 break
@@ -355,14 +1383,14 @@ function CreateBoard(){
             }
             break
           case 4:
-             CheckWhiteCheckers(X-600,Y)
-             HightLightedTriangle(X-675,true)
+             CheckWhiteCheckers(X-680,Y)
+             HightLightedTriangle(X-755,true)
             switch(Number2){
                case 1:
                 CheckWhiteCheckers(X-150,Y)
                 HightLightedTriangle(X-225,true)
-                CheckWhiteCheckers(X-750,Y)
-                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
                 break
                case 2:
                 CheckWhiteCheckers(X-300,Y)
@@ -377,20 +1405,30 @@ function CreateBoard(){
                 HightLightedTriangle(X-1205,true)
                 break
                case 4:
+                if(HightLightedTriangle(X-755,true)){
                 CheckWhiteCheckers(X-1280,Y)
-                HightLightedTriangle(X-1355,true)
+                HightLightedTriangle(X-1355,true) 
+                }
+                if(HightLightedTriangle(X-1355,true)){
+                CheckWhiteCheckers(X-1130,500)
+                HightLightedTriangle(X-1205) 
+                }
+                if(HightLightedTriangle(X-1205)){
+                CheckWhiteCheckers(X-450,500)
+                HightLightedTriangle(X-525)
+                }
                 break
                case 5:
-                CheckWhiteCheckers(X-750,Y)
-                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
                 CheckWhiteCheckers(X-1430,Y)
                 HightLightedTriangle(X-1505,true)
                 break
                case 6:
                 CheckWhiteCheckers(X-980,Y)
                 HightLightedTriangle(X-1055,true)
-                CheckWhiteCheckers(X-1580,Y)
-                HightLightedTriangle(X-1655,true)
+                CheckWhiteCheckers(X-1430,500)
+                HightLightedTriangle(X-1505)
                 break
             }
             break
@@ -494,6 +1532,34 @@ function CreateBoard(){
         break
       case 1615:
         switch(NumbeR){
+          case 0:
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                break
+               case 2:
+                CheckWhiteCheckers(X-300,Y)
+                HightLightedTriangle(X-375,true)
+                break
+               case 3:
+                CheckWhiteCheckers(X-450,Y)
+                HightLightedTriangle(X-525,true)
+                break
+               case 4:
+                CheckWhiteCheckers(X-600,Y)
+                HightLightedTriangle(X-675,true)
+                break
+               case 5:
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+            }
+            break
           case 1:
             CheckWhiteCheckers(X-150,Y)
             HightLightedTriangle(X-225,true)
@@ -527,12 +1593,12 @@ function CreateBoard(){
                case 4:
                 CheckWhiteCheckers(X-600,Y)
                 HightLightedTriangle(X-675,true)
-                CheckWhiteCheckers(X-750,Y)
-                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
                 break
                case 5:
-                CheckWhiteCheckers(X-750,Y)
-                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
                 CheckWhiteCheckers(X-980,Y)
                 HightLightedTriangle(X-1055,true)
                 break
@@ -571,8 +1637,8 @@ function CreateBoard(){
                case 3:
                 CheckWhiteCheckers(X-450,Y)
                 HightLightedTriangle(X-525,true)
-                CheckWhiteCheckers(X-750,Y)
-                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
                 break
                case 4:
                 CheckWhiteCheckers(X-600,Y)
@@ -607,8 +1673,8 @@ function CreateBoard(){
                case 2:
                 CheckWhiteCheckers(X-300,Y)
                 HightLightedTriangle(X-375,true)
-                CheckWhiteCheckers(X-750,Y)
-                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
                 break
                case 3:
                 if(HightLightedTriangle(X-525,true)){
@@ -651,8 +1717,8 @@ function CreateBoard(){
                case 1:
                 CheckWhiteCheckers(X-150,Y)
                 HightLightedTriangle(X-225,true)
-                CheckWhiteCheckers(X-750,Y)
-                HightLightedTriangle(X-825,true)
+                CheckWhiteCheckers(X-830,Y)
+                HightLightedTriangle(X-905,true)
                 break
                case 2:
                 CheckWhiteCheckers(X-300,Y)
@@ -794,6 +1860,34 @@ function CreateBoard(){
         break
       case 1765:
         switch(NumbeR){
+          case 0:
+            switch(Number2){
+               case 1:
+                CheckWhiteCheckers(X-150,Y)
+                HightLightedTriangle(X-225,true)
+                break
+               case 2:
+                CheckWhiteCheckers(X-300,Y)
+                HightLightedTriangle(X-375,true)
+                break
+               case 3:
+                CheckWhiteCheckers(X-450,Y)
+                HightLightedTriangle(X-525,true)
+                break
+               case 4:
+                CheckWhiteCheckers(X-600,Y)
+                HightLightedTriangle(X-675,true)
+                break
+               case 5:
+                CheckWhiteCheckers(X-750,Y)
+                HightLightedTriangle(X-825,true)
+                break
+               case 6:
+                CheckWhiteCheckers(X-980,Y)
+                HightLightedTriangle(X-1055,true)
+                break
+            }
+            break
           case 1:
             CheckWhiteCheckers(X-150,Y)
             HightLightedTriangle(X-225,true)
@@ -1340,18 +2434,18 @@ WhiteCheckers = [
   {x:1090,y:1025},
   {x:1090,y:1095},
   {x:1090,y:1165},
-  {x:71,y:1025},
-  {x:71,y:1095},
-  {x:71,y:1165},
-  {x:11,y:375},
-  {x:11,y:300},
-  {x:11,y:225},
-  {x:11,y:150},
-  {x:11, y:75}
+  {x:710,y:1025},
+  {x:710,y:1095},
+  {x:710,y:1165},
+  {x:110,y:375},
+  {x:110,y:300},
+  {x:110,y:225},
+  {x:110,y:150},
+  {x:110, y:75}
 ] 
 BlackCheckers = [
   {x:1840,y:1165},
-  {x:1540,y:1165},
+  {x:1240,y:1165},
   {x:1090,y:375},
   {x:1090,y:300},
   {x:1090,y:225},
@@ -1375,8 +2469,8 @@ if(Start.textContent === 'Roll Dice'){
   Rolled = 'Rolling'
   const randNum1 = Math.ceil(Math.random()*6)
   const randNum2 = Math.ceil(Math.random()*6)
-  NumbeR = 5
-  Number2 = 5
+  NumbeR = 6
+  Number2 = 6
   dice.style.transform = ''
   dice.style.animation = 'rolling 4s'
   dice2.style.animation = 'rolling 4s'
