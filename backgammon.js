@@ -411,8 +411,8 @@ function CreateBoard(){
              HightLightedTriangle(X-755,true)
             switch(Number2){
                case 1:
-                CheckWhiteCheckers(X-150,Y)
-                HightLightedTriangle(X-225,true)
+                CheckWhiteCheckers(X-230,Y)
+                HightLightedTriangle(X-305,true)
                 CheckWhiteCheckers(X-830,Y)
                 HightLightedTriangle(X-905,true)
                 break
@@ -425,34 +425,34 @@ function CreateBoard(){
                case 3:
                 CheckWhiteCheckers(X-530,Y)
                 HightLightedTriangle(X-605,true)
-                CheckWhiteCheckers(X-1130,Y)
-                HightLightedTriangle(X-1205,true)
+                CheckWhiteCheckers(X-980,500)
+                HightLightedTriangle(X-1055)
                 break
                case 4:
                 if(HightLightedTriangle(X-755,true)){
-                CheckWhiteCheckers(X-1130,500)
-                HightLightedTriangle(X-1205)
+                CheckWhiteCheckers(X-830,500)
+                HightLightedTriangle(X-905)
                 }
-                if(HightLightedTriangle(X-1205)){
-                CheckWhiteCheckers(X-530,500)
-                HightLightedTriangle(X-605)
+                if(HightLightedTriangle(X-905)){
+                CheckWhiteCheckers(X-230,500)
+                HightLightedTriangle(X-305)
                 }
-                if(HightLightedTriangle(X-605)){
-                CheckWhiteCheckers(X+150,500)
-                HightLightedTriangle(X+75)
+                if(HightLightedTriangle(X-305)){
+                CheckWhiteCheckers(X+450,500)
+                HightLightedTriangle(X+375)
                 }
                 break
                case 5:
                 CheckWhiteCheckers(X-830,Y)
                 HightLightedTriangle(X-905,true)
-                CheckWhiteCheckers(X-980,500)
-                HightLightedTriangle(X-1055)
+                CheckWhiteCheckers(X-680,500)
+                HightLightedTriangle(X-755)
                 break
                case 6:
                 CheckWhiteCheckers(X-980,Y)
                 HightLightedTriangle(X-1055,true)
-                CheckWhiteCheckers(X-830,500)
-                HightLightedTriangle(X-905)
+                CheckWhiteCheckers(X-530,500)
+                HightLightedTriangle(X-605)
                 break
             }
             break
@@ -461,44 +461,44 @@ function CreateBoard(){
             HightLightedTriangle(X-905,true)
             switch(Number2){
                case 1:
-                CheckWhiteCheckers(X-150,Y)
-                HightLightedTriangle(X-225,true)
+                CheckWhiteCheckers(X-230,Y)
+                HightLightedTriangle(X-305,true)
                 CheckWhiteCheckers(X-980,Y)
                 HightLightedTriangle(X-1055,true)
                 break
                case 2:
                 CheckWhiteCheckers(X-380,Y)
                 HightLightedTriangle(X-455,true)
-                CheckWhiteCheckers(X-1130,Y)
-                HightLightedTriangle(X-1205,true)
+                CheckWhiteCheckers(X-980,500)
+                HightLightedTriangle(X-1055)
                 break
                case 3:
                 CheckWhiteCheckers(X-530,Y)
                 HightLightedTriangle(X-605,true)
-                CheckWhiteCheckers(X-1130,500)
-                HightLightedTriangle(X-1205)
+                CheckWhiteCheckers(X-830,500)
+                HightLightedTriangle(X-905)
                 break
                case 4:
                 CheckWhiteCheckers(X-680,Y)
                 HightLightedTriangle(X-755,true)
-                CheckWhiteCheckers(X-980,500)
-                HightLightedTriangle(X-1055)
+                CheckWhiteCheckers(X-680,500)
+                HightLightedTriangle(X-755)
                 break
                case 5:
                 if(HightLightedTriangle(X-905,true)){
-                CheckWhiteCheckers(X-830,500)
-                HightLightedTriangle(X-905)
+                CheckWhiteCheckers(X-530,500)
+                HightLightedTriangle(X-605)
                 }
-                if(HightLightedTriangle(X-905)){
-                CheckWhiteCheckers(X,500)
-                HightLightedTriangle(X-75)
+                if(HightLightedTriangle(X-605)){
+                CheckWhiteCheckers(X+300,500)
+                HightLightedTriangle(X+225)
                 }
                 break
                case 6:
                 CheckWhiteCheckers(X-980,Y)
                 HightLightedTriangle(X-1055,true)
-                CheckWhiteCheckers(X-680,500)
-                HightLightedTriangle(X-755)
+                CheckWhiteCheckers(X-380,500)
+                HightLightedTriangle(X-455)
                 break
             }
             break
@@ -2233,9 +2233,17 @@ function CreateBoard(){
         Loop = 1
         BottomY = 233
         BlackCheckers.forEach(BlackChecker=>{
-        if(X === BlackChecker.x){
+       if(X === BlackChecker.x){
+      if(Y<600){
+        if(BlackChecker.y<600){
           Counter+=1
-        }   
+        }
+      }else{
+        if(BlackChecker.y>600){
+          Counter+=1
+        }
+      }
+     }   
         })
         BlackCheckers.forEach(BlackChecker=>{
           if(X === BlackChecker.x ){
@@ -2267,8 +2275,16 @@ function CreateBoard(){
         BottomY = 233
         WhiteCheckers.forEach(WhiteChecker=>{
           if(X === WhiteChecker.x){
+      if(Y<600){
+        if(WhiteChecker.y<600){
           Counter+=1
-        } 
+        }
+      }else{
+        if(WhiteChecker.y>600){
+          Counter+=1
+        }
+      }
+     }
         })
         WhiteCheckers.forEach(WhiteChecker=>{
          if(X === WhiteChecker.x ){
@@ -2340,7 +2356,15 @@ function Checkers (X,Y) {
   Loop = 1
   BlackCheckers.forEach(BlackChecker=>{
      if(X === BlackChecker.x){
-       Counter+=1
+      if(Y<600){
+        if(BlackChecker.y<600){
+          Counter+=1
+        }
+      }else{
+        if(BlackChecker.y>600){
+          Counter+=1
+        }
+      }
      }
   })
 BlackCheckers.forEach(BlackChecker =>{
@@ -2377,10 +2401,20 @@ context.strokeStyle = '#949494fa'
 context.stroke()
 
 })
+BottomY = 233
+  Loop = 1
 Counter = 0
 WhiteCheckers.forEach(WhiteChecker=>{
      if(X === WhiteChecker.x){
-       Counter+=1
+      if(Y<600){
+        if(WhiteChecker.y<600){
+          Counter+=1
+        }
+      }else{
+        if(WhiteChecker.y>600){
+          Counter+=1
+        }
+      }
      }
   })
 WhiteCheckers.forEach(WhiteChecker =>{
@@ -2429,11 +2463,11 @@ BottomWhiteTriangLe()
 WhiteCheckers = [
   {x:1840,y:150},
   {x:1840,y:75},
-  {x:1090,y:880},
-  {x:1090,y:955},
-  {x:1090,y:1025},
-  {x:1090,y:1095},
-  {x:1090,y:1165},
+  {x:10,y:880},
+  {x:10,y:955},
+  {x:10,y:1025},
+  {x:10,y:1095},
+  {x:10,y:1165},
   {x:710,y:1025},
   {x:710,y:1095},
   {x:710,y:1165},
@@ -2445,7 +2479,7 @@ WhiteCheckers = [
 ] 
 BlackCheckers = [
   {x:1840,y:1165},
-  {x:1240,y:1165},
+  {x:1090,y:1165},
   {x:1090,y:375},
   {x:1090,y:300},
   {x:1090,y:225},
@@ -2470,7 +2504,7 @@ if(Start.textContent === 'Roll Dice'){
   const randNum1 = Math.ceil(Math.random()*6)
   const randNum2 = Math.ceil(Math.random()*6)
   NumbeR = 6
-  Number2 = 6
+  Number2 = 1
   dice.style.transform = ''
   dice.style.animation = 'rolling 4s'
   dice2.style.animation = 'rolling 4s'
