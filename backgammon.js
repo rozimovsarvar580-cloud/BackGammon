@@ -155,7 +155,7 @@ function CreateBoard(){
     })
     }
     function CheckBlackCheckers(X,Y){
-      Counter =0
+      Counter = 0
     BlackCheckers.forEach(BlackChecker=>{
     if(BlackChecker.x === X){
       if(Y<600){
@@ -13349,6 +13349,59 @@ function CreateBoard(){
         })
       }
     }
+    function BlackCheckerToCenter(X,Y){
+      if(Counter === 1){
+      BlackCheckers.forEach(BlackChecker=>{
+      if(BlackChecker.x === X){
+          Counter = 0
+          BlackCheckers.forEach(BlackChecker=>{
+            if(BlackChecker.x === 975){
+              Counter++
+            }
+          })
+          WhiteCheckers.forEach(WhiteChecker=>{
+            if(WhiteChecker.x === 975){
+              Counter++
+            }
+          })
+          if(Counter === 0){
+            BlackChecker.y = 75
+          }else{
+           BlackChecker.y = Counter*75
+          }
+          BlackChecker.x = 975
+      }
+      })
+      Checkers()
+      }
+    }
+    function WhiteCheckerToCenter(X,Y){
+      if(Counter === 1){
+      WhiteCheckers.forEach(WhiteChecker=>{
+      if(WhiteChecker.x === X){
+          Counter = 0
+          BlackCheckers.forEach(BlackChecker=>{
+            if(BlackChecker.x === 975){
+              Counter++
+            }
+          })
+          WhiteCheckers.forEach(WhiteChecker=>{
+            if(WhiteChecker.x === 975){
+              Counter++
+            }
+          })
+          if(Counter === 0){
+            WhiteChecker.y = 75
+          }else{
+           WhiteChecker.y = Counter*75
+          }
+           WhiteChecker.x = 975
+      }
+      })
+      console.log(X,Y)
+      Checkers()
+      }
+    }
 let X = 1200
 let Y = 560
 let BlackCheckers = [
@@ -13492,7 +13545,8 @@ context.stroke()
 }
 let Rolled
 Start.addEventListener('click',()=>{
-GameTip.textContent = ''
+if(Start.textContent === 'Start The Game'){
+ GameTip.textContent = ''
 context.clearRect(0,0,1950,1230)
 CreateBoard()
 TopBlackTriangLe()
@@ -13535,8 +13589,15 @@ BlackCheckers = [
 ]
 Checkers()
 dice.style.display = 'block'
-dice2.style.display = 'block'
+dice2.style.display = 'block' 
+Start.textContent = 'Roll Dice!'
+}
 if(Start.textContent === 'Roll Dice'){
+  GameTip.textContent = 'finish your moves first'
+  GameTip.style.marginLeft = '-1000px'
+  game.style.marginLeft = '-1090px'
+}
+if(Start.textContent === 'Roll Dice!'){
   dice3.style.display = 'none'
   dice4.style.display = 'none'
   Rolled = 'Rolling'
@@ -13590,11 +13651,13 @@ if(Start.textContent === 'Roll Dice'){
   }
   dice.style.animation = ''
   dice2.style.animation = ''
-  if(randNum1 === randNum2){
+  if(!CheckWhoIsFirst){
+    if(randNum1 === randNum2){
     dice3.style.display = 'block'
     dice4.style.display = 'block'
     dice3.style.transform = dice.style.transform
     dice4.style.transform = dice.style.transform
+  }
   }
   Rolled = 'Rolled'
    if(CheckWhoIsFirst){
@@ -13606,16 +13669,28 @@ if(Start.textContent === 'Roll Dice'){
         dice4.style.display = 'none'
     }
     if(NumbeR>Number2){
+      if(GameTip.textContent === 'Tie Roll Again'){
+        GameTip.textContent = ''
+      }
     CheckWhoIsFirst = false
      WhoIsTurn = 'White'
-    }else{
+     GameTip.textContent = "White's Turn"
+     GameTip.style.marginLeft = '-900px'
+    game.style.marginLeft = '-1050px'
+    }
+    if(NumbeR<Number2){
+      if(GameTip.textContent === 'Tie Roll Again'){
+        GameTip.textContent = ''
+      }
      CheckWhoIsFirst = false
      WhoIsTurn = 'Black'
+     GameTip.textContent = "Black's Turn"
+     GameTip.style.marginLeft = '-900px'
+    game.style.marginLeft = '-1050px'
     }
     }
   },1000)
 }
-Start.textContent = 'Roll Dice'
 })
 game.addEventListener('click',(e)=>{
   if(Start.textContent === 'Roll Dice'){
@@ -13630,14 +13705,12 @@ game.addEventListener('click',(e)=>{
      game.style.marginLeft = '-1050px'
    }
   }
-  if(Start.textContent !== 'Roll Dice'){
+  if(Start.textContent === 'Start The Game'){
     GameTip.textContent = 'Game is not Started'
     GameTip.style.marginLeft = '-1200px'
     game.style.marginLeft = '-1350px'
   }
-   
   if(Rolled === 'Rolled'){
-    GameTip.textContent = ''
     if(!CheckWhoIsFirst){
       if(WhoIsTurn === 'White'){ 
         WhiteCheckers.forEach(WhiteChecker =>{
@@ -13683,12 +13756,42 @@ game.addEventListener('click',(e)=>{
            WhiteCheckers.forEach(WhiteChecker=>{
               if(x === WhiteChecker.x){
                 if(y === WhiteChecker.y){
+                if(NumbeR*150 === (WhiteChecker.x-argument.x+75)-150){
+                  NumbeR = 0
+                }else{
+                  if(NumbeR*150 === (WhiteChecker.x-argument.x+75)-230){
+                  NumbeR = 0
+                  }
+                }
+                if(Number2*150 === (WhiteChecker.x-argument.x+75)-150){
+                  Number2 = 0
+                }else{
+                  if(Number2*150 === (WhiteChecker.x-argument.x+75)-230){
+                    Number2 = 0
+                  }
+                }
+                if((Number2+NumbeR)*150 === (WhiteChecker.x-argument.x+75)-150){
+                  Number2 = 0
+                  NumbeR = 0
+                }else{
+                  if((Number2+NumbeR)*150 === (WhiteChecker.x-argument.x+75)-230){
+                    Number2 = 0
+                    NumbeR = 0
+                  }
+                }
                  WhiteChecker.x = argument.x+75
+                 Counter =0
                  WhiteCheckers.forEach(WhiteChecker=>{
                   if(argument.x+75 === WhiteChecker.x){
                     Counter+=1
                   } 
                  })
+                Start.textContent = 'Roll Dice'
+                 if(NumbeR === 0 && Number2 === 0){
+                  WhoIsTurn = 'Black'
+                  GameTip.textContent = "Black's Turn roll dice"
+                  Start.textContent = 'Roll Dice!'
+                 }
                  WhiteChecker.y = Counter*75
                  context.clearRect(0,0,1950,1230)
                  CreateBoard()
@@ -13696,6 +13799,8 @@ game.addEventListener('click',(e)=>{
                  TopWhiteTriangLe()
                  BottomBlackTriangLe()
                  BottomWhiteTriangLe()
+                 CheckBlackCheckers(WhiteChecker.x,WhiteChecker.y)
+                 BlackCheckerToCenter(WhiteChecker.x,WhiteChecker.y)
                  Checkers()
                 }
              } 
@@ -13708,12 +13813,42 @@ game.addEventListener('click',(e)=>{
             BlackCheckers.forEach(BlackChecker=>{
               if(x === BlackChecker.x){
                 if(y === BlackChecker.y){
+                  if(NumbeR*150 === (argument.x+75-BlackChecker.x)-150){
+                  NumbeR = 0
+                 }else{
+                  if(NumbeR*150 === (argument.x+75-BlackChecker.x)-80){
+                    NumbeR = 0
+                  }
+                 }
+                 if(Number2*150 === (argument.x+75-BlackChecker.x)-150){
+                  Number2 = 0
+                 }else{
+                  if(Number2*150 === (argument.x+75-BlackChecker.x)-80){
+                  Number2 = 0
+                  }
+                 }
+                 if((Number2+NumbeR)*150 === (argument.x+75-BlackChecker.x)-150){
+                  Number2 = 0
+                  NumbeR = 0
+                 }else{
+                  if((Number2+NumbeR)*150 === (argument.x+75-BlackChecker.x)-80){
+                  Number2 = 0
+                  NumbeR = 0
+                  }
+                 }
                   BlackChecker.x = argument.x+75
+                  Counter =0
                   BlackCheckers.forEach(BlackChecker=>{
                     if(argument.x+75 === BlackChecker.x){
                       Counter+=1
                     } 
                   })
+                  Start.textContent = 'Roll Dice'
+                  if(NumbeR === 0 && Number2 === 0){
+                  WhoIsTurn = 'White'
+                  GameTip.textContent = "White's Turn roll dice"
+                  Start.textContent = 'Roll Dice!'
+                 }
                   BlackChecker.y = Counter*75
                   context.clearRect(0,0,1950,1230)
                  CreateBoard()
@@ -13721,6 +13856,8 @@ game.addEventListener('click',(e)=>{
                  TopWhiteTriangLe()
                  BottomBlackTriangLe()
                  BottomWhiteTriangLe()
+                 CheckWhiteCheckers(BlackChecker.x,BlackChecker.y)
+                 WhiteCheckerToCenter(BlackChecker.x,BlackChecker.y)            
                  Checkers()
                 }
               }
@@ -13738,12 +13875,41 @@ game.addEventListener('click',(e)=>{
             BlackCheckers.forEach(BlackChecker=>{
               if(x === BlackChecker.x){
                 if(y === BlackChecker.y){
+                 if(NumbeR*150 === (BlackChecker.x-argument.x+75)-150){
+                  NumbeR = 0
+                 }else{
+                  if(NumbeR*150 === (BlackChecker.x-argument.x+75)-230){
+                  NumbeR = 0
+                  }
+                 }
+                 if(Number2*150 === (BlackChecker.x-argument.x+75)-150){
+                  Number2 = 0
+                 }else{
+                  if(Number2*150 === (BlackChecker.x-argument.x+75)-230){
+                    Number2 = 0
+                  }
+                 }
+                 if((Number2+NumbeR)*150 === (BlackChecker.x-argument.x+75)-150){
+                  Number2 = 0
+                  NumbeR = 0
+                 }else{
+                  if((Number2+NumbeR)*150 === (BlackChecker.x-argument.x+75)-230){
+                  Number2 = 0
+                  NumbeR = 0
+                  }
+                 }
                   BlackChecker.x = argument.x+75
                   BlackCheckers.forEach(BlackChecker=>{
                     if(argument.x+75 === BlackChecker.x){
                       BottomY-=14
                     } 
                   })
+                  Start.textContent = 'Roll Dice'
+                  if(NumbeR === 0 && Number2 === 0){
+                  WhoIsTurn = 'White'
+                  GameTip.textContent = "White's Turn roll dice"
+                  Start.textContent = 'Roll Dice!'
+                 }
                   BlackChecker.y = BottomY*5
                   context.clearRect(0,0,1950,1230)
                  CreateBoard()
@@ -13751,6 +13917,8 @@ game.addEventListener('click',(e)=>{
                  TopWhiteTriangLe()
                  BottomBlackTriangLe()
                  BottomWhiteTriangLe()
+                 CheckWhiteCheckers(BlackChecker.x,BlackChecker.y)
+                 WhiteCheckerToCenter(BlackChecker.x,BlackChecker.y)
                  Checkers()
                 }
               }
@@ -13763,12 +13931,41 @@ game.addEventListener('click',(e)=>{
            WhiteCheckers.forEach(WhiteChecker=>{
               if(x === WhiteChecker.x){
                 if(y === WhiteChecker.y){
+                if(NumbeR*150 === (argument.x+75-WhiteChecker.x)-150){
+                  NumbeR = 0
+                }else{
+                  if(NumbeR*150 === (argument.x+75-WhiteChecker.x)-80){
+                   NumbeR = 0
+                  }
+                }
+                if(Number2*150 === (argument.x+75-WhiteChecker.x)-150){
+                  Number2 = 0
+                }else{
+                  if(Number2*150 === (argument.x+75-WhiteChecker.x)-80){
+                    Number2 = 0
+                  }
+                }
+                if((Number2+NumbeR)*150 === (argument.x+75-WhiteChecker.x)-150){
+                  Number2 = 0
+                  NumbeR = 0
+                }else{
+                  if((Number2+NumbeR)*150 === (argument.x+75-WhiteChecker.x)-80){
+                    Number2 = 0
+                    NumbeR = 0
+                  }
+                }
                  WhiteChecker.x = argument.x+75
                  WhiteCheckers.forEach(WhiteChecker=>{
                   if(argument.x+75 === WhiteChecker.x){
                     BottomY-=14
                   } 
                  })
+                 Start.textContent = 'Roll Dice'
+                 if(NumbeR === 0 && Number2 === 0){
+                  WhoIsTurn = 'Black'
+                  GameTip.textContent = "Black's Turn roll dice"
+                  Start.textContent = 'Roll Dice!'
+                 }
                  WhiteChecker.y = BottomY*5
                  context.clearRect(0,0,1950,1230)
                  CreateBoard()
@@ -13776,8 +13973,9 @@ game.addEventListener('click',(e)=>{
                  TopWhiteTriangLe()
                  BottomBlackTriangLe()
                  BottomWhiteTriangLe()
-                 Checkers()
-                 
+                CheckBlackCheckers(WhiteChecker.x,WhiteChecker.y)
+                BlackCheckerToCenter(WhiteChecker.x,WhiteChecker.y)
+                Checkers()
                 }
              } 
            })
