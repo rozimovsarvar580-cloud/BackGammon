@@ -33,7 +33,32 @@ function CreateBoard(){
     
     }
     Board2()
+    
 }
+   function Board3(color){
+    context.fillStyle ='wheat'
+    context.fillRect(1950,20,235,600)
+    context.lineWidth = 30
+     if(color){
+    context.strokeStyle = 'yellow'
+    context.strokeRect(1975,40,185,540)
+    }
+    context.strokeStyle = 'orange'
+    context.strokeRect(1950,20,235,600)
+    }
+    Board3()
+    function Board4(color){
+    context.fillStyle ='wheat'
+    context.fillRect(1950,600,235,620)
+    context.lineWidth = 30
+    if(color){
+    context.strokeStyle = 'yellow'
+    context.strokeRect(1975,620,185,580)
+    }
+    context.strokeStyle = 'orange'
+    context.strokeRect(1950,600,235,620)
+    }
+    Board4()
     function TopWhiteTriangLe(X){
     const TopWhiteTriangles = [
          {a:35,b:185},
@@ -1904,6 +1929,14 @@ function CreateBoard(){
                 HightLightedTriangle(X+675)
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -1946,8 +1979,24 @@ function CreateBoard(){
                case 5:
                 CheckWhiteCheckers(X+750,500)
                 HightLightedTriangle(X+675)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -1966,6 +2015,14 @@ function CreateBoard(){
                 CheckWhiteCheckers(X+600,500)
                 HightLightedTriangle(X+525)
                 }
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckWhiteCheckers(X+450,500)
@@ -1976,12 +2033,36 @@ function CreateBoard(){
                case 4:
                 CheckWhiteCheckers(X+600,500)
                 HightLightedTriangle(X+525)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
                 CheckWhiteCheckers(X+750,500)
                 HightLightedTriangle(X+675)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2002,16 +2083,48 @@ function CreateBoard(){
                 HightLightedTriangle(X+675)
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
                 CheckWhiteCheckers(X+600,500)
                 HightLightedTriangle(X+525)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
                 CheckWhiteCheckers(X+750,500)
                 HightLightedTriangle(X+675)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2028,18 +2141,58 @@ function CreateBoard(){
                case 2:
                 CheckWhiteCheckers(X+300,500)
                 HightLightedTriangle(X+225)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckWhiteCheckers(X+450,500)
                 HightLightedTriangle(X+375)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
                 CheckWhiteCheckers(X+750,500)
                 HightLightedTriangle(X+675)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2050,48 +2203,152 @@ function CreateBoard(){
                case 1:
                 CheckWhiteCheckers(X+150,500)
                 HightLightedTriangle(X+75)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckWhiteCheckers(X+300,500)
                 HightLightedTriangle(X+225)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckWhiteCheckers(X+450,500)
                 HightLightedTriangle(X+375)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
                 CheckWhiteCheckers(X+600,500)
                 HightLightedTriangle(X+525)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 6:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckWhiteCheckers(X+150,500)
                 HightLightedTriangle(X+75)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckWhiteCheckers(X+300,500)
                 HightLightedTriangle(X+225)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckWhiteCheckers(X+450,500)
                 HightLightedTriangle(X+375)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
                 CheckWhiteCheckers(X+600,500)
                 HightLightedTriangle(X+525)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
                 CheckWhiteCheckers(X+750,500)
                 HightLightedTriangle(X+675)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2118,9 +2375,24 @@ function CreateBoard(){
                 HightLightedTriangle(X+525)
                 break
                case 5:
-                
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2157,10 +2429,34 @@ function CreateBoard(){
                case 4:
                 CheckWhiteCheckers(X+600,500)
                 HightLightedTriangle(X+525)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2183,14 +2479,46 @@ function CreateBoard(){
                case 3:
                 CheckWhiteCheckers(X+450,500)
                  HightLightedTriangle(X+375)
+                 CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
                 CheckWhiteCheckers(X+600,500)
                 HightLightedTriangle(X+525)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2207,16 +2535,56 @@ function CreateBoard(){
                case 2:
                 CheckWhiteCheckers(X+300,500)
                 HightLightedTriangle(X+225)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
                 CheckWhiteCheckers(X+600,500)
                 HightLightedTriangle(X+525)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2227,68 +2595,228 @@ function CreateBoard(){
                case 1:
                 CheckWhiteCheckers(X+150,500)
                 HightLightedTriangle(X+75)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckWhiteCheckers(X+300,500)
                 HightLightedTriangle(X+225)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckWhiteCheckers(X+450,500)
                 HightLightedTriangle(X+375)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 5:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckWhiteCheckers(X+150,500)
                 HightLightedTriangle(X+75)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckWhiteCheckers(X+300,500)
                 HightLightedTriangle(X+225)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckWhiteCheckers(X+450,500)
                 HightLightedTriangle(X+375)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
                 CheckWhiteCheckers(X+600,500)
                 HightLightedTriangle(X+525)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 6:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckWhiteCheckers(X+150,500)
                 HightLightedTriangle(X+75)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckWhiteCheckers(X+300,500)
                 HightLightedTriangle(X+225)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckWhiteCheckers(X+450,500)
                 HightLightedTriangle(X+375)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
                 CheckWhiteCheckers(X+600,500)
                 HightLightedTriangle(X+525)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2311,11 +2839,34 @@ function CreateBoard(){
                 HightLightedTriangle(X+375)
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
-                
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2332,6 +2883,14 @@ function CreateBoard(){
                 CheckWhiteCheckers(X+450,500)
                 HightLightedTriangle(X+375)
                 }
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckWhiteCheckers(X+300,500)
@@ -2342,12 +2901,44 @@ function CreateBoard(){
                case 3:
                 CheckWhiteCheckers(X+450,500)
                 HightLightedTriangle(X+375)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2362,16 +2953,56 @@ function CreateBoard(){
                  HightLightedTriangle(X+375)
                  break
                case 2:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckWhiteCheckers(X+450,500)
                  HightLightedTriangle(X+375)
+                 CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2382,84 +3013,300 @@ function CreateBoard(){
                case 1:
                 CheckWhiteCheckers(X+150,500)
                 HightLightedTriangle(X+75)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckWhiteCheckers(X+300,500)
                 HightLightedTriangle(X+225)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 4:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckWhiteCheckers(X+150,500)
                 HightLightedTriangle(X+75)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckWhiteCheckers(X+300,500)
                 HightLightedTriangle(X+225)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckWhiteCheckers(X+450,500)
                 HightLightedTriangle(X+375)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 5:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckWhiteCheckers(X+150,500)
                 HightLightedTriangle(X+75)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckWhiteCheckers(X+300,500)
                 HightLightedTriangle(X+225)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckWhiteCheckers(X+450,500)
                 HightLightedTriangle(X+375)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 6:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckWhiteCheckers(X+150,500)
                 HightLightedTriangle(X+75)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckWhiteCheckers(X+300,500)
                 HightLightedTriangle(X+225)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckWhiteCheckers(X+450,500)
                 HightLightedTriangle(X+375)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2478,12 +3325,44 @@ function CreateBoard(){
                 HightLightedTriangle(X+225)
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2496,18 +3375,66 @@ function CreateBoard(){
                 CheckWhiteCheckers(X+300,500)
                 HightLightedTriangle(X+225)
                 }
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckWhiteCheckers(X+300,500)
                 HightLightedTriangle(X+225)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2518,76 +3445,292 @@ function CreateBoard(){
                case 1:
                  CheckWhiteCheckers(X+150,500)
                  HightLightedTriangle(X+75)
+                 CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                  break
                case 2:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 3:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckWhiteCheckers(X+150,500)
                 HightLightedTriangle(X+75)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckWhiteCheckers(X+300,500)
                 HightLightedTriangle(X+225)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 4:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckWhiteCheckers(X+150,500)
                 HightLightedTriangle(X+75)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckWhiteCheckers(X+300,500)
                 HightLightedTriangle(X+225)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 5:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckWhiteCheckers(X+150,500)
                 HightLightedTriangle(X+75)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckWhiteCheckers(X+300,500)
                 HightLightedTriangle(X+225)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2596,18 +3739,66 @@ function CreateBoard(){
                case 1:
                 CheckWhiteCheckers(X+150,500)
                 HightLightedTriangle(X+75)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckWhiteCheckers(X+300,500)
                 HightLightedTriangle(X+225)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2622,14 +3813,54 @@ function CreateBoard(){
                 HightLightedTriangle(X+75)
                 break
                case 2:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2638,106 +3869,426 @@ function CreateBoard(){
             HightLightedTriangle(X+75)
             switch(Number2){
                case 1:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 2:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                  CheckWhiteCheckers(X+150,500)
                  HightLightedTriangle(X+75)
+                 CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                  break
                case 2:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 3:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckWhiteCheckers(X+150,500)
                 HightLightedTriangle(X+75)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 4:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckWhiteCheckers(X+150,500)
                 HightLightedTriangle(X+75)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 5:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckWhiteCheckers(X+150,500)
                 HightLightedTriangle(X+75)
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 6:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckWhiteCheckers(X+150,500)
                 HightLightedTriangle(X+75)
                 break
                case 2:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -2748,112 +4299,496 @@ function CreateBoard(){
           case 0:
             switch(Number2){
                case 1:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 1:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 2:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                  break
                case 2:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 3:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 4:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 5:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 6:
+            CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckBlackCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4()
+                  Board3(true)
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -6723,6 +8658,7 @@ function CreateBoard(){
         break
       }
       }
+      
       Checkers(X,Y)
     }
     if(WhoIsTurn === 'White'){
@@ -12307,6 +14243,14 @@ function CreateBoard(){
                 HightLightedTriangle(X+675,true)
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -12349,8 +14293,24 @@ function CreateBoard(){
                case 5:
                 CheckBlackCheckers(X+750,Y)
                 HightLightedTriangle(X+675,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -12369,6 +14329,14 @@ function CreateBoard(){
                 CheckBlackCheckers(X+600,Y)
                 HightLightedTriangle(X+525,true)
                 }
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckBlackCheckers(X+450,Y)
@@ -12379,12 +14347,36 @@ function CreateBoard(){
                case 4:
                 CheckBlackCheckers(X+600,Y)
                 HightLightedTriangle(X+525,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
                 CheckBlackCheckers(X+750,Y)
                 HightLightedTriangle(X+675,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -12405,16 +14397,48 @@ function CreateBoard(){
                 HightLightedTriangle(X+675,true)
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
                 CheckBlackCheckers(X+600,Y)
                 HightLightedTriangle(X+525,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
                 CheckBlackCheckers(X+750,Y)
                 HightLightedTriangle(X+675,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -12431,18 +14455,58 @@ function CreateBoard(){
                case 2:
                 CheckBlackCheckers(X+300,Y)
                 HightLightedTriangle(X+225,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckBlackCheckers(X+450,Y)
                 HightLightedTriangle(X+375,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
                 CheckBlackCheckers(X+750,Y)
                 HightLightedTriangle(X+675,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -12453,48 +14517,152 @@ function CreateBoard(){
                case 1:
                 CheckBlackCheckers(X+150,Y)
                 HightLightedTriangle(X+75,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckBlackCheckers(X+300,Y)
                 HightLightedTriangle(X+225,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckBlackCheckers(X+450,Y)
                 HightLightedTriangle(X+375,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
                 CheckBlackCheckers(X+600,Y)
                 HightLightedTriangle(X+525,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 6:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckBlackCheckers(X+150,Y)
                 HightLightedTriangle(X+75,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckBlackCheckers(X+300,Y)
                 HightLightedTriangle(X+225,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckBlackCheckers(X+450,Y)
                 HightLightedTriangle(X+375,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
                 CheckBlackCheckers(X+600,Y)
                 HightLightedTriangle(X+525,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
                 CheckBlackCheckers(X+750,Y)
                 HightLightedTriangle(X+675,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -12521,8 +14689,24 @@ function CreateBoard(){
                 HightLightedTriangle(X+525,true)
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -12559,10 +14743,34 @@ function CreateBoard(){
                case 4:
                 CheckBlackCheckers(X+600,Y)
                 HightLightedTriangle(X+525,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -12581,18 +14789,58 @@ function CreateBoard(){
                 CheckBlackCheckers(X+600,Y)
                 HightLightedTriangle(X+525,true)
                 }
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckBlackCheckers(X+450,Y)
                 HightLightedTriangle(X+375,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
                 CheckBlackCheckers(X+600,Y)
                 HightLightedTriangle(X+525,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -12609,16 +14857,56 @@ function CreateBoard(){
                case 2:
                 CheckBlackCheckers(X+300,Y)
                 HightLightedTriangle(X+225,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
                 CheckBlackCheckers(X+600,Y)
                 HightLightedTriangle(X+525,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -12629,40 +14917,128 @@ function CreateBoard(){
                case 1:
                 CheckBlackCheckers(X+150,Y)
                 HightLightedTriangle(X+75,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckBlackCheckers(X+300,Y)
                 HightLightedTriangle(X+225,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckBlackCheckers(X+450,Y)
                 HightLightedTriangle(X+375,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 5:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckBlackCheckers(X+150,Y)
                 HightLightedTriangle(X+75,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckBlackCheckers(X+300,Y)
                 HightLightedTriangle(X+225,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckBlackCheckers(X+450,Y)
                 HightLightedTriangle(X+375,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
                 CheckBlackCheckers(X+600,Y)
                 HightLightedTriangle(X+525,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
                 break
@@ -12671,26 +15047,82 @@ function CreateBoard(){
             }
             break
           case 6:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckBlackCheckers(X+150,Y)
                 HightLightedTriangle(X+75,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckBlackCheckers(X+300,Y)
                 HightLightedTriangle(X+225,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckBlackCheckers(X+450,Y)
                 HightLightedTriangle(X+375,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
                 CheckBlackCheckers(X+600,Y)
                 HightLightedTriangle(X+525,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -12713,10 +15145,34 @@ function CreateBoard(){
                 HightLightedTriangle(X+375,true)
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -12733,9 +15189,19 @@ function CreateBoard(){
                 CheckBlackCheckers(X+450,Y)
                 HightLightedTriangle(X+375,true)
                 }
+                if(HightLightedTriangle(X+375,true)){
+                  CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
+                }
                 break
                case 2:
-               CheckBlackCheckers(X+300,Y)
+                CheckBlackCheckers(X+300,Y)
                 HightLightedTriangle(X+225,true)
                 CheckBlackCheckers(X+450,Y)
                 HightLightedTriangle(X+375,true)
@@ -12743,12 +15209,44 @@ function CreateBoard(){
                case 3:
                 CheckBlackCheckers(X+450,Y)
                 HightLightedTriangle(X+375,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -12763,16 +15261,56 @@ function CreateBoard(){
                 HightLightedTriangle(X+375,true)
                  break
                case 2:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 CheckBlackCheckers(X+450,Y)
                 HightLightedTriangle(X+375,true)
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -12783,84 +15321,300 @@ function CreateBoard(){
                case 1:
                 CheckBlackCheckers(X+150,Y)
                  HightLightedTriangle(X+75,true)
+                 CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckBlackCheckers(X+300,Y)
                 HightLightedTriangle(X+225,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 4:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckBlackCheckers(X+150,Y)
                 HightLightedTriangle(X+75,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckBlackCheckers(X+300,Y)
                 HightLightedTriangle(X+225,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckBlackCheckers(X+450,Y)
                 HightLightedTriangle(X+375,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 5:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckBlackCheckers(X+150,Y)
                 HightLightedTriangle(X+75,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckBlackCheckers(X+300,Y)
                 HightLightedTriangle(X+225,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckBlackCheckers(X+450,Y)
                 HightLightedTriangle(X+375,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 6:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckBlackCheckers(X+150,Y)
                 HightLightedTriangle(X+75,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckBlackCheckers(X+300,Y)
                 HightLightedTriangle(X+225,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
                 CheckBlackCheckers(X+450,Y)
                 HightLightedTriangle(X+375,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -12879,12 +15633,44 @@ function CreateBoard(){
                 HightLightedTriangle(X+225,true)
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -12897,18 +15683,68 @@ function CreateBoard(){
                 CheckBlackCheckers(X+300,Y)
                 HightLightedTriangle(X+225,true)
                 }
+                if(HightLightedTriangle(X+225,true)){
+                  CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
+                }
                 break
                case 2:
                CheckBlackCheckers(X+300,Y)
                 HightLightedTriangle(X+225,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -12921,94 +15757,358 @@ function CreateBoard(){
                  HightLightedTriangle(X+75,true)
                  break
                case 2:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 3:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckBlackCheckers(X+150,Y)
                  HightLightedTriangle(X+75,true)
+                 CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckBlackCheckers(X+300,Y)
                 HightLightedTriangle(X+225,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 4:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 CheckBlackCheckers(X+150,Y)
                 HightLightedTriangle(X+75,true)
                 break
                case 2:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 CheckBlackCheckers(X+300,Y)
                 HightLightedTriangle(X+225,true)
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 5:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 CheckBlackCheckers(X+150,Y)
                 HightLightedTriangle(X+75,true)
                 break
                case 2:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 CheckBlackCheckers(X+300,Y)
                 HightLightedTriangle(X+225,true)
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 6:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckBlackCheckers(X+150,Y)
                 HightLightedTriangle(X+75,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
                 CheckBlackCheckers(X+300,Y)
                 HightLightedTriangle(X+225,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -13023,14 +16123,54 @@ function CreateBoard(){
                 HightLightedTriangle(X+75,true)
                 break
                case 2:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -13039,106 +16179,434 @@ function CreateBoard(){
             HightLightedTriangle(X+75,true)
             switch(Number2){
                case 1:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 2:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                  CheckBlackCheckers(X+150,Y)
                  HightLightedTriangle(X+75,true)
+                 CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                  break
                case 2:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 3:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckBlackCheckers(X+150,Y)
                  HightLightedTriangle(X+75,true)
+                 CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 4:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckBlackCheckers(X+150,Y)
                 HightLightedTriangle(X+75,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 5:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckBlackCheckers(X+150,Y)
                 HightLightedTriangle(X+75,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 6:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
                 CheckBlackCheckers(X+150,Y)
                 HightLightedTriangle(X+75,true)
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -13149,112 +16617,496 @@ function CreateBoard(){
           case 0:
             switch(Number2){
                case 1:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 1:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 2:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                  break
                case 2:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 3:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 4:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 5:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
           case 6:
+            CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
             switch(Number2){
                case 1:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 2:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 3:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 4:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 5:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
                case 6:
+                CheckWhiteCheckersHomeBoard()
+                if(Counter === 15){
+                  Board4(true)
+                  Board3()
+                }else{
+                Board4()
+                Board3()
+                }
                 break
             }
             break
@@ -13402,6 +17254,22 @@ function CreateBoard(){
       Checkers()
       }
     }
+   function CheckBlackCheckersHomeBoard(){
+    Counter = 0
+    BlackCheckers.forEach(BlackChecker=>{
+      if(BlackChecker.x>=1090){
+        Counter++
+      }
+    })
+   }
+   function CheckWhiteCheckersHomeBoard(){
+    Counter = 0
+    WhiteCheckers.forEach(WhiteChecker=>{
+      if(WhiteChecker.x>=1090){
+        Counter++
+      }
+    })
+   }
 let X = 1200
 let Y = 560
 let BlackCheckers = [
@@ -13549,6 +17417,8 @@ if(Start.textContent === 'Start The Game'){
  GameTip.textContent = ''
 context.clearRect(0,0,1950,1230)
 CreateBoard()
+Board3()
+Board4()
 TopBlackTriangLe()
 TopWhiteTriangLe()
 BottomBlackTriangLe()
@@ -13985,5 +17855,61 @@ game.addEventListener('click',(e)=>{
         }
       }
     })
+    if(WhoIsTurn === 'Black'){
+      CheckBlackCheckersHomeBoard()
+      if(Counter === 15){
+        BlackCheckers.forEach(BlackChecker=>{
+          if(x === BlackChecker.x){
+            if(y === BlackChecker.y){
+              BlackChecker.x = 1995
+              Counter = 0
+              BlackCheckers.forEach(BlackChecker=>{
+                if(BlackChecker.x === 1995){
+                 Counter++
+                }
+              })
+              BlackChecker.y = Counter*75
+              context.clearRect(0,0,1950,1230)
+                 CreateBoard()
+                 TopBlackTriangLe()
+                 TopWhiteTriangLe()
+                 BottomBlackTriangLe()
+                 BottomWhiteTriangLe()
+                 Board3()
+                 Board4()
+              Checkers()
+            }
+          }
+        })
+      }
+    }
+    if(WhoIsTurn === 'White'){
+      CheckWhiteCheckersHomeBoard()
+      if(Counter === 15){
+        WhiteCheckers.forEach(WhiteChecker=>{
+          if(x === WhiteChecker.x){
+            if(y === WhiteChecker.y){
+              WhiteChecker.x = 1995
+              BottomY = 233
+              WhiteCheckers.forEach(WhiteChecker=>{
+                if(WhiteChecker.x === 1995){
+                 BottomY-=14
+                }
+              })
+              WhiteChecker.y = BottomY*5
+              context.clearRect(0,0,1950,1230)
+                 CreateBoard()
+                 TopBlackTriangLe()
+                 TopWhiteTriangLe()
+                 BottomBlackTriangLe()
+                 BottomWhiteTriangLe()
+                 Board3()
+                 Board4()
+              Checkers()
+            }
+          }
+        })
+      }
+    }
 }
 })
