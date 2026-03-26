@@ -19,6 +19,7 @@ body{
     background-color:green;
 }
 .dice{
+    margin-left: -200px;
     margin-top: -50px;
     position: relative;
     display: none;
@@ -28,7 +29,7 @@ body{
 }
 .dice2{
     margin-top: -50px;
-    margin-left: -460px;
+    margin-left: -400px;
     position: relative;
     display: none;
     width: 100px;

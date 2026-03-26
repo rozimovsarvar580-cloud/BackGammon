@@ -4794,6 +4794,9 @@ function CreateBoard(){
             break
         }
         break
+      case 900:
+        console.log(1)
+        break
       }
       }else{
       switch(X-75){
@@ -17112,6 +17115,319 @@ function CreateBoard(){
             break
         }
         break
+      case 900:
+        GameTip.textContent = ''
+        switch(NumbeR){
+          case 0:
+            switch(Number2){
+               case 1:
+                 CheckBlackCheckers(X,610)
+                HightLightedTriangle(X-75,true)
+                break
+               case 2:
+                 CheckBlackCheckers(X+150,610)
+                HightLightedTriangle(X+75,true)
+                break
+               case 3:
+                 CheckBlackCheckers(X+300,610)
+                HightLightedTriangle(X+225,true)
+                break
+               case 4:
+                 CheckBlackCheckers(X+450,610)
+                HightLightedTriangle(X+375,true)
+                break
+               case 5:
+                 CheckBlackCheckers(X+600,610)
+                HightLightedTriangle(X+525,true)
+                break
+               case 6:
+                 CheckBlackCheckers(X+750,610)
+                HightLightedTriangle(X+675,true)
+                break
+            }
+            break
+          case 1:
+            CheckBlackCheckers(X+865,500)
+            HightLightedTriangle(X+790)
+            switch(Number2){
+               case 1:
+                if(HightLightedTriangle(X+790)){
+                 CheckBlackCheckers(X+150,610)
+                HightLightedTriangle(X+75,true)
+                }
+                if(HightLightedTriangle(X+75,true)){
+                 CheckBlackCheckers(X+300,610)
+                HightLightedTriangle(X+225,true) 
+                }
+                if(HightLightedTriangle(X+225,true)){
+                 CheckBlackCheckers(X+450,610)
+                HightLightedTriangle(X+375,true)
+                }
+                break
+               case 2:
+                 CheckBlackCheckers(X+150,610)
+                HightLightedTriangle(X+75,true)
+                 CheckBlackCheckers(X+300,610)
+                HightLightedTriangle(X+225,true) 
+                break
+               case 3:
+                 CheckBlackCheckers(X+300,610)
+                HightLightedTriangle(X+225,true) 
+                 CheckBlackCheckers(X+450,610)
+                HightLightedTriangle(X+375,true)
+                break
+               case 4:
+                 CheckBlackCheckers(X+450,610)
+                HightLightedTriangle(X+375,true)
+                 CheckBlackCheckers(X+600,610)
+                HightLightedTriangle(X+525,true) 
+                break
+               case 5:
+                 CheckBlackCheckers(X+600,610)
+                HightLightedTriangle(X+525,true)  
+                 CheckBlackCheckers(X+750,610)
+                HightLightedTriangle(X+675,true)
+                break
+               case 6:
+                 CheckBlackCheckers(X+750,610)
+                HightLightedTriangle(X+675,true)
+                 CheckBlackCheckers(X+980,610)
+                HightLightedTriangle(X+905,true)  
+                break
+            }
+            break
+          case 2:
+            CheckBlackCheckers(X+715,500)
+            HightLightedTriangle(X+640)
+            switch(Number2){
+               case 1:
+                 CheckBlackCheckers(X+865,500)
+                HightLightedTriangle(X+790)
+                 CheckBlackCheckers(X+565,500)
+                 HightLightedTriangle(X+490)
+                 break
+               case 2:
+                if(HightLightedTriangle(X+640)){
+                CheckBlackCheckers(X+415,500)
+                HightLightedTriangle(X+340)
+                }
+                if(HightLightedTriangle(X+340)){
+                CheckBlackCheckers(X+115,500)
+                HightLightedTriangle(X+40)
+                }
+                if(HightLightedTriangle(X+40)){
+                CheckBlackCheckers(X-265,500)
+                HightLightedTriangle(X-340)
+                }
+                break
+               case 3:
+                CheckBlackCheckers(X+565,500)
+                HightLightedTriangle(X+490)
+                CheckBlackCheckers(X+265,500)
+                HightLightedTriangle(X+190)
+                break
+               case 4:
+                CheckBlackCheckers(X+415,500)
+                HightLightedTriangle(X+340)
+                CheckBlackCheckers(X+115,500)
+                HightLightedTriangle(X+40)
+                break
+               case 5:
+                CheckBlackCheckers(X+265,500)
+                HightLightedTriangle(X+190)
+                CheckBlackCheckers(X-115,500)
+                HightLightedTriangle(X-190)
+                break
+               case 6:
+                CheckBlackCheckers(X+115,500)
+                HightLightedTriangle(X+40)
+                CheckBlackCheckers(X-265,500)
+                HightLightedTriangle(X-340)
+                break
+            }
+            break
+          case 3:
+            CheckBlackCheckers(X+565,500)
+            HightLightedTriangle(X+490)
+            switch(Number2){
+               case 1:
+                CheckBlackCheckers(X+865,500)
+                HightLightedTriangle(X+790)
+                CheckBlackCheckers(X+415,500)
+                HightLightedTriangle(X+340)
+                break
+               case 2:
+                CheckBlackCheckers(X+715,500)
+                HightLightedTriangle(X+640)
+                CheckBlackCheckers(X+265,500)
+                HightLightedTriangle(X+190)
+                break
+               case 3:
+                if(HightLightedTriangle(X+490)){
+                   CheckBlackCheckers(X+115,500)
+                HightLightedTriangle(X+40)
+                }
+                if(HightLightedTriangle(X+40)){
+                CheckBlackCheckers(X-415,500)
+                HightLightedTriangle(X-490)
+                }
+                if(HightLightedTriangle(X-490)){
+                CheckBlackCheckers(X-865,500)
+                HightLightedTriangle(X-940)
+                }
+                break
+               case 4:
+                CheckBlackCheckers(X+415,500)
+                HightLightedTriangle(X+340)
+                CheckBlackCheckers(X-115,500)
+                HightLightedTriangle(X-190)
+                break
+               case 5:
+                CheckBlackCheckers(X+265,500)
+                HightLightedTriangle(X+190)
+                CheckBlackCheckers(X-265,500)
+                HightLightedTriangle(X-340)
+                break
+               case 6:
+                CheckBlackCheckers(X+115,500)
+                HightLightedTriangle(X+40)
+                CheckBlackCheckers(X-415,500)
+                HightLightedTriangle(X-490)
+                break
+            }
+            break
+          case 4:
+             CheckBlackCheckers(X+415,500)
+             HightLightedTriangle(X+340)
+            switch(Number2){
+               case 1:
+                CheckBlackCheckers(X+865,500)
+                HightLightedTriangle(X+790)
+                CheckBlackCheckers(X+265,500)
+                HightLightedTriangle(X+190)
+                break
+               case 2:
+                CheckBlackCheckers(X+715,500)
+                HightLightedTriangle(X+640)
+                CheckBlackCheckers(X+115,500)
+                HightLightedTriangle(X+40)
+                break
+               case 3:
+                CheckBlackCheckers(X+565,500)
+                HightLightedTriangle(X+490)
+                CheckBlackCheckers(X-115,500)
+                HightLightedTriangle(X-190)
+                break
+               case 4:
+                if(HightLightedTriangle(X+340)){
+                CheckBlackCheckers(X-265,500)
+                HightLightedTriangle(X-340)
+                }
+                if(HightLightedTriangle(X-340)){
+                CheckBlackCheckers(X-865,500)
+                HightLightedTriangle(X-940)
+                }
+                break
+               case 5:
+                CheckBlackCheckers(X+265,500)
+                HightLightedTriangle(X+190)
+                CheckBlackCheckers(X-415,500)
+                HightLightedTriangle(X-490)
+                break
+               case 6:
+                CheckBlackCheckers(X+115,500)
+                HightLightedTriangle(X+40)
+                CheckBlackCheckers(X-565,500)
+                HightLightedTriangle(X-640)
+                break
+            }
+            break
+          case 5:
+            CheckBlackCheckers(X+265,500)
+            HightLightedTriangle(X+190)
+            switch(Number2){
+               case 1:
+                CheckBlackCheckers(X+865,500)
+                HightLightedTriangle(X+790)
+                CheckBlackCheckers(X+115,500)
+                HightLightedTriangle(X+40)
+                break
+               case 2:
+                CheckBlackCheckers(X+715,500)
+                HightLightedTriangle(X+640)
+                CheckBlackCheckers(X-115,500)
+                HightLightedTriangle(X-190)
+                break
+               case 3:
+                CheckBlackCheckers(X+565,500)
+                HightLightedTriangle(X+490)
+                CheckBlackCheckers(X-265,500)
+                HightLightedTriangle(X-340)
+                break
+               case 4:
+                CheckBlackCheckers(X+415,500)
+                HightLightedTriangle(X+340)
+                CheckBlackCheckers(X-415,500)
+                HightLightedTriangle(X-490)
+                break
+               case 5:
+                if(HightLightedTriangle(X+190)){
+                CheckBlackCheckers(X-565,500)
+                HightLightedTriangle(X-640)
+                }
+                break
+               case 6:
+                CheckBlackCheckers(X+115,500)
+                HightLightedTriangle(X+40)
+                CheckBlackCheckers(X-715,500)
+                HightLightedTriangle(X-790)
+                break
+            }
+            break
+          case 6:
+           CheckBlackCheckers(X+115,500)
+           HightLightedTriangle(X+40)
+            switch(Number2){
+               case 1:
+                CheckBlackCheckers(X+865,500)
+                HightLightedTriangle(X+790)
+                CheckBlackCheckers(X-115,500)
+                HightLightedTriangle(X-190)
+                break
+               case 2:
+                CheckBlackCheckers(X+715,500)
+                HightLightedTriangle(X+640)
+                CheckBlackCheckers(X-265,500)
+                HightLightedTriangle(X-340)
+                break
+               case 3:
+                CheckBlackCheckers(X+565,500)
+                HightLightedTriangle(X+490)
+                CheckBlackCheckers(X-415,500)
+                HightLightedTriangle(X-490)
+                break
+               case 4:
+                CheckBlackCheckers(X+415,500)
+                HightLightedTriangle(X+340)
+                CheckBlackCheckers(X-565,500)
+                HightLightedTriangle(X-640)
+                break
+               case 5:
+                 CheckBlackCheckers(X+265,500)
+                 HightLightedTriangle(X+190)
+                CheckBlackCheckers(X-715,500)
+                HightLightedTriangle(X-790)
+                break
+               case 6:
+                if(HightLightedTriangle(X+40)){
+                CheckBlackCheckers(X-865,500)
+                HightLightedTriangle(X-940)
+                }
+                break
+            }
+            break
+        }
+        break
       }
       }
       Checkers(X,Y)
@@ -17211,11 +17527,6 @@ function CreateBoard(){
               Counter++
             }
           })
-          WhiteCheckers.forEach(WhiteChecker=>{
-            if(WhiteChecker.x === 975){
-              Counter++
-            }
-          })
           if(Counter === 0){
             BlackChecker.y = 75
           }else{
@@ -17231,26 +17542,16 @@ function CreateBoard(){
       if(Counter === 1){
       WhiteCheckers.forEach(WhiteChecker=>{
       if(WhiteChecker.x === X){
-          Counter = 0
-          BlackCheckers.forEach(BlackChecker=>{
-            if(BlackChecker.x === 975){
-              Counter++
-            }
-          })
+          BottomY = 233
           WhiteCheckers.forEach(WhiteChecker=>{
             if(WhiteChecker.x === 975){
-              Counter++
+              BottomY-=14
             }
           })
-          if(Counter === 0){
-            WhiteChecker.y = 75
-          }else{
-           WhiteChecker.y = Counter*75
-          }
+           WhiteChecker.y = BottomY*5
            WhiteChecker.x = 975
       }
       })
-      console.log(X,Y)
       Checkers()
       }
     }
@@ -17266,6 +17567,22 @@ function CreateBoard(){
     Counter = 0
     WhiteCheckers.forEach(WhiteChecker=>{
       if(WhiteChecker.x>=1090){
+        Counter++
+      }
+    })
+   }
+   function CheckBlackCheckersInCenter(){
+    Counter = 0
+    BlackCheckers.forEach(BlackChecker=>{
+      if(BlackChecker.x === 975){
+        Counter++
+      }
+    })
+   }
+   function CheckWhiteCheckersInCenter(){
+    Counter = 0
+    WhiteCheckers.forEach(WhiteChecker=>{
+      if(WhiteChecker.x === 975){
         Counter++
       }
     })
@@ -17426,7 +17743,7 @@ BottomWhiteTriangLe()
 WhiteCheckers = [
   {x:1840,y:150},
   {x:1840,y:75},
-  {x:1090,y:885},
+  {x:975,y:1165},
   {x:1090,y:955},
   {x:1090,y:1025},
   {x:1090,y:1095},
@@ -17473,8 +17790,8 @@ if(Start.textContent === 'Roll Dice!'){
   Rolled = 'Rolling'
   const randNum1 = Math.ceil(Math.random()*6)
   const randNum2 = Math.ceil(Math.random()*6)
-  NumbeR = randNum1
-  Number2 = randNum2
+  NumbeR = 6
+  Number2 = 1
   dice.style.transform = ''
   dice.style.animation = 'rolling 4s'
   dice2.style.animation = 'rolling 4s'
@@ -17591,10 +17908,24 @@ game.addEventListener('click',(e)=>{
          )
          if(distance<35){
           array = []
+          CheckWhiteCheckersInCenter()
+          if(Counter === 1){
+           GameTip.textContent = 'Move pieces in center'
+           GameTip.style.marginLeft = '-990px'
+           game.style.marginLeft = '-1050px'
+           if(WhiteChecker.x === 975){
+            Checkers(WhiteChecker.x,WhiteChecker.y)
+          CheckCoordinates(WhiteChecker.x,WhiteChecker.y)
+          x = WhiteChecker.x
+          y = WhiteChecker.y 
+           }
+          }else{
           Checkers(WhiteChecker.x,WhiteChecker.y)
           CheckCoordinates(WhiteChecker.x,WhiteChecker.y)
           x = WhiteChecker.x
-          y = WhiteChecker.y
+          y = WhiteChecker.y 
+          }
+          
          }
       })
       }
@@ -17607,10 +17938,24 @@ game.addEventListener('click',(e)=>{
          )
          if(distance<35){
           array = []
-          Checkers(BlackChecker.x,BlackChecker.y)
+          CheckBlackCheckersInCenter()
+          if(Counter === 1){
+           GameTip.textContent = 'Move pieces in center'
+           GameTip.style.marginLeft = '-990px'
+           game.style.marginLeft = '-1050px'
+           if(BlackChecker.x === 975){
+            Checkers(BlackChecker.x,BlackChecker.y)
           CheckCoordinates(BlackChecker.x,BlackChecker.y)
           x = BlackChecker.x
-          y= BlackChecker.y
+          y= BlackChecker.y 
+           }
+          }else{
+           Checkers(BlackChecker.x,BlackChecker.y)
+          CheckCoordinates(BlackChecker.x,BlackChecker.y)
+          x = BlackChecker.x
+          y= BlackChecker.y 
+          }
+          
          }
       }) 
       }
@@ -17683,27 +18028,40 @@ game.addEventListener('click',(e)=>{
             BlackCheckers.forEach(BlackChecker=>{
               if(x === BlackChecker.x){
                 if(y === BlackChecker.y){
+                  if((Number2+NumbeR)*150 === (argument.x+75-BlackChecker.x)-150){
+                  Number2 = 0
+                  NumbeR = 0
+                 }else{
+                  if((Number2+NumbeR)*150 === (argument.x+75-BlackChecker.x)+150){
+                  Number2 = 0
+                  NumbeR = 0
+                  }else{
+                    if((Number2+NumbeR)*150 === (argument.x+75-BlackChecker.x)+70){
+                  Number2 = 0
+                  NumbeR = 0
+                  }
+                  }
+                 }
                   if(NumbeR*150 === (argument.x+75-BlackChecker.x)-150){
                   NumbeR = 0
                  }else{
-                  if(NumbeR*150 === (argument.x+75-BlackChecker.x)-80){
+                  if(NumbeR*150 === (argument.x+75-BlackChecker.x)+150){
                     NumbeR = 0
+                  }else{
+                    if(NumbeR*150 === (argument.x+75-BlackChecker.x)+70){
+                    NumbeR = 0
+                  }
                   }
                  }
                  if(Number2*150 === (argument.x+75-BlackChecker.x)-150){
                   Number2 = 0
                  }else{
-                  if(Number2*150 === (argument.x+75-BlackChecker.x)-80){
-                  Number2 = 0
-                  }
-                 }
-                 if((Number2+NumbeR)*150 === (argument.x+75-BlackChecker.x)-150){
-                  Number2 = 0
-                  NumbeR = 0
-                 }else{
-                  if((Number2+NumbeR)*150 === (argument.x+75-BlackChecker.x)-80){
-                  Number2 = 0
-                  NumbeR = 0
+                  if(Number2*150 === (argument.x+75-BlackChecker.x)+150){
+                    Number2 = 0
+                  }else{
+                    if(Number2*150 === (argument.x+75-BlackChecker.x)+70){
+                      Number2 = 0
+                     }
                   }
                  }
                   BlackChecker.x = argument.x+75
@@ -17801,27 +18159,40 @@ game.addEventListener('click',(e)=>{
            WhiteCheckers.forEach(WhiteChecker=>{
               if(x === WhiteChecker.x){
                 if(y === WhiteChecker.y){
+                 if((Number2+NumbeR)*150 === (argument.x+75-WhiteChecker.x)-150){
+                  Number2 = 0
+                  NumbeR = 0
+                }else{
+                  if((Number2+NumbeR)*150 === (argument.x+75-WhiteChecker.x)+150){
+                    Number2 = 0
+                    NumbeR = 0
+                  }else{
+                    if((Number2+NumbeR)*150 === (argument.x+75-WhiteChecker.x)+70){
+                    Number2 = 0
+                    NumbeR = 0
+                  }
+                  }
+                }
                 if(NumbeR*150 === (argument.x+75-WhiteChecker.x)-150){
                   NumbeR = 0
                 }else{
-                  if(NumbeR*150 === (argument.x+75-WhiteChecker.x)-80){
+                  if(NumbeR*150 === (argument.x+75-WhiteChecker.x)+150){
                    NumbeR = 0
+                  }else{
+                    if(NumbeR*150 === (argument.x+75-WhiteChecker.x)+70){
+                   NumbeR = 0
+                  }
                   }
                 }
                 if(Number2*150 === (argument.x+75-WhiteChecker.x)-150){
                   Number2 = 0
                 }else{
-                  if(Number2*150 === (argument.x+75-WhiteChecker.x)-80){
+                  if(Number2*150 === (argument.x+75-WhiteChecker.x)+150){
+                    Number2 = 0
+                  }else{
+                    if(Number2*150 === (argument.x+75-WhiteChecker.x)+70){
                     Number2 = 0
                   }
-                }
-                if((Number2+NumbeR)*150 === (argument.x+75-WhiteChecker.x)-150){
-                  Number2 = 0
-                  NumbeR = 0
-                }else{
-                  if((Number2+NumbeR)*150 === (argument.x+75-WhiteChecker.x)-80){
-                    Number2 = 0
-                    NumbeR = 0
                   }
                 }
                  WhiteChecker.x = argument.x+75
