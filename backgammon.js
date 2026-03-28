@@ -2354,6 +2354,8 @@ CheckWhiteCheckers(X+1280,500)
             }
             break
           case 6:
+            CheckWhiteCheckers(X+150,500)
+            HightLightedTriangle(X+75)
             CheckBlackCheckersHomeBoard()
                 if(Counter === 15){
                   Board4()
@@ -2750,6 +2752,8 @@ CheckWhiteCheckers(X+1280,500)
             }
             break
           case 5:
+            CheckWhiteCheckers(X+150,500)
+                HightLightedTriangle(X+75)
             CheckBlackCheckersHomeBoard()
                 if(Counter === 15){
                   Board4()
@@ -2830,6 +2834,8 @@ CheckWhiteCheckers(X+1280,500)
             }
             break
           case 6:
+            CheckWhiteCheckers(X+150,500)
+            HightLightedTriangle(X+75)
             CheckBlackCheckersHomeBoard()
                 if(Counter === 15){
                   Board4()
@@ -3136,6 +3142,8 @@ CheckWhiteCheckers(X+1280,500)
                 }
                 break
                case 4:
+                CheckWhiteCheckers(X+150,500)
+                HightLightedTriangle(X+75)
                 CheckBlackCheckersHomeBoard()
                 if(Counter === 15){
                   Board4()
@@ -3146,6 +3154,8 @@ CheckWhiteCheckers(X+1280,500)
                 }
                 break
                case 5:
+                CheckWhiteCheckers(X+150,500)
+                HightLightedTriangle(X+75)
                 CheckBlackCheckersHomeBoard()
                 if(Counter === 15){
                   Board4()
@@ -3156,6 +3166,8 @@ CheckWhiteCheckers(X+1280,500)
                 }
                 break
                case 6:
+                CheckWhiteCheckers(X+150,500)
+                HightLightedTriangle(X+75)
                 CheckBlackCheckersHomeBoard()
                 if(Counter === 15){
                   Board4()
@@ -3168,6 +3180,8 @@ CheckWhiteCheckers(X+1280,500)
             }
             break
           case 4:
+            CheckWhiteCheckers(X+150,500)
+            HightLightedTriangle(X+75)
             CheckBlackCheckersHomeBoard()
                 if(Counter === 15){
                   Board4()
@@ -3224,6 +3238,8 @@ CheckWhiteCheckers(X+1280,500)
                 }
                 break
                case 5:
+                CheckWhiteCheckers(X+150,500)
+                HightLightedTriangle(X+75)
                 CheckBlackCheckersHomeBoard()
                 if(Counter === 15){
                   Board4()
@@ -3234,6 +3250,8 @@ CheckWhiteCheckers(X+1280,500)
                 }
                 break
                case 6:
+                CheckWhiteCheckers(X+150,500)
+                HightLightedTriangle(X+75)
                 CheckBlackCheckersHomeBoard()
                 if(Counter === 15){
                   Board4()
@@ -3246,6 +3264,8 @@ CheckWhiteCheckers(X+1280,500)
             }
             break
           case 5:
+            CheckWhiteCheckers(X+150,500)
+                HightLightedTriangle(X+75)
             CheckBlackCheckersHomeBoard()
                 if(Counter === 15){
                   Board4()
@@ -3292,6 +3312,8 @@ CheckWhiteCheckers(X+1280,500)
                 }
                 break
                case 4:
+                CheckWhiteCheckers(X+150,500)
+                HightLightedTriangle(X+75)
                 CheckBlackCheckersHomeBoard()
                 if(Counter === 15){
                   Board4()
@@ -3312,6 +3334,8 @@ CheckWhiteCheckers(X+1280,500)
                 }
                 break
                case 6:
+                CheckWhiteCheckers(X+150,500)
+                HightLightedTriangle(X+75)
                 CheckBlackCheckersHomeBoard()
                 if(Counter === 15){
                   Board4()
@@ -3324,6 +3348,8 @@ CheckWhiteCheckers(X+1280,500)
             }
             break
           case 6:
+            CheckWhiteCheckers(X+150,500)
+                HightLightedTriangle(X+75)
             CheckBlackCheckersHomeBoard()
                 if(Counter === 15){
                   Board4()
@@ -3370,6 +3396,8 @@ CheckWhiteCheckers(X+1280,500)
                 }
                 break
                case 4:
+                CheckWhiteCheckers(X+150,500)
+                HightLightedTriangle(X+75)
                 CheckBlackCheckersHomeBoard()
                 if(Counter === 15){
                   Board4()
@@ -3380,6 +3408,8 @@ CheckWhiteCheckers(X+1280,500)
                 }
                 break
                case 5:
+                CheckWhiteCheckers(X+150,500)
+                HightLightedTriangle(X+75)
                 CheckBlackCheckersHomeBoard()
                 if(Counter === 15){
                   Board4()
@@ -4891,326 +4921,326 @@ CheckWhiteCheckers(X+1280,500)
           case 0:
             switch(Number2){
                case 1:
-                 CheckBlackCheckers(X+865,610)
+                 CheckWhiteCheckers(X+865,610)
                  HightLightedTriangle(X+790,true)
                 break
                case 2:
-                 CheckBlackCheckers(X+715,610)
+                 CheckWhiteCheckers(X+715,610)
                  HightLightedTriangle(X+640,true)
                 break
                case 3:
-                 CheckBlackCheckers(X+565,610)
+                 CheckWhiteCheckers(X+565,610)
                 HightLightedTriangle(X+490,true)
                 break
                case 4:
-                 CheckBlackCheckers(X+415,610)
+                 CheckWhiteCheckers(X+415,610)
                 HightLightedTriangle(X+340,true)
                 break
                case 5:
-                 CheckBlackCheckers(X+265,610)
+                 CheckWhiteCheckers(X+265,610)
                 HightLightedTriangle(X+190,true) 
                 break
                case 6:
-                 CheckBlackCheckers(X+115,610)
+                 CheckWhiteCheckers(X+115,610)
                 HightLightedTriangle(X+40,true)
                 break
             }
             break
           case 1:
-            CheckBlackCheckers(X+865,610)
+            CheckWhiteCheckers(X+865,610)
             HightLightedTriangle(X+790,true)
             switch(Number2){
                case 1:
                 if(HightLightedTriangle(X+790,true)){
-                 CheckBlackCheckers(X+715,610)
+                 CheckWhiteCheckers(X+715,610)
                  HightLightedTriangle(X+640,true)
                 }
                 if(HightLightedTriangle(X+640,true)){
                   if(Number3){
-                   CheckBlackCheckers(X+565,610)
+                   CheckWhiteCheckers(X+565,610)
                 HightLightedTriangle(X+490,true) 
                   }
                  
                 }
                 if(HightLightedTriangle(X+490,true)){
                   if(Number4){
-                    CheckBlackCheckers(X+415,610)
+                    CheckWhiteCheckers(X+415,610)
                 HightLightedTriangle(X+340,true)
                   }
                  
                 }
                 break
                case 2:
-                 CheckBlackCheckers(X+715,610)
+                 CheckWhiteCheckers(X+715,610)
                  HightLightedTriangle(X+640,true)
-                 CheckBlackCheckers(X+565,610)
+                CheckWhiteCheckers(X+565,610)
                 HightLightedTriangle(X+490,true)
                 break
                case 3:
-                 CheckBlackCheckers(X+565,610)
+                 CheckWhiteCheckers(X+565,610)
                 HightLightedTriangle(X+490,true)
-                 CheckBlackCheckers(X+415,610)
+                 CheckWhiteCheckers(X+415,610)
                 HightLightedTriangle(X+340,true)
                 break
                case 4:
-                 CheckBlackCheckers(X+415,610)
+                 CheckWhiteCheckers(X+415,610)
                 HightLightedTriangle(X+340,true)
-                 CheckBlackCheckers(X+265,610)
+                 CheckWhiteCheckers(X+265,610)
                 HightLightedTriangle(X+190,true)
                 break
                case 5:
-                 CheckBlackCheckers(X+265,610)
+                 CheckWhiteCheckers(X+265,610)
                 HightLightedTriangle(X+190,true) 
-                 CheckBlackCheckers(X+115,610)
+                 CheckWhiteCheckers(X+115,610)
                 HightLightedTriangle(X+40,true)
                 break
                case 6:
-                 CheckBlackCheckers(X+115,610)
+                 CheckWhiteCheckers(X+115,610)
                 HightLightedTriangle(X+40,true)
-                 CheckBlackCheckers(X-115,610)
+                 CheckWhiteCheckers(X-115,610)
                 HightLightedTriangle(X-190,true)
                 break
             }
             break
           case 2:
-            CheckBlackCheckers(X+715,610)
+            CheckWhiteCheckers(X+715,610)
             HightLightedTriangle(X+640,true)
             switch(Number2){
                case 1:
-                 CheckBlackCheckers(X+865,610)
+                 CheckWhiteCheckers(X+865,610)
                 HightLightedTriangle(X+790,true)
-                 CheckBlackCheckers(X+565,610)
+                 CheckWhiteCheckers(X+565,610)
                  HightLightedTriangle(X+490,true)
                  break
                case 2:
                 if(HightLightedTriangle(X+640,true)){
-                CheckBlackCheckers(X+415,610)
+                CheckWhiteCheckers(X+415,610)
                 HightLightedTriangle(X+340,true)
                 }
                 if(HightLightedTriangle(X+340,true)){
                   if(Number3){
-                  CheckBlackCheckers(X+115,610)
+                 CheckWhiteCheckers(X+115,610)
                 HightLightedTriangle(X+40,true)  
                   }
                 
                 }
                 if(HightLightedTriangle(X+40,true)){
                   if(Number4){
-                    CheckBlackCheckers(X-265,610)
+                   CheckWhiteCheckers(X-265,610)
                 HightLightedTriangle(X-340,true)
                   }
                 
                 }
                 break
                case 3:
-                CheckBlackCheckers(X+565,610)
+                CheckWhiteCheckers(X+565,610)
                 HightLightedTriangle(X+490,true)
-                CheckBlackCheckers(X+265,610)
+                CheckWhiteCheckers(X+265,610)
                 HightLightedTriangle(X+190,true)
                 break
                case 4:
-                CheckBlackCheckers(X+415,610)
+                CheckWhiteCheckers(X+415,610)
                 HightLightedTriangle(X+340,true)
-                CheckBlackCheckers(X+115,610)
+                CheckWhiteCheckers(X+115,610)
                 HightLightedTriangle(X+40,true)
                 break
                case 5:
-                CheckBlackCheckers(X+265,610)
+                CheckWhiteCheckers(X+265,610)
                 HightLightedTriangle(X+190,true)
-                CheckBlackCheckers(X-115,610)
+                CheckWhiteCheckers(X-115,610)
                 HightLightedTriangle(X-190,true)
                 break
                case 6:
-                CheckBlackCheckers(X+115,610)
+                CheckWhiteCheckers(X+115,610)
                 HightLightedTriangle(X+40,true)
-                CheckBlackCheckers(X-265,610)
+                CheckWhiteCheckers(X-265,610)
                 HightLightedTriangle(X-340,true)
                 break
             }
             break
           case 3:
-            CheckBlackCheckers(X+565,610)
+           CheckWhiteCheckers(X+565,610)
             HightLightedTriangle(X+490,true)
             switch(Number2){
                case 1:
-                CheckBlackCheckers(X+865,610)
+                CheckWhiteCheckers(X+865,610)
                 HightLightedTriangle(X+790,true)
-                CheckBlackCheckers(X+415,610)
+                CheckWhiteCheckers(X+415,610)
                 HightLightedTriangle(X+340,true)
                 break
                case 2:
-                CheckBlackCheckers(X+715,610)
+                CheckWhiteCheckers(X+715,610)
                 HightLightedTriangle(X+640,true)
-                CheckBlackCheckers(X+265,610)
+                CheckWhiteCheckers(X+265,610)
                 HightLightedTriangle(X+190,true)
                 break
                case 3:
                 if(HightLightedTriangle(X+490,true)){
-                   CheckBlackCheckers(X+115,610)
+                   CheckWhiteCheckers(X+115,610)
                 HightLightedTriangle(X+40,true)
                 }
                 if(HightLightedTriangle(X+40,true)){
                   if(Number3){
-                   CheckBlackCheckers(X-415,610)
+                   CheckWhiteCheckers(X-415,610)
                 HightLightedTriangle(X-490,true) 
                   }
                 
                 }
                 if(HightLightedTriangle(X-490,true)){
                   if(Number4){
-                    CheckBlackCheckers(X-865,610)
+                    CheckWhiteCheckers(X-865,610)
                 HightLightedTriangle(X-940,true)
                   }
                 
                 }
                 break
                case 4:
-                CheckBlackCheckers(X+415,610)
+                CheckWhiteCheckers(X+415,610)
                 HightLightedTriangle(X+340,true)
                 CheckBlackCheckers(X-115,610)
                 HightLightedTriangle(X-190,true)
                 break
                case 5:
-                CheckBlackCheckers(X+265,610)
+                CheckWhiteCheckers(X+265,610)
                 HightLightedTriangle(X+190,true)
-                CheckBlackCheckers(X-265,610)
+                CheckWhiteCheckers(X-265,610)
                 HightLightedTriangle(X-340,true)
                 break
                case 6:
-                CheckBlackCheckers(X+115,610)
+                CheckWhiteCheckers(X+115,610)
                 HightLightedTriangle(X+40,true)
-                CheckBlackCheckers(X-415,610)
+                CheckWhiteCheckers(X-415,610)
                 HightLightedTriangle(X-490,true)
                 break
             }
             break
           case 4:
-             CheckBlackCheckers(X+415,610)
+             CheckWhiteCheckers(X+415,610)
              HightLightedTriangle(X+340,true)
             switch(Number2){
                case 1:
-                CheckBlackCheckers(X+865,610)
+                CheckWhiteCheckers(X+865,610)
                 HightLightedTriangle(X+790,true)
-                CheckBlackCheckers(X+265,610)
+                CheckWhiteCheckers(X+265,610)
                 HightLightedTriangle(X+190,true)
                 break
                case 2:
-                CheckBlackCheckers(X+715,610)
+                CheckWhiteCheckers(X+715,610)
                 HightLightedTriangle(X+640,true)
-                CheckBlackCheckers(X+115,610)
+                CheckWhiteCheckers(X+115,610)
                 HightLightedTriangle(X+40,true)
                 break
                case 3:
-                CheckBlackCheckers(X+565,610)
+                CheckWhiteCheckers(X+565,610)
                 HightLightedTriangle(X+490,true)
-                CheckBlackCheckers(X-115,610)
+                CheckWhiteCheckers(X-115,610)
                 HightLightedTriangle(X-190,true)
                 break
                case 4:
                 if(HightLightedTriangle(X+340,true)){
-                CheckBlackCheckers(X-265,610)
+                CheckWhiteCheckers(X-265,610)
                 HightLightedTriangle(X-340,true)
                 }
                 if(HightLightedTriangle(X-340,true)){
                   if(Number3){
-                   CheckBlackCheckers(X-865,610)
+                   CheckWhiteCheckers(X-865,610)
                 HightLightedTriangle(X-940,true) 
                   }
                 }
                 break
                case 5:
-                CheckBlackCheckers(X+265,610)
+                CheckWhiteCheckers(X+265,610)
                 HightLightedTriangle(X+190,true)
-                CheckBlackCheckers(X-415,610)
+                CheckWhiteCheckers(X-415,610)
                 HightLightedTriangle(X-490,true)
                 break
                case 6:
-                CheckBlackCheckers(X+115,610)
+                CheckWhiteCheckers(X+115,610)
                 HightLightedTriangle(X+40,true)
-                CheckBlackCheckers(X-565,610)
+                CheckWhiteCheckers(X-565,610)
                 HightLightedTriangle(X-640,true)
                 break
             }
             break
           case 5:
-            CheckBlackCheckers(X+265,610)
+           CheckWhiteCheckers(X+265,610)
             HightLightedTriangle(X+190,true)
             switch(Number2){
                case 1:
-                CheckBlackCheckers(X+865,610)
+                CheckWhiteCheckers(X+865,610)
                 HightLightedTriangle(X+790,true)
-                CheckBlackCheckers(X+115,610)
+               CheckWhiteCheckers(X+115,610)
                 HightLightedTriangle(X+40,true)
                 break
                case 2:
-                CheckBlackCheckers(X+715,610)
+                CheckWhiteCheckers(X+715,610)
                 HightLightedTriangle(X+640,true)
-                CheckBlackCheckers(X-115,610)
+                CheckWhiteCheckers(X-115,610)
                 HightLightedTriangle(X-190,true)
                 break
                case 3:
-                CheckBlackCheckers(X+565,610)
+                CheckWhiteCheckers(X+565,610)
                 HightLightedTriangle(X+490,true)
-                CheckBlackCheckers(X-265,610)
+                CheckWhiteCheckers(X-265,610)
                 HightLightedTriangle(X-340,true)
                 break
                case 4:
-                CheckBlackCheckers(X+415,610)
+                CheckWhiteCheckers(X+415,610)
                 HightLightedTriangle(X+340,true)
-                CheckBlackCheckers(X-415,610)
+                CheckWhiteCheckers(X-415,610)
                 HightLightedTriangle(X-490,true)
                 break
                case 5:
                 if(HightLightedTriangle(X+190,true)){
-                CheckBlackCheckers(X-565,610)
+                CheckWhiteCheckers(X-565,610)
                 HightLightedTriangle(X-640,true)
                 }
                 break
                case 6:
-                CheckBlackCheckers(X+115,610)
+                CheckWhiteCheckers(X+115,610)
                 HightLightedTriangle(X+40,true)
-                CheckBlackCheckers(X-715,610)
+                CheckWhiteCheckers(X-715,610)
                 HightLightedTriangle(X-790,true)
                 break
             }
             break
           case 6:
-           CheckBlackCheckers(X+115,610)
+           CheckWhiteCheckers(X+115,610)
            HightLightedTriangle(X+40,true)
             switch(Number2){
                case 1:
-                CheckBlackCheckers(X+865,610)
+                CheckWhiteCheckers(X+865,610)
                 HightLightedTriangle(X+790,true)
-                CheckBlackCheckers(X-115,610)
+                CheckWhiteCheckers(X-115,610)
                 HightLightedTriangle(X-190,true)
                 break
                case 2:
-                CheckBlackCheckers(X+715,610)
+                CheckWhiteCheckers(X+715,610)
                 HightLightedTriangle(X+640,true)
-                CheckBlackCheckers(X-265,610)
+                CheckWhiteCheckers(X-265,610)
                 HightLightedTriangle(X-340,true)
                 break
                case 3:
-                CheckBlackCheckers(X+565,610)
+                CheckWhiteCheckers(X+565,610)
                 HightLightedTriangle(X+490,true)
-                CheckBlackCheckers(X-415,610)
+                CheckWhiteCheckers(X-415,610)
                 HightLightedTriangle(X-490,true)
                 break
                case 4:
-                CheckBlackCheckers(X+415,610)
+                CheckWhiteCheckers(X+415,610)
                 HightLightedTriangle(X+340,true)
-                CheckBlackCheckers(X-565,610)
+                CheckWhiteCheckers(X-565,610)
                 HightLightedTriangle(X-640,true)
                 break
                case 5:
-                 CheckBlackCheckers(X+265,610)
+                 CheckWhiteCheckers(X+265,610)
                  HightLightedTriangle(X+190,true)
-                CheckBlackCheckers(X-715,610)
+                CheckWhiteCheckers(X-715,610)
                 HightLightedTriangle(X-790,true)
                 break
                case 6:
                 if(HightLightedTriangle(X+40,true)){
-                CheckBlackCheckers(X-865,610)
+                CheckWhiteCheckers(X-865,610)
                 HightLightedTriangle(X-940,true)
                 }
                 break
@@ -13577,7 +13607,7 @@ CheckBlackCheckers(X+450,610)
                 break
                case 6:
                 if(HightLightedTriangle(X-1055)){
-                CheckBlackCheckers(X-1730,Y)
+                CheckBlackCheckers(X-1730,610)
                 HightLightedTriangle(X-1805,true)
                 }
                 if(HightLightedTriangle(X-1805,true)){
@@ -18505,9 +18535,14 @@ CheckBlackCheckers(X+450,610)
                 if(HightLightedTriangle(X-340)){
                   if(Number3){
                     CheckBlackCheckers(X-865,500)
-                HightLightedTriangle(X-940)
+                    HightLightedTriangle(X-940)
                   }
-                
+                }
+                if(HightLightedTriangle(X-940)){
+                  if(Number4){
+                   CheckBlackCheckers(X-415,610)
+                  HightLightedTriangle(X-490,true)
+                  }
                 }
                 break
                case 5:
@@ -18557,6 +18592,19 @@ CheckBlackCheckers(X+450,610)
                 CheckBlackCheckers(X-565,500)
                 HightLightedTriangle(X-640)
                 }
+                if(HightLightedTriangle(X-640)){
+                  if(Number3){
+                    CheckBlackCheckers(X-565,610)
+                HightLightedTriangle(X-640,true)
+                  }
+                  
+                }
+                if(HightLightedTriangle(X-640,true)){
+                  if(Number4){
+                   CheckBlackCheckers(X+265,610)
+                  HightLightedTriangle(X+190,true) 
+                  }
+                }
                 break
                case 6:
                 CheckBlackCheckers(X+115,500)
@@ -18604,6 +18652,18 @@ CheckBlackCheckers(X+450,610)
                 if(HightLightedTriangle(X+40)){
                 CheckBlackCheckers(X-865,500)
                 HightLightedTriangle(X-940)
+                }
+                if(HightLightedTriangle(X-940)){
+                  if(Number3){
+                    CheckBlackCheckers(X-115,610)
+                HightLightedTriangle(X-190,true)
+                  }
+                }
+                if(HightLightedTriangle(X-190,true)){
+                  if(Number4){
+                   CheckBlackCheckers(X+865,610)
+                HightLightedTriangle(X+790,true) 
+                  }
                 }
                 break
             }
@@ -18925,7 +18985,7 @@ BottomWhiteTriangLe()
 WhiteCheckers = [
   {x:1840,y:150},
   {x:1840,y:75},
-  {x:975,y:1165},
+  {x:1090,y:885},
   {x:1090,y:955},
   {x:1090,y:1025},
   {x:1090,y:1095},
@@ -19093,7 +19153,7 @@ game.addEventListener('click',(e)=>{
          if(distance<35){
           array = []
           CheckWhiteCheckersInCenter()
-          if(Counter === 1){
+          if(Counter >= 1){
            GameTip.textContent = 'Move pieces in center'
            GameTip.style.marginLeft = '-990px'
            game.style.marginLeft = '-1050px'
@@ -19102,12 +19162,14 @@ game.addEventListener('click',(e)=>{
           CheckCoordinates(WhiteChecker.x,WhiteChecker.y)
           x = WhiteChecker.x
           y = WhiteChecker.y 
+        
            }
           }else{
           Checkers(WhiteChecker.x,WhiteChecker.y)
           CheckCoordinates(WhiteChecker.x,WhiteChecker.y)
           x = WhiteChecker.x
           y = WhiteChecker.y 
+      
           }
           
          }
@@ -19123,7 +19185,7 @@ game.addEventListener('click',(e)=>{
          if(distance<35){
           array = []
           CheckBlackCheckersInCenter()
-          if(Counter === 1){
+          if(Counter >= 1){
            GameTip.textContent = 'Move pieces in center'
            GameTip.style.marginLeft = '-990px'
            game.style.marginLeft = '-1050px'
@@ -19132,19 +19194,23 @@ game.addEventListener('click',(e)=>{
             CheckCoordinates(BlackChecker.x,BlackChecker.y)
            x = BlackChecker.x
            y= BlackChecker.y 
+        
            }
           }else{
            Checkers(BlackChecker.x,BlackChecker.y)
           CheckCoordinates(BlackChecker.x,BlackChecker.y)
           x = BlackChecker.x
           y= BlackChecker.y 
+       
           }
           
          }
       }) 
       }
     }
+   
     array.forEach(argument =>{
+      
       if(argument.x<e.offsetX && argument.x+150>e.offsetX){
         if(argument.y === 490){
          if(argument.y>e.offsetY){
@@ -19155,7 +19221,267 @@ game.addEventListener('click',(e)=>{
            WhiteCheckers.forEach(WhiteChecker=>{
               if(x === WhiteChecker.x){
                 if(y === WhiteChecker.y){
-                  console.log(NumbeR*150,Number2*150,((argument.x+75-WhiteChecker.x)-115)-600)
+                  if(NumbeR === Number2){
+                    if((NumbeR*150)*4 === ((argument.x+75-WhiteChecker.x)-115)+300){
+                      NumbeR =0 
+                      Number2 = 0
+                    }else{
+                       if((NumbeR*150)*4 === ((argument.x+75-WhiteChecker.x)-115)+1580){
+                      NumbeR =0 
+                      Number2 = 0
+                    }else{
+                      if((NumbeR*150)*4 === ((argument.x+75-WhiteChecker.x)-115)+2780){
+                      NumbeR =0 
+                      Number2 = 0
+                    }else{
+    
+                    }
+                    }
+                    }
+                    if(NumbeR*150 === ((argument.x+75-WhiteChecker.x)-115)-600){
+                      if(Number4){
+                        Number4 =  undefined
+                      }else{
+                        Number3 = undefined
+                      }
+                      if(Number3 === undefined){
+                        NumbeR = 0
+                      }
+                    }else{
+                      if(NumbeR*150 === ((argument.x+75-WhiteChecker.x)-115)-300){
+                      if(Number4){
+                        Number4 =  undefined
+                      }else{
+                        Number3 = undefined
+                      }
+                      if(Number3 === undefined){
+                        NumbeR = 0
+                      }
+                    }else{
+                      if(NumbeR*150 === ((argument.x+75-WhiteChecker.x)-115)){
+                      if(Number4){
+                        Number4 =  undefined
+                      }else{
+                        Number3 = undefined
+                      }
+                      if(Number3 === undefined){
+                        NumbeR = 0
+                      }
+                    }else{
+                      if(NumbeR*150 === ((argument.x+75-WhiteChecker.x)-115)+300){
+                      if(Number4){
+                        Number4 =  undefined
+                      }else{
+                        Number3 = undefined
+                      }
+                      if(Number3 === undefined){
+                        NumbeR = 0
+                      }
+                    }else{
+                      if(NumbeR*150 === ((argument.x+75-WhiteChecker.x)-115)+600){
+                      if(Number4){
+                        Number4 =  undefined
+                      }else{
+                        Number3 = undefined
+                      }
+                      if(Number3 === undefined){
+                        NumbeR = 0
+                      }
+                    }else{
+                      if(NumbeR*150 === ((argument.x+75-WhiteChecker.x)-115)+900){
+                      if(Number4){
+                        Number4 =  undefined
+                      }else{
+                        Number3 = undefined
+                      }
+                      if(Number3 === undefined){
+                        NumbeR = 0
+                      }
+                    }
+                    }
+                    }
+                    }
+                    }
+                    }
+                    if(NumbeR === 0){
+                      if(Number2*150 === ((argument.x+75-WhiteChecker.x)-115)-600){
+                    Number2 = 0
+                  }else{
+                    if(Number2*150 === ((argument.x+75-WhiteChecker.x)-115)-300){
+                      Number2 = 0
+                     }else{
+                      if(Number2*150 === ((argument.x+75-WhiteChecker.x)-115)){
+                       Number2 = 0
+                       }else{
+                        if(Number2*150 === ((argument.x+75-WhiteChecker.x)-115)+300){
+                          Number2 = 0
+                         }else{
+                          if(Number2*150 === ((argument.x+75-WhiteChecker.x)-115)+600){
+                            Number2 = 0
+                            }else{
+                              if(Number2*150 === ((argument.x+75-WhiteChecker.x)-115)+900){
+                               Number2 = 0
+                              }
+                            }
+                         }
+                       }
+                     }
+                  }
+                    }
+                    if((NumbeR*150)*3 === ((argument.x+75-WhiteChecker.x)-115)){
+                       NumbeR = 0
+                       Number3 = undefined
+                       Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*3 === ((argument.x+75-WhiteChecker.x)-115)+900){
+                       NumbeR = 0
+                       Number3 = undefined
+                       Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*3 === ((argument.x+75-WhiteChecker.x)-115)+1880){
+                       NumbeR = 0
+                       Number3 = undefined
+                       Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*3 === ((argument.x+75-WhiteChecker.x)-115)+2780){
+                       NumbeR = 0
+                       Number3 = undefined
+                       Number4 = undefined
+                    }
+                    }
+                    }
+                    }
+                    if((NumbeR*150)*2 === ((argument.x+75-WhiteChecker.x)-115)-300){
+                      Number3 = undefined
+                      Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*2 === ((argument.x+75-WhiteChecker.x)-115)+300){
+                      Number3 = undefined
+                      Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*2 === ((argument.x+75-WhiteChecker.x)-115)+900){
+                      Number3 = undefined
+                      Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*2 === ((argument.x+75-WhiteChecker.x)-115)+1580){
+                      Number3 = undefined
+                      Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*2 === ((argument.x+75-WhiteChecker.x)-115)+2180){
+                      Number3 = undefined
+                      Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*2 === ((argument.x+75-WhiteChecker.x)-115)+2780){
+                      Number3 = undefined
+                      Number4 = undefined
+                    }
+                    }
+                    }
+                    }
+                    }
+                    }
+                  }
+                  if(NumbeR*150 === ((argument.x+75-WhiteChecker.x)-115)-600){
+                    NumbeR = 0
+                  }else{
+                    if(NumbeR*150 === ((argument.x+75-WhiteChecker.x)-115)-300){
+                    NumbeR = 0
+                     }else{
+                      if(NumbeR*150 === ((argument.x+75-WhiteChecker.x)-115)){
+                        NumbeR = 0
+                       }else{
+                        if(NumbeR*150 === ((argument.x+75-WhiteChecker.x)-115)+300){
+                          NumbeR = 0
+                         }else{
+                          if(NumbeR*150 === ((argument.x+75-WhiteChecker.x)-115)+600){
+                               NumbeR = 0
+                            }else{
+                              if(NumbeR*150 === ((argument.x+75-WhiteChecker.x)-115)+900){
+                               NumbeR = 0
+                              }
+                            }
+                         }
+                       }
+                     }
+                  }
+                  if(Number2*150 === ((argument.x+75-WhiteChecker.x)-115)-600){
+                    Number2 = NumbeR
+                    NumbeR = 0
+                  }else{
+                    if(Number2*150 === ((argument.x+75-WhiteChecker.x)-115)-300){
+                      Number2 = NumbeR
+                    NumbeR = 0
+                     }else{
+                      if(Number2*150 === ((argument.x+75-WhiteChecker.x)-115)){
+                        Number2 = NumbeR
+                        NumbeR = 0
+                       }else{
+                        if(Number2*150 === ((argument.x+75-WhiteChecker.x)-115)+300){
+                          Number2 = NumbeR
+                          NumbeR = 0
+                         }else{
+                          if(Number2*150 === ((argument.x+75-WhiteChecker.x)-115)+600){
+                            Number2 = NumbeR
+                               NumbeR = 0
+                            }else{
+                              if(Number2*150 === ((argument.x+75-WhiteChecker.x)-115)+900){
+                                Number2 = NumbeR
+                               NumbeR = 0
+                              }
+                            }
+                         }
+                       }
+                     }
+                  }
+                  if((NumbeR+Number2)*150 === ((argument.x+75-WhiteChecker.x)-115)){
+                    NumbeR = 0
+                    Number2 = 0
+                  }else{
+                    if((NumbeR+Number2)*150 === ((argument.x+75-WhiteChecker.x)-115)+300){
+                    NumbeR = 0
+                    Number2 = 0
+                  }else{
+                    if((NumbeR+Number2)*150 === ((argument.x+75-WhiteChecker.x)-115)+600){
+                    NumbeR = 0
+                    Number2 = 0
+                  }else{
+                   if((NumbeR+Number2)*150 === ((argument.x+75-WhiteChecker.x)-115)+900){
+                    NumbeR = 0
+                    Number2 = 0
+                  }else{
+                    if((NumbeR+Number2)*150 === ((argument.x+75-WhiteChecker.x)-115)+1280){
+                    NumbeR = 0
+                    Number2 = 0
+                  }else{
+                    if((NumbeR+Number2)*150 === ((argument.x+75-WhiteChecker.x)-115)+1580){
+                    NumbeR = 0
+                    Number2 = 0
+                  }else{
+                    if((NumbeR+Number2)*150 === ((argument.x+75-WhiteChecker.x)-115)+1880){
+                    NumbeR = 0
+                    Number2 = 0
+                  }else{
+                    if((NumbeR+Number2)*150 === ((argument.x+75-WhiteChecker.x)-115)+2180){
+                    NumbeR = 0
+                    Number2 = 0
+                  }else{
+                    if((NumbeR+Number2)*150 === ((argument.x+75-WhiteChecker.x)-115)+2480){
+                    NumbeR = 0
+                    Number2 = 0
+                  }else{
+                    if((NumbeR+Number2)*150 === ((argument.x+75-WhiteChecker.x)-115)+2780){
+                    NumbeR = 0
+                    Number2 = 0
+                  }
+                  }
+                  }
+                  }
+                  }
+                  }
+                  }
+                }
+              }
+                     }
                   if(NumbeR === Number2){
                     if((NumbeR*150)*4 === (WhiteChecker.x-argument.x+75)-230){
                       NumbeR = 0
@@ -19277,6 +19603,42 @@ game.addEventListener('click',(e)=>{
             BlackCheckers.forEach(BlackChecker=>{
               if(x === BlackChecker.x){
                 if(y === BlackChecker.y){
+                  if(NumbeR === 0){
+                      if((argument.x+75-BlackChecker.x)-115 === 715){
+                     Number2 =0
+                    }
+                    if((argument.x+75-BlackChecker.x)-115 === 865){
+                     Number2 =0
+                    }
+                    }
+                  if(BlackChecker.x === 975){
+                    if((argument.x+75-BlackChecker.x)-115 === 150){
+                      NumbeR =0
+                      Number2 =0
+                    }else{
+                      if((argument.x+75-BlackChecker.x)-115 === -680){
+                      NumbeR =0
+                      Number3 = undefined
+                      Number4 = undefined
+                    }else{
+                      if((argument.x+75-BlackChecker.x)-115 === -530){
+                      NumbeR =0
+                      Number2 =0
+                    }else{
+                      if((argument.x+75-BlackChecker.x)-115 === -230){
+                      NumbeR =0
+                      Number3 = undefined
+                      Number4 = undefined
+                    }else{
+                      if((argument.x+75-BlackChecker.x)-115 === 750){
+                      NumbeR =0
+                      Number2 =0
+                    }
+                    }
+                    }
+                    }
+                    }
+                  }
                   if(NumbeR === Number2){
                    if((NumbeR*150)*4 === (argument.x+75-BlackChecker.x)-150){
                       NumbeR = 0
@@ -19289,6 +19651,11 @@ game.addEventListener('click',(e)=>{
                       if((NumbeR*150)*4 === (argument.x+75-BlackChecker.x)+70){
                       NumbeR = 0
                       Number2 = 0
+                     }else{
+                      if((NumbeR*150)*4 === (argument.x+75-BlackChecker.x)-80){
+                      NumbeR = 0
+                      Number2 = 0
+                     }
                      }
                      }
                     }
@@ -19321,6 +19688,17 @@ game.addEventListener('click',(e)=>{
                       if(Number3 === undefined){
                         NumbeR = 0
                       }
+                    }else{
+                      if(NumbeR*150 === (argument.x+75-BlackChecker.x)-80){
+                      if(Number4){
+                        Number4 =  undefined
+                      }else{
+                        Number3 = undefined
+                      }
+                      if(Number3 === undefined){
+                        NumbeR = 0
+                      }
+                    }
                     }
                     }
                     }
@@ -19333,6 +19711,10 @@ game.addEventListener('click',(e)=>{
                       }else{
                         if(Number2*150 === (argument.x+75-BlackChecker.x)+70){
                         Number2 = 0
+                      }else{
+                        if(Number2*150 === (argument.x+75-BlackChecker.x)-80){
+                        Number2 = 0
+                      }
                       }
                       }
                       }
@@ -19352,6 +19734,12 @@ game.addEventListener('click',(e)=>{
                        NumbeR = 0
                        Number3 = undefined
                        Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*3 === (argument.x+75-BlackChecker.x)-80){
+                       NumbeR = 0
+                       Number3 = undefined
+                       Number4 = undefined
+                    }
                     }
                     }
                     }
@@ -19366,6 +19754,11 @@ game.addEventListener('click',(e)=>{
                       if((NumbeR*150)*2 === (argument.x+75-BlackChecker.x)+70){
                        Number3 = undefined
                        Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*2 === (argument.x+75-BlackChecker.x)-80){
+                       Number3 = undefined
+                       Number4 = undefined
+                    }
                     }
                     }
                     }
@@ -19381,6 +19774,11 @@ game.addEventListener('click',(e)=>{
                     if((Number2+NumbeR)*150 === (argument.x+75-BlackChecker.x)+70){
                   Number2 = 0
                   NumbeR = 0
+                  }else{
+                    if((Number2+NumbeR)*150 === (argument.x+75-BlackChecker.x)-80){
+                  Number2 = 0
+                  NumbeR = 0
+                  }
                   }
                   }
                  }
@@ -19392,6 +19790,10 @@ game.addEventListener('click',(e)=>{
                   }else{
                     if(NumbeR*150 === (argument.x+75-BlackChecker.x)+70){
                     NumbeR = 0
+                  }else{
+                    if(NumbeR*150 === (argument.x+75-BlackChecker.x)-80){
+                    NumbeR = 0
+                  }
                   }
                   }
                  }
@@ -19406,6 +19808,11 @@ game.addEventListener('click',(e)=>{
                     if(Number2*150 === (argument.x+75-BlackChecker.x)+70){
                       Number2 = NumbeR
                       NumbeR = 0
+                     }else{
+                      if(Number2*150 === (argument.x+75-BlackChecker.x)-80){
+                      Number2 = NumbeR
+                      NumbeR = 0
+                     }
                      }
                   }
                  }
@@ -19449,6 +19856,267 @@ game.addEventListener('click',(e)=>{
               if(x === BlackChecker.x){
                 if(y === BlackChecker.y){
                   if(NumbeR === Number2){
+                    if((NumbeR*150)*4 === ((argument.x+75-BlackChecker.x)-115)+300){
+                      NumbeR =0 
+                      Number2 = 0
+                    }else{
+                       if((NumbeR*150)*4 === ((argument.x+75-BlackChecker.x)-115)+1580){
+                      NumbeR =0 
+                      Number2 = 0
+                    }else{
+                      if((NumbeR*150)*4 === ((argument.x+75-BlackChecker.x)-115)+2780){
+                      NumbeR =0 
+                      Number2 = 0
+                    }else{
+    
+                    }
+                    }
+                    }
+                    if(NumbeR*150 === ((argument.x+75-BlackChecker.x)-115)-600){
+                      if(Number4){
+                        Number4 =  undefined
+                      }else{
+                        Number3 = undefined
+                      }
+                      if(Number3 === undefined){
+                        NumbeR = 0
+                      }
+                    }else{
+                      if(NumbeR*150 === ((argument.x+75-BlackChecker.x)-115)-300){
+                      if(Number4){
+                        Number4 =  undefined
+                      }else{
+                        Number3 = undefined
+                      }
+                      if(Number3 === undefined){
+                        NumbeR = 0
+                      }
+                    }else{
+                      if(NumbeR*150 === ((argument.x+75-BlackChecker.x)-115)){
+                      if(Number4){
+                        Number4 =  undefined
+                      }else{
+                        Number3 = undefined
+                      }
+                      if(Number3 === undefined){
+                        NumbeR = 0
+                      }
+                    }else{
+                      if(NumbeR*150 === ((argument.x+75-BlackChecker.x)-115)+300){
+                      if(Number4){
+                        Number4 =  undefined
+                      }else{
+                        Number3 = undefined
+                      }
+                      if(Number3 === undefined){
+                        NumbeR = 0
+                      }
+                    }else{
+                      if(NumbeR*150 === ((argument.x+75-BlackChecker.x)-115)+600){
+                      if(Number4){
+                        Number4 =  undefined
+                      }else{
+                        Number3 = undefined
+                      }
+                      if(Number3 === undefined){
+                        NumbeR = 0
+                      }
+                    }else{
+                      if(NumbeR*150 === ((argument.x+75-BlackChecker.x)-115)+900){
+                      if(Number4){
+                        Number4 =  undefined
+                      }else{
+                        Number3 = undefined
+                      }
+                      if(Number3 === undefined){
+                        NumbeR = 0
+                      }
+                    }
+                    }
+                    }
+                    }
+                    }
+                    }
+                    if(NumbeR === 0){
+                      if(Number2*150 === ((argument.x+75-BlackChecker.x)-115)-600){
+                    Number2 = 0
+                  }else{
+                    if(Number2*150 === ((argument.x+75-BlackChecker.x)-115)-300){
+                      Number2 = 0
+                     }else{
+                      if(Number2*150 === ((argument.x+75-BlackChecker.x)-115)){
+                       Number2 = 0
+                       }else{
+                        if(Number2*150 === ((argument.x+75-BlackChecker.x)-115)+300){
+                          Number2 = 0
+                         }else{
+                          if(Number2*150 === ((argument.x+75-BlackChecker.x)-115)+600){
+                            Number2 = 0
+                            }else{
+                              if(Number2*150 === ((argument.x+75-BlackChecker.x)-115)+900){
+                               Number2 = 0
+                              }
+                            }
+                         }
+                       }
+                     }
+                  }
+                    }
+                    if((NumbeR*150)*3 === ((argument.x+75-BlackChecker.x)-115)){
+                       NumbeR = 0
+                       Number3 = undefined
+                       Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*3 === ((argument.x+75-BlackChecker.x)-115)+900){
+                       NumbeR = 0
+                       Number3 = undefined
+                       Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*3 === ((argument.x+75-BlackChecker.x)-115)+1880){
+                       NumbeR = 0
+                       Number3 = undefined
+                       Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*3 === ((argument.x+75-BlackChecker.x)-115)+2780){
+                       NumbeR = 0
+                       Number3 = undefined
+                       Number4 = undefined
+                    }
+                    }
+                    }
+                    }
+                    if((NumbeR*150)*2 === ((argument.x+75-BlackChecker.x)-115)-300){
+                      Number3 = undefined
+                      Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*2 === ((argument.x+75-BlackChecker.x)-115)+300){
+                      Number3 = undefined
+                      Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*2 === ((argument.x+75-BlackChecker.x)-115)+900){
+                      Number3 = undefined
+                      Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*2 === ((argument.x+75-BlackChecker.x)-115)+1580){
+                      Number3 = undefined
+                      Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*2 === ((argument.x+75-BlackChecker.x)-115)+2180){
+                      Number3 = undefined
+                      Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*2 === ((argument.x+75-BlackChecker.x)-115)+2780){
+                      Number3 = undefined
+                      Number4 = undefined
+                    }
+                    }
+                    }
+                    }
+                    }
+                    }
+                  }
+                  if(NumbeR*150 === ((argument.x+75-BlackChecker.x)-115)-600){
+                    NumbeR = 0
+                  }else{
+                    if(NumbeR*150 === ((argument.x+75-BlackChecker.x)-115)-300){
+                    NumbeR = 0
+                     }else{
+                      if(NumbeR*150 === ((argument.x+75-BlackChecker.x)-115)){
+                        NumbeR = 0
+                       }else{
+                        if(NumbeR*150 === ((argument.x+75-BlackChecker.x)-115)+300){
+                          NumbeR = 0
+                         }else{
+                          if(NumbeR*150 === ((argument.x+75-BlackChecker.x)-115)+600){
+                               NumbeR = 0
+                            }else{
+                              if(NumbeR*150 === ((argument.x+75-BlackChecker.x)-115)+900){
+                               NumbeR = 0
+                              }
+                            }
+                         }
+                       }
+                     }
+                  }
+                  if(Number2*150 === ((argument.x+75-BlackChecker.x)-115)-600){
+                    Number2 = NumbeR
+                    NumbeR = 0
+                  }else{
+                    if(Number2*150 === ((argument.x+75-BlackChecker.x)-115)-300){
+                      Number2 = NumbeR
+                    NumbeR = 0
+                     }else{
+                      if(Number2*150 === ((argument.x+75-BlackChecker.x)-115)){
+                        Number2 = NumbeR
+                        NumbeR = 0
+                       }else{
+                        if(Number2*150 === ((argument.x+75-BlackChecker.x)-115)+300){
+                          Number2 = NumbeR
+                          NumbeR = 0
+                         }else{
+                          if(Number2*150 === ((argument.x+75-BlackChecker.x)-115)+600){
+                            Number2 = NumbeR
+                               NumbeR = 0
+                            }else{
+                              if(Number2*150 === ((argument.x+75-BlackChecker.x)-115)+900){
+                                Number2 = NumbeR
+                               NumbeR = 0
+                              }
+                            }
+                         }
+                       }
+                     }
+                  }
+                  if((NumbeR+Number2)*150 === ((argument.x+75-BlackChecker.x)-115)){
+                    NumbeR = 0
+                    Number2 = 0
+                  }else{
+                    if((NumbeR+Number2)*150 === ((argument.x+75-BlackChecker.x)-115)+300){
+                    NumbeR = 0
+                    Number2 = 0
+                  }else{
+                    if((NumbeR+Number2)*150 === ((argument.x+75-BlackChecker.x)-115)+600){
+                    NumbeR = 0
+                    Number2 = 0
+                  }else{
+                   if((NumbeR+Number2)*150 === ((argument.x+75-BlackChecker.x)-115)+900){
+                    NumbeR = 0
+                    Number2 = 0
+                  }else{
+                    if((NumbeR+Number2)*150 === ((argument.x+75-BlackChecker.x)-115)+1280){
+                    NumbeR = 0
+                    Number2 = 0
+                  }else{
+                    if((NumbeR+Number2)*150 === ((argument.x+75-BlackChecker.x)-115)+1580){
+                    NumbeR = 0
+                    Number2 = 0
+                  }else{
+                    if((NumbeR+Number2)*150 === ((argument.x+75-BlackChecker.x)-115)+1880){
+                    NumbeR = 0
+                    Number2 = 0
+                  }else{
+                    if((NumbeR+Number2)*150 === ((argument.x+75-BlackChecker.x)-115)+2180){
+                    NumbeR = 0
+                    Number2 = 0
+                  }else{
+                    if((NumbeR+Number2)*150 === ((argument.x+75-BlackChecker.x)-115)+2480){
+                    NumbeR = 0
+                    Number2 = 0
+                  }else{
+                    if((NumbeR+Number2)*150 === ((argument.x+75-BlackChecker.x)-115)+2780){
+                    NumbeR = 0
+                    Number2 = 0
+                  }
+                  }
+                  }
+                  }
+                  }
+                  }
+                  }
+                }
+              }
+                     }
+                  if(NumbeR === Number2){
                      if((NumbeR*150)*4 === (BlackChecker.x-argument.x+75)-230){
                       NumbeR = 0
                       Number2 = 0
@@ -19489,7 +20157,7 @@ game.addEventListener('click',(e)=>{
                       }
 
                     }
-                    if((NumbeR*150)*3 === (blackChecker.x-argument.x+75)-150){
+                    if((NumbeR*150)*3 === (BlackChecker.x-argument.x+75)-150){
                        NumbeR = 0
                        Number3 = undefined
                        Number4 = undefined
@@ -19569,6 +20237,43 @@ game.addEventListener('click',(e)=>{
            WhiteCheckers.forEach(WhiteChecker=>{
               if(x === WhiteChecker.x){
                 if(y === WhiteChecker.y){
+                  console.log(NumbeR*150,Number2*150,(argument.x+75-WhiteChecker.x)-80,(argument.x+75-WhiteChecker.x)+70,(argument.x+75-WhiteChecker.x)+150,(argument.x+75-WhiteChecker.x)-150)
+                  if(NumbeR === 0){
+                      if((argument.x+75-WhiteChecker.x)-115 === 715){
+                     Number2 =0
+                    }
+                    if((argument.x+75-WhiteChecker.x)-115 === 865){
+                     Number2 =0
+                    }
+                    }
+                  if(WhiteChecker.x === 975){
+                    if((argument.x+75-WhiteChecker.x)-115 === 150){
+                      NumbeR =0
+                      Number2 =0
+                    }else{
+                      if((argument.x+75-WhiteChecker.x)-115 === -680){
+                      NumbeR =0
+                      Number3 = undefined
+                      Number4 = undefined
+                    }else{
+                      if((argument.x+75-WhiteChecker.x)-115 === -530){
+                      NumbeR =0
+                      Number2 =0
+                    }else{
+                      if((argument.x+75-WhiteChecker.x)-115 === -230){
+                      NumbeR =0
+                      Number3 = undefined
+                      Number4 = undefined
+                    }else{
+                      if((argument.x+75-WhiteChecker.x)-115 === 750){
+                      NumbeR =0
+                      Number2 =0
+                    }
+                    }
+                    }
+                    }
+                    }
+                  }
                 if(NumbeR === Number2){
                    if((NumbeR*150)*4 === (argument.x+75-WhiteChecker.x)-150){
                       NumbeR = 0
@@ -19581,6 +20286,11 @@ game.addEventListener('click',(e)=>{
                       if((NumbeR*150)*4 === (argument.x+75-WhiteChecker.x)+70){
                       NumbeR = 0
                       Number2 = 0
+                     }else{
+                      if((NumbeR*150)*4 === (argument.x+75-WhiteChecker.x)-80){
+                      NumbeR = 0
+                      Number2 = 0
+                     }
                      }
                      }
                     }
@@ -19613,6 +20323,17 @@ game.addEventListener('click',(e)=>{
                       if(Number3 === undefined){
                         NumbeR = 0
                       }
+                    }else{
+                      if(NumbeR*150 === (argument.x+75-WhiteChecker.x)-80){
+                      if(Number4){
+                        Number4 =  undefined
+                      }else{
+                        Number3 = undefined
+                      }
+                      if(Number3 === undefined){
+                        NumbeR = 0
+                      }
+                    }
                     }
                     }
                     }
@@ -19625,6 +20346,10 @@ game.addEventListener('click',(e)=>{
                       }else{
                         if(Number2*150 === (argument.x+75-WhiteChecker.x)+70){
                         Number2 = 0
+                      }else{
+                        if(Number2*150 === (argument.x+75-WhiteChecker.x)-80){
+                        Number2 = 0
+                      }
                       }
                       }
                       }
@@ -19644,6 +20369,12 @@ game.addEventListener('click',(e)=>{
                        NumbeR = 0
                        Number3 = undefined
                        Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*3 === (argument.x+75-WhiteChecker.x)-80){
+                       NumbeR = 0
+                       Number3 = undefined
+                       Number4 = undefined
+                    }
                     }
                     }
                     }
@@ -19658,6 +20389,11 @@ game.addEventListener('click',(e)=>{
                       if((NumbeR*150)*2 === (argument.x+75-WhiteChecker.x)+70){
                        Number3 = undefined
                        Number4 = undefined
+                    }else{
+                      if((NumbeR*150)*2 === (argument.x+75-WhiteChecker.x)-80){
+                       Number3 = undefined
+                       Number4 = undefined
+                    }
                     }
                     }
                     }
@@ -19673,6 +20409,11 @@ game.addEventListener('click',(e)=>{
                     if((Number2+NumbeR)*150 === (argument.x+75-WhiteChecker.x)+70){
                     Number2 = 0
                     NumbeR = 0
+                  }else{
+                    if((Number2+NumbeR)*150 === (argument.x+75-WhiteChecker.x)-80){
+                    Number2 = 0
+                    NumbeR = 0
+                  }
                   }
                   }
                 }
@@ -19684,6 +20425,10 @@ game.addEventListener('click',(e)=>{
                   }else{
                     if(NumbeR*150 === (argument.x+75-WhiteChecker.x)+70){
                    NumbeR = 0
+                  }else{
+                    if(NumbeR*150 === (argument.x+75-WhiteChecker.x)-80){
+                   NumbeR = 0
+                  }
                   }
                   }
                 }
@@ -19698,6 +20443,11 @@ game.addEventListener('click',(e)=>{
                     if(Number2*150 === (argument.x+75-WhiteChecker.x)+70){
                     Number2 = NumbeR
                     NumbeR = 0
+                  }else{
+                    if(Number2*150 === (argument.x+75-WhiteChecker.x)-80){
+                    Number2 = NumbeR
+                    NumbeR = 0
+                  }
                   }
                   }
                 }
