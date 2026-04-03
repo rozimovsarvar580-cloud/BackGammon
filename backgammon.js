@@ -9,8 +9,11 @@ const GameTip = document.querySelector('.Gametip')
 let CheckWhoIsFirst = true
 let WhoIsTurn
 let Counter = 0
+let Counter2 = 0
 let Loop = 1
 let BottomY = 233
+let Number3
+let Number4
 let TriangleInfo 
 let X = 1200
 let Y = 560
@@ -50,55 +53,606 @@ let WhiteCheckers = [
   {x:WhiteX+75, y:WhiteY},
   {x:WhiteX,    y:WhiteY}
 ]
-function HighlightTriangle (X,Y){
-if(WhoIsTurn === 'White'){
-  Counter = 0
-  TriangleInfo  = [
-  {1:1765,
-   2:1615,
-   3:1465,
-   4:1315,
-   5:1165,
-   6:1015,
-   7:785,
-   8:635,
-   9:485,
-   10:335,
-   11:185,
-   12:35,
-   13:35,
-   14:185,
-   15:335,
-   16:485,
-   17:635,
-   18:785,
-   19:1015,
-   20:1165,
-   21:1315,
-   22:1465,
-   23:1615,
-   24:1765,
-  }
-]
-while (Counter<=24) {
-    Counter++
-    if(TriangleInfo[0][Counter] === X-75){
-      console.log(Counter,X)
+function CheckBlackCheckers(X,Y){
+Counter2 = 0
+BlackCheckers.forEach(BlackChecker=>{
+  if(BlackChecker.x === X+75){
+    if(Y<600){
+      if(BlackChecker.y<600){
+        Counter2++
+      }
+    }else{
+      if(BlackChecker.y>600){
+        Counter2++
+      }
     }
   }
+})
+}
+function CheckWhiteCheckers (X,Y){
+  Counter2 = 0
+WhiteCheckers.forEach(WhiteChecker=>{
+  if(WhiteChecker.x === X+75){
+    if(Y<600){
+      if(WhiteChecker.y<600){
+        Counter2++
+      }
+    }else{
+      if(WhiteChecker.y>600){
+        Counter2++
+      }
+    }
+  }
+})
+}
+function HighlightTriangle (X,Y){
+if(WhoIsTurn === 'White'){
+  context.clearRect(0,0,1950,1230)
+  CreateBoard()
+  TopTriangle()
+  BottomTriangle()
+  Checkers()
+  Counter = 0
+  TriangleInfo  = [
+  {},
+  {1:1765,y:500},
+  {2:1615,y:500},
+  {3:1465,y:500},
+  {4:1315,y:500},
+  {5:1165,y:500},
+  {6:1015,y:500},
+  {7:785,y:500},
+  {8:635,y:500},
+  {9:485,y:500},
+  {10:335,y:500},
+  {11:185,y:500},
+  {12:35,y:500},
+  {13:35,  y:610},
+  {14:185, y:610},
+  {15:335, y:610},
+  {16:485, y:610},
+  {17:635, y:610},
+  {18:785, y:610},
+  {19:1015,y:610},
+  {20:1165,y:610},
+  {21:1315,y:610},
+  {22:1465,y:610},
+  {23:1615,y:610},
+  {24:1765,y:610},
+ ]
+
+  while (Counter<=24) {
+    Counter++
+    if(Y<600){
+      if(TriangleInfo[Counter].y < 600){
+      if(TriangleInfo[Counter][Counter] === X - 75){
+        break
+      }
+    }
+    }else{
+      if(TriangleInfo[Counter].y > 600){
+      if(TriangleInfo[Counter][Counter] === X - 75){
+        break
+      }
+    }
+    }
+  } 
+
+  if(NumbeR === Number2){
+    if(TriangleInfo[Counter+NumbeR].y<600){
+      CheckBlackCheckers(TriangleInfo[Counter+NumbeR][Counter+NumbeR],TriangleInfo[Counter+NumbeR].y)
+     if(Counter2<=1){
+       context.clearRect(0,0,1950,1230)
+       CreateBoard()
+       TopTriangle(TriangleInfo[Counter+NumbeR][Counter+NumbeR])
+       if(TriangleInfo[Counter+NumbeR+Number2].y<600){
+         CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2],TriangleInfo[Counter+NumbeR+Number2].y)
+         if(Counter2<=1){
+          TopTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
+          if(TriangleInfo[Counter+NumbeR+Number2+Number3].y<600){
+            CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3],TriangleInfo[Counter+NumbeR+Number2+Number3].y)
+            if(Counter2<=1){
+              TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3])
+              if(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y<600){
+                 CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }else{
+                CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }
+            }
+          }else{
+            CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3],TriangleInfo[Counter+NumbeR+Number2+Number3].y)
+            if(Counter2<=1){
+              BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3])
+              if(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y<600){
+                 CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }else{
+                CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }
+            }
+          }
+         }
+       }else{
+        CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2],TriangleInfo[Counter+NumbeR+Number2].y)
+         if(Counter2<=1){
+          BottomTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
+          if(TriangleInfo[Counter+NumbeR+Number2+Number3].y<600){
+            CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3],TriangleInfo[Counter+NumbeR+Number2+Number3].y)
+            if(Counter2<=1){
+              TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3])
+              if(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y<600){
+                 CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }else{
+                CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }
+            }
+          }else{
+            CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3],TriangleInfo[Counter+NumbeR+Number2+Number3].y)
+            if(Counter2<=1){
+              BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3])
+              if(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y<600){
+                 CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }else{
+                CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }
+            }
+          }
+         }
+       }
+       BottomTriangle()
+       Checkers(X,Y)
+     }
+    }else{
+      CheckBlackCheckers(TriangleInfo[Counter+NumbeR][Counter+NumbeR],TriangleInfo[Counter+NumbeR].y)
+     if(Counter2<=1){
+       context.clearRect(0,0,1950,1230)
+       CreateBoard()
+       TopTriangle()
+       if(TriangleInfo[Counter+NumbeR+Number2].y<600){
+         CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2],TriangleInfo[Counter+NumbeR+Number2].y)
+         if(Counter2<=1){
+          TopTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
+          if(TriangleInfo[Counter+NumbeR+Number2+Number3].y<600){
+            CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3],TriangleInfo[Counter+NumbeR+Number2+Number3].y)
+            if(Counter2<=1){
+              TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3])
+              if(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y<600){
+                 CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }else{
+                CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }
+            }
+          }else{
+            CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3],TriangleInfo[Counter+NumbeR+Number2+Number3].y)
+            if(Counter2<=1){
+              BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3])
+              if(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y<600){
+                 CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }else{
+                CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }
+            }
+          }
+         }
+       }else{
+        CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2],TriangleInfo[Counter+NumbeR+Number2].y)
+         if(Counter2<=1){
+          BottomTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
+          if(TriangleInfo[Counter+NumbeR+Number2+Number3].y<600){
+            CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3],TriangleInfo[Counter+NumbeR+Number2+Number3].y)
+            if(Counter2<=1){
+              TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3])
+              if(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y<600){
+                 CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }else{
+                CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }
+            }
+          }else{
+            CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3],TriangleInfo[Counter+NumbeR+Number2+Number3].y)
+            if(Counter2<=1){
+              BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3])
+              if(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y<600){
+                 CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }else{
+                CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }
+            }
+          }
+         }
+       }
+       BottomTriangle(TriangleInfo[Counter+NumbeR][Counter+NumbeR])
+       Checkers(X,Y)
+     }
+    }
+    
+  }else{
+    if(NumbeR !== 0 && Number2 !== 0){
+      context.clearRect(0,0,1950,1230)
+      CreateBoard()
+      CheckBlackCheckers(TriangleInfo[Counter+Number2][Counter+Number2],TriangleInfo[Counter+Number2].y)
+      if(Counter2<=1){
+        if(TriangleInfo[Counter+Number2].y<600){
+           TopTriangle(TriangleInfo[Counter+Number2][Counter+Number2])
+           CheckBlackCheckers(TriangleInfo[Counter+Number2+NumbeR][Counter+Number2+NumbeR],TriangleInfo[Counter+Number2+NumbeR].y)
+           if(Counter2<=1){
+            if(TriangleInfo[Counter+Number2+NumbeR].y<600){
+             TopTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
+           }else{
+             BottomTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
+           }
+           }
+        }else{
+          BottomTriangle(TriangleInfo[Counter+Number2][Counter+Number2])
+           CheckBlackCheckers(TriangleInfo[Counter+Number2+NumbeR][Counter+Number2+NumbeR],TriangleInfo[Counter+Number2+NumbeR].y)
+           if(Counter2<=1){
+            if(TriangleInfo[Counter+Number2+NumbeR].y<600){
+             TopTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
+           }else{
+             BottomTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
+           }
+           }
+           
+        }
+      
+      }
+    if(TriangleInfo[Counter+NumbeR].y<600){
+      CheckBlackCheckers(TriangleInfo[Counter+NumbeR][Counter+NumbeR],TriangleInfo[Counter+NumbeR].y)
+      if(Counter2<=1){
+      TopTriangle(TriangleInfo[Counter+NumbeR][Counter+NumbeR])
+      BottomTriangle()
+      Checkers(X,Y)
+      }
+    }else{
+      CheckBlackCheckers(TriangleInfo[Counter+NumbeR][Counter+NumbeR],TriangleInfo[Counter+NumbeR].y)
+      if(Counter2<=1){
+      TopTriangle()
+      BottomTriangle(TriangleInfo[Counter+NumbeR][Counter+NumbeR])
+      Checkers(X,Y)
+      } 
+    }
+   }
+}
+  Checkers(X,Y)
+}
+if(WhoIsTurn === 'Black'){
+   context.clearRect(0,0,1950,1230)
+  CreateBoard()
+  TopTriangle()
+  BottomTriangle()
+  Checkers()
+  Counter = 0
+  TriangleInfo  = [
+  {},
+  {1:1765,y:610},
+  {2:1615,y:610},
+  {3:1465,y:610},
+  {4:1315,y:610},
+  {5:1165,y:610},
+  {6:1015,y:610},
+  {7:785,y: 610},
+  {8:635,y: 610},
+  {9:485,y: 610},
+  {10:335,y:610},
+  {11:185,y:610},
+  {12:35,y: 610},
+  {13:35,  y:500},
+  {14:185, y:500},
+  {15:335, y:500},
+  {16:485, y:500},
+  {17:635, y:500},
+  {18:785, y:500},
+  {19:1015,y:500},
+  {20:1165,y:500},
+  {21:1315,y:500},
+  {22:1465,y:500},
+  {23:1615,y:500},
+  {24:1765,y:500},
+ ]
+  while (Counter<=24) {
+    Counter++
+    if(Y<600){
+      if(TriangleInfo[Counter].y < 600){
+      if(TriangleInfo[Counter][Counter] === X - 75){
+        break
+      }
+    }
+    }else{
+      if(TriangleInfo[Counter].y > 600){
+      if(TriangleInfo[Counter][Counter] === X - 75){
+        break
+      }
+    }
+    }
+  }
+  if(NumbeR === Number2){
+    if(TriangleInfo[Counter+NumbeR].y<600){
+      CheckWhiteCheckers(TriangleInfo[Counter+NumbeR][Counter+NumbeR],TriangleInfo[Counter+NumbeR].y)
+     if(Counter2<=1){
+       context.clearRect(0,0,1950,1230)
+       CreateBoard()
+       TopTriangle(TriangleInfo[Counter+NumbeR][Counter+NumbeR])
+       if(TriangleInfo[Counter+NumbeR+Number2].y<600){
+         CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2],TriangleInfo[Counter+NumbeR+Number2].y)
+         if(Counter2<=1){
+          TopTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
+          if(TriangleInfo[Counter+NumbeR+Number2+Number3].y<600){
+            CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3],TriangleInfo[Counter+NumbeR+Number2+Number3].y)
+            if(Counter2<=1){
+              TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3])
+              if(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y<600){
+                 CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }else{
+                CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }
+            }
+          }else{
+            CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3],TriangleInfo[Counter+NumbeR+Number2+Number3].y)
+            if(Counter2<=1){
+              BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3])
+              if(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y<600){
+                 CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }else{
+                CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }
+            }
+          }
+         }
+       }else{
+        CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2],TriangleInfo[Counter+NumbeR+Number2].y)
+         if(Counter2<=1){
+          BottomTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
+          if(TriangleInfo[Counter+NumbeR+Number2+Number3].y<600){
+            CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3],TriangleInfo[Counter+NumbeR+Number2+Number3].y)
+            if(Counter2<=1){
+              TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3])
+              if(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y<600){
+                 CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }else{
+                CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }
+            }
+          }else{
+            CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3],TriangleInfo[Counter+NumbeR+Number2+Number3].y)
+            if(Counter2<=1){
+              BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3])
+              if(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y<600){
+                 CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }else{
+                CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }
+            }
+          }
+         }
+       }
+       BottomTriangle()
+       Checkers(X,Y)
+     }
+    }else{
+      CheckWhiteCheckers(TriangleInfo[Counter+NumbeR][Counter+NumbeR],TriangleInfo[Counter+NumbeR].y)
+     if(Counter2<=1){
+       context.clearRect(0,0,1950,1230)
+       CreateBoard()
+       TopTriangle()
+       if(TriangleInfo[Counter+NumbeR+Number2].y<600){
+         CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2],TriangleInfo[Counter+NumbeR+Number2].y)
+         if(Counter2<=1){
+          TopTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
+          if(TriangleInfo[Counter+NumbeR+Number2+Number3].y<600){
+            CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3],TriangleInfo[Counter+NumbeR+Number2+Number3].y)
+            if(Counter2<=1){
+              TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3])
+              if(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y<600){
+                 CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }else{
+                CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }
+            }
+          }else{
+            CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3],TriangleInfo[Counter+NumbeR+Number2+Number3].y)
+            if(Counter2<=1){
+              BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3])
+              if(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y<600){
+                 CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }else{
+                CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }
+            }
+          }
+         }
+       }else{
+        CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2],TriangleInfo[Counter+NumbeR+Number2].y)
+         if(Counter2<=1){
+          BottomTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
+          if(TriangleInfo[Counter+NumbeR+Number2+Number3].y<600){
+            CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3],TriangleInfo[Counter+NumbeR+Number2+Number3].y)
+            if(Counter2<=1){
+              TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3])
+              if(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y<600){
+                 CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }else{
+                CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }
+            }
+          }else{
+            CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3],TriangleInfo[Counter+NumbeR+Number2+Number3].y)
+            if(Counter2<=1){
+              BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3])
+              if(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y<600){
+                 CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }else{
+                CheckWhiteCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],TriangleInfo[Counter+NumbeR+Number2+Number3+Number4].y)
+                 if(Counter2<=1){
+                  BottomTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4])
+                 }
+              }
+            }
+          }
+         }
+       }
+       BottomTriangle(TriangleInfo[Counter+NumbeR][Counter+NumbeR])
+       Checkers(X,Y)
+     }
+    }
+    
+  }else{
+    if(NumbeR !== 0 && Number2 !== 0){
+      context.clearRect(0,0,1950,1230)
+      CreateBoard()
+      CheckWhiteCheckers(TriangleInfo[Counter+Number2][Counter+Number2],TriangleInfo[Counter+Number2].y)
+      if(Counter2<=1){
+        if(TriangleInfo[Counter+Number2].y<600){
+           TopTriangle(TriangleInfo[Counter+Number2][Counter+Number2])
+        }else{
+          BottomTriangle(TriangleInfo[Counter+Number2][Counter+Number2])
+        }
+      }
+    if(TriangleInfo[Counter+NumbeR].y<600){
+      CheckWhiteCheckers(TriangleInfo[Counter+NumbeR][Counter+NumbeR],TriangleInfo[Counter+NumbeR].y)
+      if(Counter2<=1){
+      TopTriangle(TriangleInfo[Counter+NumbeR][Counter+NumbeR])
+      CheckWhiteCheckers(TriangleInfo[Counter+Number2+NumbeR][Counter+Number2+NumbeR],TriangleInfo[Counter+Number2+NumbeR].y)
+      if(Counter2<=1){
+        if(TriangleInfo[Counter+Number2+NumbeR].y<600){
+          TopTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
+        }else{
+          BottomTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
+        }
+      }
+      BottomTriangle()
+      Checkers(X,Y)
+      }
+    }else{
+      CheckWhiteCheckers(TriangleInfo[Counter+NumbeR][Counter+NumbeR],TriangleInfo[Counter+NumbeR].y)
+      if(Counter2<=1){
+      TopTriangle()
+      BottomTriangle(TriangleInfo[Counter+NumbeR][Counter+NumbeR])
+      CheckWhiteCheckers(TriangleInfo[Counter+Number2+NumbeR][Counter+Number2+NumbeR],TriangleInfo[Counter+Number2+NumbeR].y)
+      if(Counter2<=1){
+       if(TriangleInfo[Counter+Number2+NumbeR].y<600){
+          TopTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
+        }else{
+          BottomTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
+        }
+      }
+      Checkers(X,Y)
+      }
+    }
+   }
+}
+  Checkers(X,Y)
 }
 }
 CreateBoard()
+TopTriangle()
+BottomTriangle()
+Checkers()
 function CreateBoard(){
     Board1()
     Board2()
     Board3()
     Board4()
-    TopWhiteTriangLe()
-    TopBlackTriangLe()
-    BottomWhiteTriangLe()
-    BottomBlackTriangLe()
-    Checkers()
+}
+
+function TopTriangle(X){
+  TopWhiteTriangLe(X)
+  TopBlackTriangLe(X)
+}
+function BottomTriangle(X){
+  BottomWhiteTriangLe(X)
+  BottomBlackTriangLe(X)
 }
 function Board1(){
     context.fillStyle ='wheat'
@@ -375,6 +929,9 @@ BlackCheckers = [
   {x:110,y:1165}
 ]
 CreateBoard()
+TopTriangle()
+BottomTriangle()
+Checkers()
 dice.style.display = 'block'
 dice2.style.display = 'block' 
 Start.textContent = 'Roll Dice!'
@@ -390,8 +947,8 @@ if(Start.textContent === 'Roll Dice!'){
   Rolled = 'Rolling'
   const randNum1 = Math.ceil(Math.random()*6)
   const randNum2 = Math.ceil(Math.random()*6)
-  NumbeR = 5
-  Number2 = 2
+  NumbeR = randNum1
+  Number2 = randNum2
   dice.style.transform = ''
   dice.style.animation = 'rolling 4s'
   dice2.style.animation = 'rolling 4s'
@@ -523,6 +1080,7 @@ game.addEventListener('click',(e)=>{
          )
          if(distance<35){
          Checkers(BlackChecker.x,BlackChecker.y)
+         HighlightTriangle(BlackChecker.x,BlackChecker.y)
          }
       }) 
       }
