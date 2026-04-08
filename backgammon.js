@@ -54,10 +54,28 @@ let WhiteCheckers = [
   {x:WhiteX+75, y:WhiteY},
   {x:WhiteX,    y:WhiteY}
 ]
+function CheckCenterPicies(){
+  if(WhoIsTurn === 'White'){
+    Counter = 0
+    WhiteCheckers.forEach(WhiteChecker=>{
+      if(WhiteChecker.x === 980){
+        Counter++
+      }
+    })
+  }
+  if(WhoIsTurn === 'Black'){
+    Counter = 0
+    BlackCheckers.forEach(BlackChecker=>{
+      if(BlackChecker.x === 980){
+        Counter++
+      }
+    })
+  }
+}
 function BlackCheckersCounter(){
   Counter2 = 0
   BlackCheckers.forEach(BlackChecker=>{
-    if(BlackChecker.x>=1090 && BlackChecker.x<=1840){
+    if(BlackChecker.x>=1090 && BlackChecker.x<2300){
      if(BlackChecker.y<600){
       Counter2++
      }
@@ -67,7 +85,7 @@ function BlackCheckersCounter(){
 function WhiteCheckersCounter(){
   Counter2 = 0
   WhiteCheckers.forEach(WhiteChecker=>{
-    if(WhiteChecker.x>=1090 && WhiteChecker.x<=1840){
+    if(WhiteChecker.x>=1090 && WhiteChecker.x<=2300){
      if(WhiteChecker.y>600){
       Counter2++
      }
@@ -115,7 +133,7 @@ if(WhoIsTurn === 'White'){
   Checkers()
   Counter = 0
   TriangleInfo  = [
-  {},
+  {0:905,y:500},
   {1:1765,y:500},
   {2:1615,y:500},
   {3:1465,y:500},
@@ -142,7 +160,6 @@ if(WhoIsTurn === 'White'){
   {24:1765,y:610},
  ]
   while (Counter<=24) {
-    Counter++
     if(Y<600){
       if(TriangleInfo[Counter].y < 600){
       if(TriangleInfo[Counter][Counter] === X - 75){
@@ -156,6 +173,7 @@ if(WhoIsTurn === 'White'){
       }
     }
     }
+    Counter++
   } 
   if(NumbeR === Number2){
     if(NumbeR !== 0){
@@ -197,12 +215,13 @@ if(WhoIsTurn === 'White'){
                  }
               }
               }else{
-         TopTriangle()
-         BottomTriangle()
+        TopTriangle()
+        BottomTriangle()
         WhiteCheckersCounter()
         if(Counter2 === 15){
           Board3()
           Board4(true)
+          InfoOnWhereToMove.push({bottom:true,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
         }
       }
                }
@@ -230,26 +249,26 @@ if(WhoIsTurn === 'White'){
                  }
               }
               }else{
-         TopTriangle()
-         BottomTriangle()
+        TopTriangle()
+        BottomTriangle()
         WhiteCheckersCounter()
         if(Counter2 === 15){
           Board3()
           Board4(true)
+          InfoOnWhereToMove.push({bottom:true,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
         }
       }
                }
-                
-              
             }
           }
           }else{
-         TopTriangle()
-         BottomTriangle()
+        TopTriangle()
+        BottomTriangle()
         WhiteCheckersCounter()
         if(Counter2 === 15){
           Board3()
           Board4(true)
+          InfoOnWhereToMove.push({bottom:true,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3})
         }
       }
           }
@@ -284,12 +303,13 @@ if(WhoIsTurn === 'White'){
                  }
               }
               }else{
-         TopTriangle()
-         BottomTriangle()
+        TopTriangle()
+        BottomTriangle()
         WhiteCheckersCounter()
         if(Counter2 === 15){
           Board3()
           Board4(true)
+          InfoOnWhereToMove.push({bottom:true,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
         }
       }
                }
@@ -317,12 +337,13 @@ if(WhoIsTurn === 'White'){
                  }
               }
               }else{
-         TopTriangle()
-         BottomTriangle()
+        TopTriangle()
+        BottomTriangle()
         WhiteCheckersCounter()
         if(Counter2 === 15){
           Board3()
           Board4(true)
+          InfoOnWhereToMove.push({bottom:true,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
         }
       }
                }
@@ -331,26 +352,26 @@ if(WhoIsTurn === 'White'){
             }
           }
           }else{
-         TopTriangle()
-         BottomTriangle()
+        TopTriangle()
+        BottomTriangle()
         WhiteCheckersCounter()
         if(Counter2 === 15){
           Board3()
           Board4(true)
+          InfoOnWhereToMove.push({bottom:true,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3})
         }
       }
           }
-          
-          
          }
        }
        }else{
-         TopTriangle()
-         BottomTriangle()
+        TopTriangle()
+        BottomTriangle()
         WhiteCheckersCounter()
         if(Counter2 === 15){
           Board3()
           Board4(true)
+          InfoOnWhereToMove.push({bottom:true,newX:1930,X:X,Y:Y,number:NumbeR+Number2})
         }
       }
        }
@@ -393,12 +414,13 @@ if(WhoIsTurn === 'White'){
                  }
               }
               }else{
-         TopTriangle()
-         BottomTriangle()
+        TopTriangle()
+        BottomTriangle()
         WhiteCheckersCounter()
         if(Counter2 === 15){
           Board3()
           Board4(true)
+          InfoOnWhereToMove.push({bottom:true,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
         }
       }
                }
@@ -426,12 +448,13 @@ if(WhoIsTurn === 'White'){
                  }
               }
               }else{
-         TopTriangle()
-         BottomTriangle()
+        TopTriangle()
+        BottomTriangle()
         WhiteCheckersCounter()
         if(Counter2 === 15){
           Board3()
           Board4(true)
+          InfoOnWhereToMove.push({bottom:true,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
         }
       }
                }
@@ -440,12 +463,13 @@ if(WhoIsTurn === 'White'){
             }
           }
           }else{
-         TopTriangle()
-         BottomTriangle()
+        TopTriangle()
+        BottomTriangle()
         WhiteCheckersCounter()
         if(Counter2 === 15){
           Board3()
           Board4(true)
+          InfoOnWhereToMove.push({bottom:true,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3})
         }
       }
           }
@@ -458,8 +482,8 @@ if(WhoIsTurn === 'White'){
           BottomTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
           InfoOnWhereToMove.push({bottom:true,newX:TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2],X:X,Y:Y,number:NumbeR+Number2})
           if(Number3 !== 0){
-if(Counter+NumbeR+Number2+Number3<=24){
-      if(TriangleInfo[Counter+NumbeR+Number2+Number3].y<600){
+        if(Counter+NumbeR+Number2+Number3<=24){
+         if(TriangleInfo[Counter+NumbeR+Number2+Number3].y<600){
             CheckBlackCheckers(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3],TriangleInfo[Counter+NumbeR+Number2+Number3].y)
             if(Counter2<=1){
               TopTriangle(TriangleInfo[Counter+NumbeR+Number2+Number3][Counter+NumbeR+Number2+Number3])
@@ -480,12 +504,13 @@ if(Counter+NumbeR+Number2+Number3<=24){
                  }
               }
               }else{
-         TopTriangle()
-         BottomTriangle()
+        TopTriangle()
+        BottomTriangle()
         WhiteCheckersCounter()
         if(Counter2 === 15){
           Board3()
           Board4(true)
+          InfoOnWhereToMove.push({bottom:true,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
         }
       }
                }
@@ -513,12 +538,13 @@ if(Counter+NumbeR+Number2+Number3<=24){
                  }
               }
               }else{
-         TopTriangle()
-         BottomTriangle()
+        TopTriangle()
+        BottomTriangle()
         WhiteCheckersCounter()
         if(Counter2 === 15){
           Board3()
           Board4(true)
+          InfoOnWhereToMove.push({bottom:true,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
         }
       }
                }
@@ -527,12 +553,13 @@ if(Counter+NumbeR+Number2+Number3<=24){
             }
           }
           }else{
-         TopTriangle()
-         BottomTriangle()
+        TopTriangle()
+        BottomTriangle()
         WhiteCheckersCounter()
         if(Counter2 === 15){
           Board3()
           Board4(true)
+          InfoOnWhereToMove.push({bottom:true,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3})
         }
       }
           }
@@ -541,12 +568,13 @@ if(Counter+NumbeR+Number2+Number3<=24){
          }
        }
        }else{
-         TopTriangle()
-         BottomTriangle()
+        TopTriangle()
+        BottomTriangle()
         WhiteCheckersCounter()
         if(Counter2 === 15){
           Board3()
           Board4(true)
+          InfoOnWhereToMove.push({bottom:true,newX:1930,X:X,Y:Y,number:NumbeR+Number2})
         }
       }
        }
@@ -556,16 +584,16 @@ if(Counter+NumbeR+Number2+Number3<=24){
      }
     } 
     }else{
-         TopTriangle()
-         BottomTriangle()
+        TopTriangle()
+        BottomTriangle()
         WhiteCheckersCounter()
         if(Counter2 === 15){
           Board3()
           Board4(true)
+          InfoOnWhereToMove.push({bottom:true,newX:1930,X:X,Y:Y,number:NumbeR})
         }
       }
     }
-    
   }else{
     if(NumbeR !== 0 || Number2 !== 0){
       context.clearRect(0,0,1950,1230)
@@ -592,6 +620,7 @@ if(Counter+NumbeR+Number2+Number3<=24){
         if(Counter2 === 15){
           Board3()
           Board4(true)
+          InfoOnWhereToMove.push({bottom:true,newX:1930,X:X,Y:Y,number:Number2})
         }
       }
       }
@@ -619,6 +648,7 @@ if(Counter+NumbeR+Number2+Number3<=24){
         if(Counter2 === 15){
           Board3()
           Board4(true)
+          InfoOnWhereToMove.push({bottom:true,newX:1930,X:X,Y:Y,number:NumbeR})
         }
       }
       }
@@ -639,10 +669,10 @@ if(Counter+NumbeR+Number2+Number3<=24){
       TopTriangle()
         BottomTriangle()
         WhiteCheckersCounter()
-        
         if(Counter2 === 15){
           Board3()
           Board4(true)
+           InfoOnWhereToMove.push({bottom:true,newX:1930,X:X,Y:Y,number:NumbeR+Number2})
         }
     }
    }
@@ -658,7 +688,7 @@ if(WhoIsTurn === 'Black'){
   Checkers()
   Counter = 0
   TriangleInfo  = [
-  {},
+  {0:905,y:610},
   {1:1765,y:610},
   {2:1615,y:610},
   {3:1465,y:610},
@@ -685,7 +715,6 @@ if(WhoIsTurn === 'Black'){
   {24:1765,y:500},
  ]
   while (Counter<=24) {
-    Counter++
     if(Y<600){
       if(TriangleInfo[Counter].y < 600){
       if(TriangleInfo[Counter][Counter] === X - 75){
@@ -699,7 +728,9 @@ if(WhoIsTurn === 'Black'){
       }
     }
     }
+    Counter++
   }
+  console.log(Counter)
   if(NumbeR === Number2){
     if(NumbeR !== 0){
       if(Counter+NumbeR<=24){
@@ -739,7 +770,16 @@ if(WhoIsTurn === 'Black'){
                   InfoOnWhereToMove.push({bottom:true,newX:TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
                  }
               }
-              }
+              }else{
+        TopTriangle()
+        BottomTriangle()
+        BlackCheckersCounter()
+        if(Counter2 === 15){
+          Board3(true)
+          Board4()
+           InfoOnWhereToMove.push({bottom:false,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
+        }
+    }
               }
               
               
@@ -764,11 +804,29 @@ if(WhoIsTurn === 'Black'){
                   InfoOnWhereToMove.push({bottom:true,newX:TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
                  }
               }
-              }
+              }else{
+        TopTriangle()
+        BottomTriangle()
+        BlackCheckersCounter()
+        if(Counter2 === 15){
+          Board3(true)
+          Board4()
+           InfoOnWhereToMove.push({bottom:false,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
+        }
+    }
               }
             }
           } 
-          }
+          }else{
+        TopTriangle()
+        BottomTriangle()
+        BlackCheckersCounter()
+        if(Counter2 === 15){
+          Board3(true)
+          Board4()
+           InfoOnWhereToMove.push({bottom:false,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3})
+        }
+    }
           }
          }
        }else{
@@ -798,7 +856,16 @@ if(WhoIsTurn === 'Black'){
                   InfoOnWhereToMove.push({bottom:true,newX:TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
                  }
               }
-              }
+              }else{
+        TopTriangle()
+        BottomTriangle()
+        BlackCheckersCounter()
+        if(Counter2 === 15){
+          Board3(true)
+          Board4()
+           InfoOnWhereToMove.push({bottom:false,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
+        }
+    }
               }
               
               
@@ -823,17 +890,44 @@ if(WhoIsTurn === 'Black'){
                   InfoOnWhereToMove.push({bottom:true,newX:TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
                  }
               }
-              }
+              }else{
+        TopTriangle()
+        BottomTriangle()
+        BlackCheckersCounter()
+        if(Counter2 === 15){
+          Board3(true)
+          Board4()
+           InfoOnWhereToMove.push({bottom:false,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
+        }
+    }
               }
                
                
             }
           } 
-          }
+          }else{
+        TopTriangle()
+        BottomTriangle()
+        BlackCheckersCounter()
+        if(Counter2 === 15){
+          Board3(true)
+          Board4()
+           InfoOnWhereToMove.push({bottom:false,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3})
+        }
+    }
           }
          }
        }
-       }
+       }else{
+        TopTriangle()
+        BottomTriangle()
+        BlackCheckersCounter()
+        if(Counter2 === 15){
+          Board3(true)
+          Board4()
+           InfoOnWhereToMove.push({bottom:false,newX:1930,X:X,Y:Y,number:NumbeR+Number2})
+        }
+    }
        }
        BottomTriangle()
      }
@@ -872,7 +966,16 @@ if(WhoIsTurn === 'Black'){
                   InfoOnWhereToMove.push({bottom:true,newX:TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
                  }
               }
-              }
+              }else{
+        TopTriangle()
+        BottomTriangle()
+        BlackCheckersCounter()
+        if(Counter2 === 15){
+          Board3(true)
+          Board4()
+           InfoOnWhereToMove.push({bottom:false,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
+        }
+    }
               }
               
               
@@ -897,13 +1000,31 @@ if(WhoIsTurn === 'Black'){
                   InfoOnWhereToMove.push({bottom:true,newX:TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
                  }
               }
-              }
+              }else{
+        TopTriangle()
+        BottomTriangle()
+        BlackCheckersCounter()
+        if(Counter2 === 15){
+          Board3(true)
+          Board4()
+           InfoOnWhereToMove.push({bottom:false,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
+        }
+    }
               }
                
                
             }
           } 
-          }
+          }else{
+        TopTriangle()
+        BottomTriangle()
+        BlackCheckersCounter()
+        if(Counter2 === 15){
+          Board3(true)
+          Board4()
+           InfoOnWhereToMove.push({bottom:false,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3})
+        }
+    }
           }
           
           
@@ -935,7 +1056,16 @@ if(WhoIsTurn === 'Black'){
                   InfoOnWhereToMove.push({bottom:true,newX:TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
                  }
               }
-              }
+              }else{
+        TopTriangle()
+        BottomTriangle()
+        BlackCheckersCounter()
+        if(Counter2 === 15){
+          Board3(true)
+          Board4()
+           InfoOnWhereToMove.push({bottom:false,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
+        }
+    }
               }
               
               
@@ -960,25 +1090,61 @@ if(WhoIsTurn === 'Black'){
                   InfoOnWhereToMove.push({bottom:true,newX:TriangleInfo[Counter+NumbeR+Number2+Number3+Number4][Counter+NumbeR+Number2+Number3+Number4],X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
                  }
               }
-              } 
+              }else{
+        TopTriangle()
+        BottomTriangle()
+        BlackCheckersCounter()
+        if(Counter2 === 15){
+          Board3(true)
+          Board4()
+           InfoOnWhereToMove.push({bottom:false,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3+Number4})
+        }
+    }
               }
                
                
             }
           } 
-          }
+          }else{
+        TopTriangle()
+        BottomTriangle()
+        BlackCheckersCounter()
+        if(Counter2 === 15){
+          Board3(true)
+          Board4()
+           InfoOnWhereToMove.push({bottom:false,newX:1930,X:X,Y:Y,number:NumbeR+Number2+Number3})
+        }
+    }
           }
          
          }
        }
-       }
+       }else{
+        TopTriangle()
+        BottomTriangle()
+        BlackCheckersCounter()
+        if(Counter2 === 15){
+          Board3(true)
+          Board4()
+           InfoOnWhereToMove.push({bottom:false,newX:1930,X:X,Y:Y,number:NumbeR+Number2})
+        }
+    }
        }
        BottomTriangle(TriangleInfo[Counter+NumbeR][Counter+NumbeR])
        InfoOnWhereToMove.push({bottom:true,newX:TriangleInfo[Counter+NumbeR][Counter+NumbeR],X:X,Y:Y,number:NumbeR})
        Checkers(X,Y)
      }
     } 
-  }
+      }else{
+        TopTriangle()
+        BottomTriangle()
+        BlackCheckersCounter()
+        if(Counter2 === 15){
+          Board3(true)
+          Board4()
+           InfoOnWhereToMove.push({bottom:false,newX:1930,X:X,Y:Y,number:NumbeR})
+        }
+    }
     }
     
    
@@ -987,20 +1153,6 @@ if(WhoIsTurn === 'Black'){
     if(NumbeR !== 0 || Number2 !== 0){
       context.clearRect(0,0,1950,1230)
       CreateBoard()
-      if(Counter+Number2+NumbeR<=24){
-        CheckWhiteCheckers(TriangleInfo[Counter+Number2+NumbeR][Counter+Number2+NumbeR],TriangleInfo[Counter+Number2+NumbeR].y)
-      if(Counter2<=1){
-       if(TriangleInfo[Counter+Number2+NumbeR].y<600){
-          TopTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
-          BottomTriangle()
-          InfoOnWhereToMove.push({bottom:false,newX:TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2],X:X,Y:Y,number:NumbeR+Number2})
-        }else{
-          BottomTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
-          TopTriangle()
-          InfoOnWhereToMove.push({bottom:true,newX:TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2],X:X,Y:Y,number:NumbeR+Number2})
-        }
-      }
-      }
       if(Number2 !== 0){
         if(Counter+Number2<=24){
         CheckWhiteCheckers(TriangleInfo[Counter+Number2][Counter+Number2],TriangleInfo[Counter+Number2].y)
@@ -1015,7 +1167,16 @@ if(WhoIsTurn === 'Black'){
           InfoOnWhereToMove.push({bottom:true,newX:TriangleInfo[Counter+Number2][Counter+Number2],X:X,Y:Y,number:Number2})
         }
       }
-      }
+      }else{
+      TopTriangle()
+        BottomTriangle()
+        BlackCheckersCounter()
+        if(Counter2 === 15){
+          Board3(true)
+          Board4()
+           InfoOnWhereToMove.push({bottom:false,newX:1930,X:X,Y:Y,number:Number2})
+        }
+    }
       }
       if(NumbeR !== 0){
        if(Counter+NumbeR<=24){
@@ -1034,9 +1195,40 @@ if(WhoIsTurn === 'Black'){
       InfoOnWhereToMove.push({bottom:true,newX:TriangleInfo[Counter+NumbeR][Counter+NumbeR],X:X,Y:Y,number:NumbeR})
       }
     }
-      } 
+      }else{
+        TopTriangle()
+        BottomTriangle()
+        BlackCheckersCounter()
+        if(Counter2 === 15){
+          Board3(true)
+          Board4()
+           InfoOnWhereToMove.push({bottom:false,newX:1930,X:X,Y:Y,number:NumbeR})
+        }
+    }
       }
-      
+      if(Counter+Number2+NumbeR<=24){
+        CheckWhiteCheckers(TriangleInfo[Counter+Number2+NumbeR][Counter+Number2+NumbeR],TriangleInfo[Counter+Number2+NumbeR].y)
+      if(Counter2<=1){
+       if(TriangleInfo[Counter+Number2+NumbeR].y<600){
+          TopTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
+          BottomTriangle()
+          InfoOnWhereToMove.push({bottom:false,newX:TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2],X:X,Y:Y,number:NumbeR+Number2})
+        }else{
+          BottomTriangle(TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2])
+          TopTriangle()
+          InfoOnWhereToMove.push({bottom:true,newX:TriangleInfo[Counter+NumbeR+Number2][Counter+NumbeR+Number2],X:X,Y:Y,number:NumbeR+Number2})
+        }
+      }
+      }else{
+      TopTriangle()
+        BottomTriangle()
+        BlackCheckersCounter()
+        if(Counter2 === 15){
+          Board3(true)
+          Board4()
+           InfoOnWhereToMove.push({bottom:false,newX:1930,X:X,Y:Y,number:NumbeR+Number2})
+        }
+    }
     
      
    }
@@ -1303,26 +1495,26 @@ if(Start.textContent === 'Start The Game'){
  GameTip.textContent = ''
 context.clearRect(0,0,1950,1230)
 WhiteCheckers = [
-  {x:1840,y:150},
-  {x:1840,y:75},
+  {x:1690,y:1095},
+  {x:1690,y:1165},
   {x:1090,y:885},
   {x:1090,y:955},
   {x:1090,y:1025},
   {x:1090,y:1095},
   {x:1090,y:1165},
-  {x:710,y:1025},
-  {x:710,y:1095},
-  {x:710,y:1165},
-  {x:110,y:375},
-  {x:110,y:300},
-  {x:110,y:225},
-  {x:110,y:150},
-  {x:110, y:75}
+  {x:1390,y:1165},
+  {x:1240,y:1095},
+  {x:1240,y:1165},
+  {x:1540,y:885},
+  {x:1540,y:955},
+  {x:1540,y:1025},
+  {x:1540,y:1095},
+  {x:1540, y:1165}
 ] 
 BlackCheckers = [
-  {x:1840,y:1095},
-  {x:1840,y:1165},
-  {x:1540,y:75},
+  {x:184,y:1095},
+  {x:184,y:1165},
+  {x:1090,y:375},
   {x:1090,y:300},
   {x:1090,y:225},
   {x:1090,y:150},
@@ -1357,7 +1549,7 @@ if(Start.textContent === 'Roll Dice!'){
   Rolled = 'Rolling'
   const randNum1 = Math.ceil(Math.random()*6)
   const randNum2 = Math.ceil(Math.random()*6)
-  NumbeR = 2
+  NumbeR = 1
   Number2 = 1
   dice.style.transform = ''
   dice.style.animation = 'rolling 4s'
@@ -1418,11 +1610,18 @@ if(Start.textContent === 'Roll Dice!'){
   Rolled = 'Rolled'
    if(CheckWhoIsFirst){
       if(NumbeR === Number2){
-        GameTip.textContent = 'Tie Roll Again'
-        GameTip.style.marginLeft = '-1200px'
-        game.style.marginLeft = '-1350px'
-        dice3.style.display = 'none'
-        dice4.style.display = 'none'
+        // GameTip.textContent = 'Tie Roll Again'
+        // GameTip.style.marginLeft = '-1200px'
+        // game.style.marginLeft = '-1350px'
+        // dice3.style.display = 'none'
+        // dice4.style.display = 'none'
+        CheckWhoIsFirst = false
+     WhoIsTurn = 'White'
+     GameTip.textContent = "White's Turn"
+     GameTip.style.marginLeft = '-900px'
+    game.style.marginLeft = '-1050px'
+    Number3 = NumbeR
+    Number4 = NumbeR
     }
     if(NumbeR>Number2){
       if(GameTip.textContent === 'Tie Roll Again'){
@@ -1483,7 +1682,6 @@ game.addEventListener('click',(e)=>{
                 if(WhiteChecker.x === argument.newX+75){
                   BottomY-=14
                 }
-                
                })
                WhiteCheckers.forEach(WhiteChecker=>{
                   if(WhiteChecker.x === argument.X){
@@ -1492,11 +1690,13 @@ game.addEventListener('click',(e)=>{
                     CreateBoard()
                     TopTriangle()
                     BottomTriangle()
+                    Board3()
+                    Board4()
                   BlackCheckers.forEach(BlackChecker=>{
                   if(BlackChecker.x === argument.newX+75){
                     if(BlackChecker.y>600){
-                      BlackChecker.x = 900
-                      BlackChecker.y = 400
+                      BlackChecker.x = 980
+                      BlackChecker.y = 611
                     }
                   }
                 })
@@ -1556,8 +1756,6 @@ game.addEventListener('click',(e)=>{
                     }
                   }
                 }) 
-                
-                
             }
           }
         }
@@ -1579,12 +1777,11 @@ game.addEventListener('click',(e)=>{
                     BottomTriangle()
                     WhiteChecker.x = argument.newX+75
                     WhiteChecker.y = Counter*75
-                    
                     BlackCheckers.forEach(BlackChecker=>{
                   if(BlackChecker.x === argument.newX+75){
                     if(BlackChecker.y<600){
                       BlackChecker.x = 980
-                      BlackChecker.y = 400
+                      BlackChecker.y = 611
                     }
                   }
                 })
@@ -1665,6 +1862,14 @@ game.addEventListener('click',(e)=>{
                     BottomTriangle()
                     BlackChecker.x = argument.newX+75
                     BlackChecker.y = BottomY*5
+                     WhiteCheckers.forEach(WhiteChecker=>{
+                  if(WhiteChecker.x === argument.newX+75){
+                   if(WhiteChecker.y<600){
+                      WhiteChecker.x = 980
+                      WhiteChecker.y = 490
+                    }
+                  }
+                })
                     if(NumbeR === Number2){
                       if(argument.number === NumbeR){
                         if(Number2 === 0){
@@ -1740,6 +1945,14 @@ game.addEventListener('click',(e)=>{
                     BottomTriangle()
                     BlackChecker.x = argument.newX+75
                     BlackChecker.y = Counter*75
+                    WhiteCheckers.forEach(WhiteChecker=>{
+                     if(WhiteChecker.x === argument.newX+75){
+                      if(WhiteChecker.y<600){
+                         WhiteChecker.x = 980
+                         WhiteChecker.y = 490
+                       }
+                     }
+                })
                     if(NumbeR === Number2){
                       if(argument.number === NumbeR){
                         if(Number2 === 0){
@@ -1808,8 +2021,20 @@ game.addEventListener('click',(e)=>{
           ((e.offsetY - WhiteChecker.y)*(e.offsetY - WhiteChecker.y))
          )
          if(distance<35){
-          Checkers(WhiteChecker.x,WhiteChecker.y)
+          CheckCenterPicies()
+          if(Counter >= 1){
+           if(WhiteChecker.x === 980){
+            Checkers(WhiteChecker.x,WhiteChecker.y)
+            HighlightTriangle(WhiteChecker.x,WhiteChecker.y)
+           }else{
+            GameTip.textContent += ' Move The Checker In The Center'
+            GameTip.style.marginLeft = '-1000px'
+            game.style.marginLeft = '-1090px'
+           }
+          }else{
+           Checkers(WhiteChecker.x,WhiteChecker.y)
           HighlightTriangle(WhiteChecker.x,WhiteChecker.y)
+          }
          }
       })
       }
@@ -1821,8 +2046,21 @@ game.addEventListener('click',(e)=>{
           ((e.offsetY - BlackChecker.y)*(e.offsetY - BlackChecker.y))
          )
          if(distance<35){
-         Checkers(BlackChecker.x,BlackChecker.y)
-         HighlightTriangle(BlackChecker.x,BlackChecker.y)
+          CheckCenterPicies()
+          if(Counter >= 1){
+            if(BlackChecker.x === 980){
+              Checkers(BlackChecker.x,BlackChecker.y)
+              HighlightTriangle(BlackChecker.x,BlackChecker.y) 
+            }else{
+              GameTip.textContent += ' Move The Checker In The Center'
+            GameTip.style.marginLeft = '-1000px'
+            game.style.marginLeft = '-1090px'
+            }
+          }else{
+           Checkers(BlackChecker.x,BlackChecker.y)
+         HighlightTriangle(BlackChecker.x,BlackChecker.y) 
+          }
+         
          }
       }) 
       }
