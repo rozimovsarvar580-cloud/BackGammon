@@ -15,6 +15,7 @@ let BottomY = 233
 let Number3
 let Number4
 let TriangleInfo 
+let CheckerY = []
 let InfoOnWhereToMove = []
 let X = 1200
 let Y = 560
@@ -54,6 +55,81 @@ let WhiteCheckers = [
   {x:WhiteX+75, y:WhiteY},
   {x:WhiteX,    y:WhiteY}
 ]
+function BlackCheckersY (){
+  
+}
+function WhiteCheckersY(){
+let counter = 1
+TriangleInfo  = [
+  {0:905,y:500},
+  {1:1765,y:500},
+  {2:1615,y:500},
+  {3:1465,y:500},
+  {4:1315,y:500},
+  {5:1165,y:500},
+  {6:1015,y:500},
+  {7:785,y:500},
+  {8:635,y:500},
+  {9:485,y:500},
+  {10:335,y:500},
+  {11:185,y:500},
+  {12:35,y:500},
+  {13:35,  y:610},
+  {14:185, y:610},
+  {15:335, y:610},
+  {16:485, y:610},
+  {17:635, y:610},
+  {18:785, y:610},
+  {19:1015,y:610},
+  {20:1165,y:610},
+  {21:1315,y:610},
+  {22:1465,y:610},
+  {23:1615,y:610},
+  {24:1765,y:610},
+ ]
+ while(counter<=24){
+   WhiteCheckers.forEach(WhiteChecker=>{
+      if(WhiteChecker.y>600 && TriangleInfo[counter].y>600){
+        if(WhiteChecker.x === TriangleInfo[counter][counter]+75){
+          Counter++
+        if(Counter>5){
+          console.log(TriangleInfo[counter][counter])
+        }
+        }
+      }
+      if(WhiteChecker.y<600 && TriangleInfo[counter].y<600){
+        if(WhiteChecker.x === TriangleInfo[counter][counter]+75){
+          Counter++
+        if(Counter>5){
+          console.log(TriangleInfo[counter][counter])
+        }
+        }
+        
+      }
+   })
+   counter++
+ }
+}
+function BlackCheckersHomeBoard(){
+  Counter = 0
+  BlackCheckers.forEach(BlackChecker=>{
+    if(BlackChecker.x>=2005 && BlackChecker.x<=2300){
+      if(BlackChecker.y<600){
+        Counter++
+      }
+    }
+  })
+}
+function WhiteCheckersHomeBoard(){
+  Counter = 0
+  WhiteCheckers.forEach(WhiteChecker=>{
+    if(WhiteChecker.x>=2005 && WhiteChecker.x<=2300){
+      if(WhiteChecker.y>600){
+        Counter++
+      }
+    }
+  })
+}
 function CheckCenterPicies(){
   if(WhoIsTurn === 'White'){
     Counter = 0
@@ -730,7 +806,6 @@ if(WhoIsTurn === 'Black'){
     }
     Counter++
   }
-  console.log(Counter)
   if(NumbeR === Number2){
     if(NumbeR !== 0){
       if(Counter+NumbeR<=24){
@@ -1270,25 +1345,27 @@ function Board2(){
     }
    function Board3(color){
     context.fillStyle ='wheat'
-    context.fillRect(1950,20,235,600)
-    context.lineWidth = 30
+    context.fillRect(1950,20,120,600)
      if(color){
+      context.lineWidth = 20
     context.strokeStyle = 'yellow'
-    context.strokeRect(1970,35,195,550)
+    context.strokeRect(1970,35,75,550)
     }
+    context.lineWidth = 30
     context.strokeStyle = 'orange'
-    context.strokeRect(1950,20,235,600)
+    context.strokeRect(1950,20,120,600)
     }
     function Board4(color){
     context.fillStyle ='wheat'
-    context.fillRect(1950,600,235,620)
-    context.lineWidth = 30
+    context.fillRect(1950,635,120,620)
     if(color){
+    context.lineWidth = 20
     context.strokeStyle = 'yellow'
-    context.strokeRect(1970,615,195,590)
+    context.strokeRect(1970,625,75,580)
     }
+    context.lineWidth = 30
     context.strokeStyle = 'orange'
-    context.strokeRect(1950,600,235,620)
+    context.strokeRect(1950,600,120,620)
     }
     function TopWhiteTriangLe(X){
     const TopWhiteTriangles = [
@@ -1495,25 +1572,25 @@ if(Start.textContent === 'Start The Game'){
  GameTip.textContent = ''
 context.clearRect(0,0,1950,1230)
 WhiteCheckers = [
-  {x:1690,y:1095},
-  {x:1690,y:1165},
+  {x:1840,y:150},
+  {x:1840,y:75},
   {x:1090,y:885},
   {x:1090,y:955},
   {x:1090,y:1025},
   {x:1090,y:1095},
   {x:1090,y:1165},
-  {x:1390,y:1165},
-  {x:1240,y:1095},
-  {x:1240,y:1165},
-  {x:1540,y:885},
-  {x:1540,y:955},
-  {x:1540,y:1025},
-  {x:1540,y:1095},
-  {x:1540, y:1165}
+  {x:710,y:1025},
+  {x:710,y:1095},
+  {x:710,y:1165},
+  {x:110,y:375},
+  {x:110,y:300},
+  {x:110,y:225},
+  {x:110,y:150},
+  {x:110, y:75}
 ] 
 BlackCheckers = [
-  {x:184,y:1095},
-  {x:184,y:1165},
+  {x:1840,y:1095},
+  {x:1840,y:1165},
   {x:1090,y:375},
   {x:1090,y:300},
   {x:1090,y:225},
@@ -1549,8 +1626,8 @@ if(Start.textContent === 'Roll Dice!'){
   Rolled = 'Rolling'
   const randNum1 = Math.ceil(Math.random()*6)
   const randNum2 = Math.ceil(Math.random()*6)
-  NumbeR = 1
-  Number2 = 1
+  NumbeR = 6
+  Number2 = 5
   dice.style.transform = ''
   dice.style.animation = 'rolling 4s'
   dice2.style.animation = 'rolling 4s'
@@ -1605,23 +1682,19 @@ if(Start.textContent === 'Roll Dice!'){
     dice4.style.transform = dice.style.transform
     Number3 = NumbeR
     Number4 = NumbeR
+  }else{
+    dice3.style.display = 'none'
+    dice4.style.display = 'none'
   }
   }
   Rolled = 'Rolled'
    if(CheckWhoIsFirst){
       if(NumbeR === Number2){
-        // GameTip.textContent = 'Tie Roll Again'
-        // GameTip.style.marginLeft = '-1200px'
-        // game.style.marginLeft = '-1350px'
-        // dice3.style.display = 'none'
-        // dice4.style.display = 'none'
-        CheckWhoIsFirst = false
-     WhoIsTurn = 'White'
-     GameTip.textContent = "White's Turn"
-     GameTip.style.marginLeft = '-900px'
-    game.style.marginLeft = '-1050px'
-    Number3 = NumbeR
-    Number4 = NumbeR
+        GameTip.textContent = 'Tie Roll Again'
+        GameTip.style.marginLeft = '-1200px'
+        game.style.marginLeft = '-1350px'
+        dice3.style.display = 'none'
+        dice4.style.display = 'none'
     }
     if(NumbeR>Number2){
       if(GameTip.textContent === 'Tie Roll Again'){
@@ -1646,6 +1719,63 @@ if(Start.textContent === 'Roll Dice!'){
     }
     Start.textContent = 'Roll Dice'
   },1000)
+}
+if(Start.textContent === 'Reset Game'){
+  GameTip.textContent = ''
+context.clearRect(0,0,1950,1230)
+WhiteCheckers = [
+  {x:1840,y:150},
+  {x:1840,y:75},
+  {x:1090,y:885},
+  {x:1090,y:955},
+  {x:1090,y:1025},
+  {x:1090,y:1095},
+  {x:1090,y:1165},
+  {x:710,y:1025},
+  {x:710,y:1095},
+  {x:710,y:1165},
+  {x:110,y:375},
+  {x:110,y:300},
+  {x:110,y:225},
+  {x:110,y:150},
+  {x:110, y:75}
+] 
+BlackCheckers = [
+  {x:1840,y:1095},
+  {x:1840,y:1165},
+  {x:1090,y:375},
+  {x:1090,y:300},
+  {x:1090,y:225},
+  {x:1090,y:150},
+  {x:1090,y:75},
+  {x:710,y:225},
+  {x:710,y:150},
+  {x:710,y:75},
+  {x:110,y:885},
+  {x:110,y:955},
+  {x:110,y:1025},
+  {x:110, y:1095},
+  {x:110,y:1165}
+]
+CreateBoard()
+Board3()
+Board4()
+TopTriangle()
+BottomTriangle()
+Checkers()
+dice.style.display = 'block'
+dice2.style.display = 'block' 
+Start.textContent = 'Roll Dice!'
+NumbeR = 0
+Number2 = 0
+Number3 = undefined
+Number4 = undefined
+Counter = 0
+Counter2 = 0
+InfoOnWhereToMove = []
+CheckWhoIsFirst = true
+WhoIsTurn = undefined
+TriangleInfo = undefined
 }
 })
 game.addEventListener('click',(e)=>{
@@ -1672,6 +1802,30 @@ game.addEventListener('click',(e)=>{
     game.style.marginLeft = '-1350px'
   }
   if(Rolled === 'Rolled'){
+    BlackCheckersHomeBoard()
+    if(Counter === 15){
+      context.fillStyle = 'ghostWhite'
+context.font = "150px Arial"
+context.fillText('Black               Wins',290,615)
+context.strokeStyle = "Blue";
+context.strokeText("Black               Wins", 290, 615);
+dice.style.display = 'none'
+dice2.style.display = 'none'
+Start.textContent = 'Reset Game'
+Rolled = ''
+    }
+    WhiteCheckersHomeBoard()
+    if(Counter === 15){
+context.fillStyle = 'ghostWhite'
+context.font = "150px Arial"
+context.fillText('White               Wins',290,615)
+context.strokeStyle = "Blue";
+context.strokeText("White               Wins", 290, 615);
+dice.style.display = 'none'
+dice2.style.display = 'none'
+Start.textContent = 'Reset Game'
+Rolled = ''
+    }
       InfoOnWhereToMove.forEach(argument=>{
       if(WhoIsTurn === 'White'){
         if(argument.bottom){
@@ -1864,7 +2018,7 @@ game.addEventListener('click',(e)=>{
                     BlackChecker.y = BottomY*5
                      WhiteCheckers.forEach(WhiteChecker=>{
                   if(WhiteChecker.x === argument.newX+75){
-                   if(WhiteChecker.y<600){
+                   if(WhiteChecker.y>600){
                       WhiteChecker.x = 980
                       WhiteChecker.y = 490
                     }
@@ -2065,5 +2219,6 @@ game.addEventListener('click',(e)=>{
       }) 
       }
     }
+    WhiteCheckersY()
   }
 })
