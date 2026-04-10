@@ -55,10 +55,10 @@ let WhiteCheckers = [
   {x:WhiteX+75, y:WhiteY},
   {x:WhiteX,    y:WhiteY}
 ]
-function BlackCheckersY (){
+function BlackCheckersY(){
   
 }
-function WhiteCheckersY(){
+function WhiteCheckersY(X,Y){
 let counter = 1
 TriangleInfo  = [
   {0:905,y:500},
@@ -87,21 +87,100 @@ TriangleInfo  = [
   {23:1615,y:610},
   {24:1765,y:610},
  ]
+ let x = 0
+ let COunter = 0
+ let COunter2 = 0
+ let number = 0
+ let Array = []
+ let number2 = 0
+ let number3 = 0
+ let Array2 = []
  while(counter<=24){
    WhiteCheckers.forEach(WhiteChecker=>{
       if(WhiteChecker.y>600 && TriangleInfo[counter].y>600){
         if(WhiteChecker.x === TriangleInfo[counter][counter]+75){
-          Counter++
-        if(Counter>5){
-          console.log(TriangleInfo[counter][counter])
+          if(x !== WhiteChecker.x){
+            COunter = 0
+          }
+          x = WhiteChecker.x
+          COunter++
+          setTimeout(()=>{
+            context.clearRect(0,0,1950,1230)
+ CreateBoard()
+Board3()
+Board4()
+TopTriangle()
+BottomTriangle()
+            if(COunter>5){
+          number = COunter
+          WhiteCheckers.forEach(WhiteChecker=>{
+            if(WhiteChecker.y>600){
+              if(WhiteChecker.x === x){
+                if(WhiteChecker.y !== 1165){
+                  number -= 1
+                 Array.push(WhiteChecker.y)
+                 if(number === 1){
+                  Array = Array.sort((a,b) =>a-b)
+                  number = 0
+                  while(number<Array.length){
+                    WhiteCheckers.forEach(WhiteChecker=>{
+                      if(WhiteChecker.y>600){
+                        if(WhiteChecker.x === x){
+                          if(WhiteChecker.y === Array[number]){
+                            WhiteChecker.y += ((COunter-=1)*15)
+                          }
+                        }
+                      }
+                    })
+                    number++
+                  }
+                 }
+                }
+              }
+            }
+          })
         }
+         Checkers(X,Y) },1)
+        
         }
       }
       if(WhiteChecker.y<600 && TriangleInfo[counter].y<600){
         if(WhiteChecker.x === TriangleInfo[counter][counter]+75){
-          Counter++
-        if(Counter>5){
-          console.log(TriangleInfo[counter][counter])
+          if(x !== WhiteChecker.x){
+            Counter2 = 0
+          }
+          x = WhiteChecker.x
+          Counter2++
+        if(Counter2>5){
+          number2 = Counter2
+          WhiteCheckers.forEach(WhiteChecker=>{
+            if(WhiteChecker.y<600){
+              if(WhiteChecker.x === x){
+                if(WhiteChecker.y !== 75){
+                  number2 -= 1
+                 Array2.push(WhiteChecker.y)
+                 if(number2 === 1){
+                  Array2 = Array2.sort((a,b) =>a-b)
+                  number2 = 0
+                  number3 = Counter2
+                  while(number2<Array2.length){
+                    WhiteCheckers.forEach(WhiteChecker=>{
+                      if(WhiteChecker.y<600){
+                        if(WhiteChecker.x === x){
+                          if(WhiteChecker.y === Array2[number2]){
+                            number3-=1
+                            WhiteChecker.y -= ((Counter2-number3)*15)
+                          }
+                        }
+                      }
+                    })
+                    number2++
+                  }
+                 }
+                }
+              }
+            }
+          })
         }
         }
         
@@ -1496,7 +1575,7 @@ if(X === BlackChecker.x ){
         context.strokeStyle = '#949494fa'
     }
   }else{
-   while(Loop<=5){
+   while(Loop<=Counter){
     if(Counter === Loop){
       if(Y === BottomY*5 && Y === BlackChecker.y){
         context.strokeStyle = 'yellow'
@@ -1547,7 +1626,7 @@ if(X === WhiteChecker.x ){
         context.strokeStyle = '#888888'
     }
   }else{
-   while(Loop<=5){
+   while(Loop<=Counter){
     if(Counter === Loop){
       if(Y === BottomY*5 && Y === WhiteChecker.y){
         context.strokeStyle = 'yellow'
@@ -1579,14 +1658,14 @@ WhiteCheckers = [
   {x:1090,y:1025},
   {x:1090,y:1095},
   {x:1090,y:1165},
-  {x:710,y:1025},
+  {x:1090,y:815},
   {x:710,y:1095},
   {x:710,y:1165},
   {x:110,y:375},
   {x:110,y:300},
   {x:110,y:225},
   {x:110,y:150},
-  {x:110, y:75}
+  {x:110, y:75},
 ] 
 BlackCheckers = [
   {x:1840,y:1095},
@@ -1907,6 +1986,7 @@ Rolled = ''
                       Start.textContent = 'Roll Dice!'
                     }
                     Checkers()
+                    WhiteCheckersY(argument.X,argument.Y)
                     }
                   }
                 }) 
@@ -1990,6 +2070,7 @@ Rolled = ''
                       Start.textContent = 'Roll Dice!'
                     }
                     Checkers()
+                    WhiteCheckersY(argument.X,argument.Y)
                     }
                   }
                 })
@@ -2186,7 +2267,7 @@ Rolled = ''
             game.style.marginLeft = '-1090px'
            }
           }else{
-           Checkers(WhiteChecker.x,WhiteChecker.y)
+          Checkers(WhiteChecker.x,WhiteChecker.y)
           HighlightTriangle(WhiteChecker.x,WhiteChecker.y)
           }
          }
@@ -2219,6 +2300,5 @@ Rolled = ''
       }) 
       }
     }
-    WhiteCheckersY()
   }
 })
