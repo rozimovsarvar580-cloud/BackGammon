@@ -55,8 +55,99 @@ let WhiteCheckers = [
   {x:WhiteX+75, y:WhiteY},
   {x:WhiteX,    y:WhiteY}
 ]
-function BlackCheckersY(){
-  
+function BlackCheckersY(X,Y){
+  let counter = 1
+TriangleInfo  = [
+  {0:905,y:610},
+  {1:1765,y:610},
+  {2:1615,y:610},
+  {3:1465,y:610},
+  {4:1315,y:610},
+  {5:1165,y:610},
+  {6:1015,y:610},
+  {7:785,y: 610},
+  {8:635,y: 610},
+  {9:485,y: 610},
+  {10:335,y:610},
+  {11:185,y:610},
+  {12:35,y: 610},
+  {13:35,  y:500},
+  {14:185, y:500},
+  {15:335, y:500},
+  {16:485, y:500},
+  {17:635, y:500},
+  {18:785, y:500},
+  {19:1015,y:500},
+  {20:1165,y:500},
+  {21:1315,y:500},
+  {22:1465,y:500},
+  {23:1615,y:500},
+  {24:1765,y:500},
+  {25:1930,y:500},
+ ]
+ let x = 0
+ let COunter = 0
+ Counter2 = 0
+ while(counter<=25){
+   BlackCheckers.forEach(BlackChecker=>{
+    if(BlackChecker.y >600 && TriangleInfo[counter].y>600){
+      if(BlackChecker.x === TriangleInfo[counter][counter]+75){
+        if(x !== BlackChecker.x){
+          COunter = 0
+        }
+         x = BlackChecker.x
+         COunter+=1
+         setTimeout(()=>{
+          if(COunter>5){
+            context.clearRect(0,0,1950,1230)
+            CreateBoard()
+            Board3()
+            Board4()
+            TopTriangle()
+            BottomTriangle()
+          BlackCheckers.forEach(BlackChecker=>{
+            if(BlackChecker.y>600){
+              if(BlackChecker.x === x){
+                if(BlackChecker.y !== 1165){
+                  BlackChecker.y += ((COunter-=1)*15)
+                }
+              }
+            }
+          })
+         }
+        Checkers(X,Y) },1)  
+     }
+    }
+    if(BlackChecker.y<600 && TriangleInfo[counter].y<600){
+      if(BlackChecker.x === TriangleInfo[counter][counter]+75){
+        if(x !== BlackChecker.x){
+          Counter2 = 0
+        }
+         x = BlackChecker.x
+         Counter2+=1
+          if(Counter2>5){
+            context.clearRect(0,0,1950,1230)
+            CreateBoard()
+            Board3()
+            Board4()
+            TopTriangle()
+            BottomTriangle()
+          BlackCheckers.forEach(BlackChecker=>{
+            if(BlackChecker.y<600){
+              if(BlackChecker.x === x){
+                if(BlackChecker.y !== 75){
+                  BlackChecker.y -= ((Counter2-=1)*15)
+                }
+              }
+            }
+          })
+          Checkers(X,Y)
+         }
+     }
+    }
+   })
+   counter++
+ }
 }
 function WhiteCheckersY(X,Y){
 let counter = 1
@@ -86,16 +177,13 @@ TriangleInfo  = [
   {22:1465,y:610},
   {23:1615,y:610},
   {24:1765,y:610},
+  {25:1930,y:610},
  ]
  let x = 0
  let COunter = 0
- let COunter2 = 0
  let number = 0
- let Array = []
- let number2 = 0
- let number3 = 0
- let Array2 = []
- while(counter<=24){
+Counter2 = 0
+ while(counter<=25){
    WhiteCheckers.forEach(WhiteChecker=>{
       if(WhiteChecker.y>600 && TriangleInfo[counter].y>600){
         if(WhiteChecker.x === TriangleInfo[counter][counter]+75){
@@ -106,35 +194,17 @@ TriangleInfo  = [
           COunter++
           setTimeout(()=>{
             context.clearRect(0,0,1950,1230)
- CreateBoard()
-Board3()
-Board4()
-TopTriangle()
-BottomTriangle()
+            CreateBoard()
+            Board3()
+            Board4()
+            TopTriangle()
+            BottomTriangle()
             if(COunter>5){
-          number = COunter
           WhiteCheckers.forEach(WhiteChecker=>{
             if(WhiteChecker.y>600){
               if(WhiteChecker.x === x){
                 if(WhiteChecker.y !== 1165){
-                  number -= 1
-                 Array.push(WhiteChecker.y)
-                 if(number === 1){
-                  Array = Array.sort((a,b) =>a-b)
-                  number = 0
-                  while(number<Array.length){
-                    WhiteCheckers.forEach(WhiteChecker=>{
-                      if(WhiteChecker.y>600){
-                        if(WhiteChecker.x === x){
-                          if(WhiteChecker.y === Array[number]){
-                            WhiteChecker.y += ((COunter-=1)*15)
-                          }
-                        }
-                      }
-                    })
-                    number++
-                  }
-                 }
+                 WhiteChecker.y += ((COunter-=1)*15)
                 }
               }
             }
@@ -151,37 +221,29 @@ BottomTriangle()
           }
           x = WhiteChecker.x
           Counter2++
-        if(Counter2>5){
-          number2 = Counter2
+            if(Counter2>5){
+              Counter2+=1
+              number = Counter2
+          context.clearRect(0,0,1950,1230)
+            CreateBoard()
+            Board3()
+            Board4()
+            TopTriangle()
+            BottomTriangle()
           WhiteCheckers.forEach(WhiteChecker=>{
             if(WhiteChecker.y<600){
               if(WhiteChecker.x === x){
                 if(WhiteChecker.y !== 75){
-                  number2 -= 1
-                 Array2.push(WhiteChecker.y)
-                 if(number2 === 1){
-                  Array2 = Array2.sort((a,b) =>a-b)
-                  number2 = 0
-                  number3 = Counter2
-                  while(number2<Array2.length){
-                    WhiteCheckers.forEach(WhiteChecker=>{
-                      if(WhiteChecker.y<600){
-                        if(WhiteChecker.x === x){
-                          if(WhiteChecker.y === Array2[number2]){
-                            number3-=1
-                            WhiteChecker.y -= ((Counter2-number3)*15)
-                          }
-                        }
-                      }
-                    })
-                    number2++
-                  }
-                 }
+                  WhiteChecker.y -= ((Counter2-=1)*15)
+                 WhiteChecker.y -= (number*2)
                 }
+                 
               }
             }
           })
+          Checkers(X,Y)
         }
+        
         }
         
       }
@@ -1658,9 +1720,9 @@ WhiteCheckers = [
   {x:1090,y:1025},
   {x:1090,y:1095},
   {x:1090,y:1165},
-  {x:1090,y:815},
+  {x:710,y:1025},
   {x:710,y:1095},
-  {x:710,y:1165},
+  {x:110,y:450},
   {x:110,y:375},
   {x:110,y:300},
   {x:110,y:225},
@@ -1935,6 +1997,13 @@ Rolled = ''
                 })
                     WhiteChecker.x = argument.newX+75
                     WhiteChecker.y = BottomY*5
+                    let info = WhiteChecker
+                    WhiteCheckers.forEach((WhiteChecker,index)=>{
+                      if(WhiteChecker.x === info.x && WhiteChecker.y === info.y){
+                        WhiteCheckers.splice(index,1)
+                        WhiteCheckers.unshift(WhiteChecker)
+                      }
+                    })
                     if(NumbeR === Number2){
                       if(argument.number === NumbeR){
                         if(Number2 === 0){
@@ -2011,6 +2080,13 @@ Rolled = ''
                     BottomTriangle()
                     WhiteChecker.x = argument.newX+75
                     WhiteChecker.y = Counter*75
+                    let info = WhiteChecker
+                    WhiteCheckers.forEach((WhiteChecker,index)=>{
+                      if(WhiteChecker.x === info.x && WhiteChecker.y === info.y){
+                        WhiteCheckers.splice(index,1)
+                        WhiteCheckers.unshift(WhiteChecker)
+                      }
+                    })
                     BlackCheckers.forEach(BlackChecker=>{
                   if(BlackChecker.x === argument.newX+75){
                     if(BlackChecker.y<600){
@@ -2077,6 +2153,7 @@ Rolled = ''
             }
           }
         }
+        console.log(WhiteCheckers)
       }
       if(WhoIsTurn === 'Black'){
         if(argument.bottom){
@@ -2097,6 +2174,13 @@ Rolled = ''
                     BottomTriangle()
                     BlackChecker.x = argument.newX+75
                     BlackChecker.y = BottomY*5
+                    let info = BlackChecker
+                    BlackCheckers.forEach((BlackChecker,index)=>{
+                      if(BlackChecker.x === info.x && BlackChecker.y === info.y){
+                        BlackCheckers.splice(index,1)
+                        BlackCheckers.unshift(BlackChecker)
+                      }
+                    })
                      WhiteCheckers.forEach(WhiteChecker=>{
                   if(WhiteChecker.x === argument.newX+75){
                    if(WhiteChecker.y>600){
@@ -2156,6 +2240,7 @@ Rolled = ''
                       Start.textContent = 'Roll Dice!'
                     }
                     Checkers()
+                    BlackCheckersY(argument.X,argument.Y)
                     }
                   }
                 })
@@ -2180,6 +2265,13 @@ Rolled = ''
                     BottomTriangle()
                     BlackChecker.x = argument.newX+75
                     BlackChecker.y = Counter*75
+                    let info = BlackChecker
+                    BlackCheckers.forEach((BlackChecker,index)=>{
+                      if(BlackChecker.x === info.x && BlackChecker.y === info.y){
+                        BlackCheckers.splice(index,1)
+                        BlackCheckers.unshift(BlackChecker)
+                      }
+                    })
                     WhiteCheckers.forEach(WhiteChecker=>{
                      if(WhiteChecker.x === argument.newX+75){
                       if(WhiteChecker.y<600){
@@ -2239,6 +2331,7 @@ Rolled = ''
                       Start.textContent = 'Roll Dice!'
                     }
                     Checkers()
+                    BlackCheckersY(argument.X,argument.Y)
                     }
                   }
                 })
